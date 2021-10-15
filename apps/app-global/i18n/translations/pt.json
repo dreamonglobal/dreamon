@@ -1,0 +1,148 @@
+{
+    "home": {
+        "slider": {
+          "one": {
+            "title": "Dream On:",
+            "subtitle": "Honduras 2021",
+            "description": "17 de novembro de 2021",
+            "button": "Assistir à viagem anterior",
+            "buttonLink": "https://www.youtube.com/watch?v=_HWe8m0N60Y",
+            "button2": "Junte-se à viagem",
+            "button2Link": "https://dreamon.gomethod.app/!/#/20234/honduras-2021"
+          },
+          "two": {
+            "title": "Ouça",
+            "subtitle": "Hoje",
+            "description": "Fique quieto - Zac & Emily Howard",
+            "button": "Ouça no Spotify",
+            "buttonLink": "https://open.spotify.com/track/17y7E6XfjXgXlV2vOhZSfK?si=4596c91f3990417a"
+          },
+          "three": {
+            "title": "Levante",
+            "subtitle": "Suas Mãos Amigas",
+            "description": "Não podemos fazer nada do que fazemos sem o apoio de pessoas como você.",
+            "button": "DOE agora",
+            "buttonLink": "https://www.paypal.com/donate/?token=_VV4NX2yorvh4-A4aMbH1VJ75nly1JyZae94238oxw6LESsAA7Mgc7OTDhtY0yn_vCMdwG&country.x=US&locale.x=US"
+          },
+          "four": {
+            "title": "Dream On:",
+            "subtitle": "Coletivo de música",
+            "description": "Dream On: Music Collective é uma equipe de escritores, cantores, músicos e adoradores. Somos apaixonados por buscar a presença de Deus em todas as áreas de nossas vidas e reacender os sonhos e propósitos que Deus colocou na vida de cada um.",
+            "button": "Veja os artistas",
+            "buttonLink": "/pt/music",
+            "button2": "próximos eventos",
+            "button2Link": "/pt/events"
+          }
+        },
+        "bucket": {
+          "one": {
+            "title": "OBTER DETALHES SOBRE PARTICIPAR DE NOSSA PRÓXIMA VIAGEM",
+            "button": "Juntar",
+            "buttonLink": "https://dreamon.gomethod.app/!/#/20234/honduras-2021"
+          },
+          "three": {
+            "title": "PRECISAMOS DA SUA AJUDA PARA MUDAR O MUNDO",
+            "button": "Doar",
+            "buttonLink": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCJ6SAWVF5U5Q"
+          }
+        },
+        "playVideo": "Play Video"
+    },
+    "about": {
+        "pageTitle": "Sobre Dream On",
+        "mission": "Nossa missão",
+        "missionDescription": "Encontramos nosso propósito Nele. Então, sonhamos de propósito. Somos um grupo de jovens adultos que têm o chamado de despertar sonhos e propósitos de volta aos corações do mundo. Sonhar requer fé, e acreditamos que isso é algo que está faltando hoje.",
+        "history": "Nossa história",
+        "historyDescription": "O Dream on começou como uma ideia durante o café da manhã em um jantar local em 2016. Desde então, ele se tornou um movimento global capacitando pessoas de todas as idades a perseguir seus sonhos.",
+        "coreValues": "Nossos principais valores",
+        "coreValueListItems": "<ul><li>Excelência em todos os sentidos</li><li>Integridade em tudo</li><li>Jesus no centro</li><li>Unidade dentro e unidade fora</li></ul>",
+        "join": "Junte-se ao time",
+        "joinDescription": "Estamos à procura de pessoas como você para se juntarem ao 'Dream Team!'",
+        "give": "Dê um Sonho",
+        "giveDescription": "Estamos fazendo parceria com pessoas como você para dar às crianças de todo o mundo os seus sonhos.",
+        "partner": "Torne-se um parceiro",
+        "partnerDescription": "Não podemos fazer nada sem o apoio de pessoas como você.",
+        "buttons": {
+            "learnMoreButton": "Saber mais",
+            "donateNowButton": "DOE agora"
+        },
+        "links": {
+            "join": "/pt/join",
+            "donate": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCJ6SAWVF5U5Q"
+        },
+        "team": {
+            "title": "A equipa de sonho"
+        }
+    },
+    "missions": {
+        "pageTitle": "Missões",
+        "upcomingTripsTitle": "Próximas viagens",
+        "upcomingTripsDescription": "Nossa visão é reacender o Corpo de Cristo para sonhar novamente, bem em sua localização geográfica. Sabemos que cada participante voltará para casa com seus próprios sonhos de mudar o mundo, mas também acreditamos na importância de o povo centro-americano realizar seus próprios sonhos.",
+        "trips": {
+            "honduras": {
+                "country": "Honduras",
+                "date": "Novembro de 2021",
+                "link": "https://dreamon.gomethod.app/!/#/20234/honduras-2021"
+            },
+            "brazil": {
+                "country": "Brasil",
+                "date": "Março de 2022",
+                "link": "#"
+            }
+        }
+    },
+    "music": {
+        "pageTitle": "Dream On: Music Collective",
+        "meetTheCollectiveTitle": "Conheça o Coletivo",
+        "meetTheCollectiveDescription": "Dream On: Music Collective é uma equipe de escritores, cantores, músicos e adoradores. Somos apaixonados por buscar a presença de Deus em todas as áreas de nossas vidas e relançar os sonhos e propósitos que Deus colocou na vida de cada um."
+    },
+    "speakers": {
+        "pageTitle": "Dream On: Coletivo de Palestrantes",
+        "meetTheCollectiveTitle": "Conheça o Coletivo",
+        "meetTheCollectiveDescription": "Dream On: Speaker Collective é uma equipe de autores, palestrantes e pregadores. Somos apaixonados por capacitar e ensinar os outros a perseguir seus sonhos e propósitos que Deus colocou na vida de cada um."
+    },
+    "events": {
+        "pageTitle": "próximos eventos",
+        "noUpcomingEvents": "Sem próximos eventos"
+    },
+    "contact": {
+        "pageTitle": "Contato",
+        "contactUs": "Entre em contato conosco",
+        "loading": "Carregando..."
+    },
+    "fourZeroFour": {
+      "pageTitle": "404 Página Não Encontrada",
+      "notFoundTitle": "Não encontrado",
+      "notFoundDescription": "Você acabou de chegar a um caminho que não existe ... a tristeza."
+    },
+    "book": {
+      "pageTitle": "Livro Dream On",
+      "testimonialVideosTitle": "Vídeos de depoimento"
+    },
+    "join": {
+      "pageTitle": "Juntar",
+      "joinTheDreamTeamTitle": "Junte-se ao Dream Team"
+    },
+    "menu": {
+      "home": "Casa",
+      "homeLink": "/pt",
+      "about": "Cerca De",
+      "aboutLink": "/pt/about",
+      "missions": "Missões",
+      "missionsLink": "/pt/missions",
+      "music": "Música",
+      "musicLink": "/pt/music",
+      "speakers": "O Orador",
+      "speakersLink": "/pt/speakers",
+      "events": "Eventos",
+      "eventsLink": "/pt/events",
+      "store": "Armazenar",
+      "storeLink": "https://shop.dreamon.world/",
+      "contact": "Contato",
+      "contactLink": "/pt/contact"
+    },
+    "footer": {
+      "copyright": "Direito Autoral",
+      "allRightsReserved": "Todos os direitos reservados."
+    }
+}

@@ -1,0 +1,665 @@
+/**
+ *
+ * ---------------------------------------------------------------------------
+ *
+ * Template Name: Liftfund | Nonprofit Template
+ * Template URL: http://lovesome.biz/tf-template/liftfund
+ * Author : urosd
+ * Version : 1.0
+ *
+ * --------------------------------------------------------------------------- 
+ *
+ */
+
+/***** medium Layout *****/
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .main-menu ul li,
+    .fixed-menu .main-menu ul li {
+        padding: 28px 6px 0;
+    }
+    .main-menu ul li a {
+        font-size: 15px;
+    }
+    .single-banner-txt h1 {
+        font-size: 50px;
+    }
+    .single-donate-wraper h2 {
+        font-size: 35px;
+    }
+    .single-donate-wraper {
+        padding: 50px 40px 50px 20px;
+    }
+    .about-img {
+        padding: 35px 0;
+    }
+    .donate-progress-box {
+        padding: 25px 50px;
+    }
+    .blog-slide .owl-nav {
+        text-align: center;
+    }
+    .blog-slide .owl-nav button {
+        position: relative;
+        margin-top: 30px;
+    }
+    .blog-slide button.owl-prev {
+        left: -1%;
+    }
+    .blog-slide button.owl-next {
+        right: -1%;
+    }
+    .contact-info {
+        padding: 80px 70px 40px 50px;
+    }
+    .widget-newsletter form input {
+        width: 51%;
+        padding: 15px 17px 15px 10px;
+    }
+    ul.list li a img {
+        width: 62px;
+    }
+    .volunteers-img {
+        margin: 30px 0;
+    }
+    .quick-contact-area .contact-info {
+        padding: 0 50px 0 50px;
+    }
+}
+
+/***** Tablet Layout *****/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 13px;
+    }
+    /* Menu area */
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-header {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .collapse.in {
+        display: block !important;
+    }
+    .navbar-collapse {
+        border: 0;
+    }
+    nav.navbar {
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 100%;
+    }
+    ul.navbar-nav {
+        border: 0 none;
+        text-align: left;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-nav li {
+        display: block !important;
+        float: none;
+        padding: 0 !important;
+    }
+    ul.navbar-nav li a {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        padding-left: 20px !important;
+        display: block;
+        color: #000 !important;
+        font-weight: 600;
+        font-size: 13px;
+    }
+    .navbar-default .navbar-nav > li > a:focus {
+        background-color: #fff !important;
+        color: #000 !important;
+    }
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:focus,
+    .navbar-default .navbar-nav > .active > a:hover {
+        background-color: #CC446C !important;
+        color: #fff !important;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+        padding: 0;
+    }
+    #bs-example-navbar-collapse-1 {
+        position: relative;
+        z-index: 9;
+        top: 15px;
+    }
+    .navbar-default .navbar-toggle {
+        background-color: #CC446C;
+        border-color: transparent;
+        margin: 7px 0 0;
+        z-index: 999;
+    }
+    .single-banner-txt h1 {
+        font-size: 50px;
+    }
+    .single-banner-txt p {
+        font-size: 14px;
+    }
+    .single-donate-wraper h2 {
+        font-size: 24px;
+    }
+    .single-donate-wraper {
+        padding: 50px 20px 50px 20px;
+    }
+    .title h2 {
+        font-size: 30px;
+    }
+    .separate-icon::before {
+        font-size: 28px;
+    }
+    .about-details h2,
+    .donate-progress-box h2 {
+        font-size: 24px;
+    }
+    .about-achievement i.fa {
+        font-size: 18px;
+    }
+    .about-achievement h4 {
+        font-size: 18px;
+    }
+    .about-img {
+        padding: 70px 0;
+    }
+    .mobile-auto {
+        width: 50%;
+        margin: 0 auto !important;
+        margin-top: 30px !important;
+    }
+    .donate-progress-box {
+        right: -70%;
+        width: 105%;
+    }
+    .progress-info h3 {
+        font-size: 16px;
+        margin-top: 47px;
+    }
+    .barfiller .tip {
+        font-size: 24px;
+        margin-top: -25px;
+    }
+    .single-gallery {
+        width: 50%;
+    }
+    .single-volunteers,
+    .single-progress-dec {
+        margin-bottom: 30px;
+    }
+    .form-group {
+        padding-left: 0;
+    }
+    .single-client {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .blog-slide .owl-nav {
+        text-align: center;
+    }
+    .blog-slide .owl-nav button {
+        position: relative;
+        margin-top: 30px;
+    }
+    .blog-slide button.owl-prev {
+        left: -1%;
+    }
+    .blog-slide button.owl-next {
+        right: -1%;
+    }
+    .footer-widgets {
+        margin-bottom: 50px;
+    }
+    .widget-newsletter form input {
+        width: 71%;
+    }
+    #scrollUp {
+        right: 31px;
+    }
+    .map-info-area {
+        display: inherit;
+    }
+    .google-map,
+    .contact-info {
+        width: 100%;
+    }
+    ul.list li a img {
+        width: 107px;
+    }
+    .contact-info h3,
+    .quick-contact h2 {
+        font-size: 26px;
+    }
+    .contact-info i {
+        font-size: 40px;
+    }
+    .media-body {
+        margin: 3px 0 30px 15px;
+    }
+    .media-body h5 {
+        font-size: 22px;
+    }
+    .vol-in {
+        display: inherit;
+    }
+    .volunteers-ins {
+        width: 100%;
+    }
+    .volunteers-ins {
+        width: 100%;
+        border-bottom: 2px solid #CC446C;
+        border-right: 0;
+    }
+    .volunteers-img {
+        padding: 100px 0;
+    }
+    .quick-contact {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .page-title-area {
+        padding: 140px 0 100px;
+    }
+    .sidebar-widget:first-child {
+        margin-top: 50px;
+    }
+    .post-info {
+        padding: 70px 0px 70px 20px;
+    }
+    .post-info {
+        padding: 40px 0 0 20px;
+    }
+    .post-info h3 {
+        font-size: 22px;
+    }
+}
+
+
+/***** Mobile Layout *****/
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 12px;
+    }
+    /* Menu area */
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-header {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .collapse.in {
+        display: block !important;
+    }
+    .navbar-collapse {
+        border: 0;
+    }
+    nav.navbar {
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 100%;
+    }
+    ul.navbar-nav {
+        border: 0 none;
+        text-align: left;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-nav li {
+        display: block !important;
+        float: none;
+        padding: 0 !important;
+    }
+    ul.navbar-nav li a {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        padding-left: 20px !important;
+        display: block;
+        color: #000 !important;
+        font-weight: 600;
+        font-size: 13px;
+    }
+    .navbar-default .navbar-nav > li > a:focus {
+        background-color: #fff !important;
+        color: #000 !important;
+    }
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:focus,
+    .navbar-default .navbar-nav > .active > a:hover {
+        background-color: #CC446C !important;
+        color: #fff !important;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+        padding: 0;
+    }
+    #bs-example-navbar-collapse-1 {
+        position: relative;
+        z-index: 9;
+        top: 9px;
+    }
+    .navbar-default .navbar-toggle {
+        background-color: #CC446C;
+        border-color: transparent;
+        margin-top: 0;
+        z-index: 999;
+    }
+    .single-banner-txt h1 {
+        font-size: 28px;
+    }
+    .single-banner-txt p {
+        font-size: 13px;
+    }
+    .tem-btn {
+        width: 120px;
+        height: 45px;
+        line-height: 44px;
+        margin-right: 3px !important;
+    }
+    .single-donate-wraper h2 {
+        font-size: 24px;
+    }
+    .single-donate-wraper {
+        width: 100%;
+        padding: 50px 50px 50px 20px;
+    }
+    .title h2 {
+        font-size: 26px;
+    }
+    .separate-icon::before {
+        font-size: 28px;
+    }
+    .about-details h2 {
+        font-size: 26px;
+        margin-top: 30px;
+    }
+    .em .about-details h2 {
+        margin-top: 0;
+    }
+    .em .about-img img {
+        margin-top: 30px;
+    }
+    .about-achievement h4 {
+        font-size: 20px;
+    }
+    .service-icon::before {
+        left: 40px;
+    }
+    .service-icon::after {
+        right: 40px;
+    }
+    .service-content {
+        margin: 30px 0 0;
+    }
+    .donate-count {
+        width: 100%;
+        border: none;
+    }
+    .donate-progress-box {
+        position: inherit;
+        top: 0;
+        right: 0;
+        transform: translate(0, 0);
+        padding: 15px;
+        margin-top: 30px;
+    }
+    .donate-progress-box h2 {
+        font-size: 22px;
+    }
+    .barfiller .tip {
+        font-size: 22px;
+        margin-top: -20px;
+    }
+    .progress-info h3 {
+        margin-top: 46px;
+        font-size: 12px;
+    }
+    .video-area a {
+        height: 50px;
+        width: 50px;
+    }
+    .video-area a i.fa {
+        font-size: 20px;
+    }
+    .video-area h2 {
+        font-size: 24px;
+    }
+    .iso-nav ul {
+        display: block;
+    }
+    .iso-nav ul li {
+        display: block;
+        font-size: 13px;
+        float: inherit;
+    }
+    .single-gallery {
+        width: 100%;
+    }
+    single-volunteers {
+        margin-bottom: 30px;
+    }
+    .single-volunteers h3 {
+        font-size: 24px;
+    }
+    .events-content h2 {
+        font-size: 22px;
+    }
+    .donate-form {
+        padding: 30px 15px;
+    }
+    .form-group h3 {
+        font-size: 20px;
+    }
+    .single-client {
+        text-align: center;
+    }
+    .client-info img {
+        margin: 0 auto;
+    }
+    .client-meta-info {
+        position: inherit;
+        top: 0;
+        left: 0;
+        width: 65%;
+        background-color: #CC446C;
+        border-radius: 10px;
+        padding: 10px 0;
+        transform: translate(0, 0);
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .single-volunteers {
+        margin-bottom: 30px;
+    }
+    .form-group {
+        padding: 0;
+    }
+    .single-progress-dec {
+        margin-bottom: 30px;
+    }
+    .single-progress-dec > span {
+        font-size: 24px;
+    }
+    .single-progress-dec h3 {
+        font-size: 18px;
+    }
+    .blog-slide .owl-nav {
+        text-align: center;
+    }
+    .blog-slide .owl-nav button {
+        position: relative;
+        margin-top: 30px;
+    }
+    .blog-slide button.owl-prev {
+        left: -1%;
+    }
+    .blog-slide button.owl-next {
+        right: -1%;
+    }
+    #scrollUp {
+        right: 31px;
+    }
+    .map-info-area {
+        display: inherit;
+    }
+    .google-map {
+        width: 100%;
+    }
+    .contact-info {
+        width: 100%;
+        font-weight: 300;
+        padding: 30px 20px;
+    }
+    .contact-info h3,
+    .quick-contact h2 {
+        font-size: 24px;
+    }
+    .contact-info i {
+        font-size: 26px;
+    }
+    .media-body h5 {
+        font-size: 20px;
+    }
+    .media-body {
+        width: 70% !important;
+        margin: 0px 0 15px 0px;
+    }
+    .footer-widgets {
+        margin-bottom: 50px;
+    }
+    .footer-widgets h2 {
+        font-size: 22px;
+    }
+    .widget-newsletter form input {
+        width: 68%;
+    }
+    ul.list li a img {
+        width: 88px;
+    }
+    #scrollUp {
+        right: 17px;
+    }
+    .page-title .title h2 {
+        font-size: 22px;
+    }
+    ul.breadcrumb li a,
+    .breadcrumb > .active {
+        font-size: 12px !important;
+    }
+    .page-title-area {
+        padding: 140px 0 100px;
+    }
+    .volunteers-img img {
+        margin-bottom: 30px;
+    }
+    .vol-in {
+        display: inherit;
+    }
+    .volunteers-ins {
+        width: 100%;
+    }
+    .volunteers-ins {
+        width: 100%;
+        border-bottom: 2px solid #CC446C;
+        border-right: 0;
+    }
+    .quick-contact {
+        width: 100%;
+        margin-bottom: 50px;
+        padding: 0 20px;
+    }
+    .quick-contact-area .contact-info {
+        padding: 0 20px;
+    }
+    .blog-area .col-sm-6 {
+        padding: 0;
+    }
+    .sidebar-widget:first-child {
+        margin-top: 50px;
+    }
+    .single-blog-content h2 {
+        font-size: 16px;
+    }
+    h3.comment-heading {
+        font-size: 22px;
+    }
+    .blog-get-info span {
+        font-size: 12px;
+    }
+    .blog-comment-wraper {
+        padding: 30px 10px;
+    }
+    blockquote p {
+        font-size: 14px;
+    }
+    .comment-content span {
+        font-size: 13px;
+    }
+    .reply-commnet-content {
+        padding-left: 30px;
+    }
+    .comment-input-form {
+        width: 100%;
+        padding: 0;
+    }
+    .single-events h2,
+    .events-slider h2 {
+        font-size: 22px;
+    }
+    .donate-wraper{
+        display: inherit;
+    }
+}
+
+/***** Wide Mobile Layout *****/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .logo img,
+    .fixed-menu .logo img {
+        width: 150px;
+    }
+    .navbar-toggle {
+        margin-top: 5px !important;
+    }
+    #bs-example-navbar-collapse-1 {
+        top: 11px;
+    }
+    .progress-info h3 {
+        margin-top: 40px;
+        font-size: 20px;
+    }
+    .widget-newsletter form input {
+        width: 79%;
+    }
+    ul.list {
+        margin: 0;
+    }
+    ul.list li a img {
+        width: 142px;
+    }
+    .single-blog-content h2 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,148 @@
+{
+    "home": {
+        "slider": {
+          "one": {
+            "title": "Dream On:",
+            "subtitle": "Honduras 2021",
+            "description": "November 17, 2021",
+            "button": "Watch Previous Trip",
+            "buttonLink": "https://www.youtube.com/watch?v=_HWe8m0N60Y",
+            "button2": "Join The Trip",
+            "button2Link": "https://dreamon.gomethod.app/!/#/20234/honduras-2021"
+          },
+          "two": {
+            "title": "Listen",
+            "subtitle": "Today",
+            "description": "Be Still - Zac & Emily Howard",
+            "button": "Listen On Spotify",
+            "buttonLink": "https://open.spotify.com/track/17y7E6XfjXgXlV2vOhZSfK?si=4596c91f3990417a"
+          },
+          "three": {
+            "title": "Raise",
+            "subtitle": "Your Helping Hands",
+            "description": "We aren't able to do any of the things we do without the support of people just like you.",
+            "button": "Donate Now",
+            "buttonLink": "https://www.paypal.com/donate/?token=_VV4NX2yorvh4-A4aMbH1VJ75nly1JyZae94238oxw6LESsAA7Mgc7OTDhtY0yn_vCMdwG&country.x=US&locale.x=US"
+          },
+          "four": {
+            "title": "Dream On:",
+            "subtitle": "Music Collective",
+            "description": "Dream On: Music Collective is a team of writers, singers, musicians, and worshippers. We are passionate about pursuing the presence of God in every area of our lives and re-sparking the dreams and purposes God has put in each and everyone’s life.",
+            "button": "View The Artists",
+            "buttonLink": "/music",
+            "button2": "Upcoming Events",
+            "button2Link": "/events"
+          }
+        },
+        "bucket": {
+          "one": {
+            "title": "GET DETAILS ABOUT JOINING OUR NEXT TRIP",
+            "button": "Join",
+            "buttonLink": "https://dreamon.gomethod.app/!/#/20234/honduras-2021"
+          },
+          "three": {
+            "title": "WE NEED YOUR HELP CHANGING THE WORLD",
+            "button": "Donate",
+            "buttonLink": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCJ6SAWVF5U5Q"
+          }
+        },
+        "playVideo": "Play Video"
+    },
+    "about": {
+        "pageTitle": "About Dream On",
+        "mission": "Our Mission",
+        "missionDescription": "We find our purpose in Him. So we dream on purpose. We are a group of young adults that have a calling to spark dreams and purposes back into the hearts of the world. Dreaming requires faith, and we believe this is something missing today.",
+        "history": "Our History",
+        "historyDescription": "Dream on began as an idea over breakfast at a local dinner in 2016. It since has turned into a global movement empowering people of all ages to pursue their dreams.",
+        "coreValues": "Our Core Values",
+        "coreValueListItems": "<ul><li>Excellence in every way</li><li>Integrity in everything</li><li>Jesus at the center</li><li>Unity Within &amp; Unity Without</li></ul>",
+        "join": "Join the Team",
+        "joinDescription": "We are looking for people just like you to join the 'Dream Team!'",
+        "give": "Give a Dream",
+        "giveDescription": "We are partnering with people like you to give children all across the globe their dreams.",
+        "partner": "Become a Partner",
+        "partnerDescription": "We aren't able to do anything without the support of people like you.",
+        "buttons": {
+            "learnMoreButton": "Learn More",
+            "donateNowButton": "Donate Now"
+        },
+        "links": {
+            "join": "/join",
+            "donate": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCJ6SAWVF5U5Q"
+        },
+        "team": {
+            "title": "The Dream Team"
+        }
+    },
+    "missions": {
+        "pageTitle": "Missions",
+        "upcomingTripsTitle": "Upcoming Trips",
+        "upcomingTripsDescription": "Our vision is to re-spark the Body of Christ to dream again, right in their very geographical location. We know that every participant will return home with their own dreams to change the world, but we also believe in the importance of the Central American people reaching their own dreams.",
+        "trips": {
+            "honduras": {
+                "country": "Honduras",
+                "date": "November 2021",
+                "link": "https://dreamon.gomethod.app/!/#/20234/honduras-2021"
+            },
+            "brazil": {
+                "country": "Brazil",
+                "date": "March 2022",
+                "link": "#"
+            }
+        }
+    },
+    "music": {
+        "pageTitle": "Dream On: Music Collective",
+        "meetTheCollectiveTitle": "Meet The Collective",
+        "meetTheCollectiveDescription": "Dream On: Music Collective is a team of writers, singers, musicians, and worshippers. We are passionate about pursuing the presence of God in every area of our lives and re-sparking the dreams and purposes God has put in each and everyone’s life."
+    },
+    "speakers": {
+        "pageTitle": "Dream On: Speaker Collective",
+        "meetTheCollectiveTitle": "Meet The Collective",
+        "meetTheCollectiveDescription": "Dream On: Speaker Collective is a team of authors, speakers, and preachers. We are passionate about empowering and teaching others to pursue their dreams and purposes God has put in each and everyone’s life."
+    },
+    "events": {
+        "pageTitle": "Upcoming Events",
+        "noUpcomingEvents": "No upcoming events"
+    },
+    "contact": {
+        "pageTitle": "Contact",
+        "contactUs": "Contact Us",
+        "loading": "Loading..."
+    },
+    "fourZeroFour": {
+      "pageTitle": "404 Page Not Found",
+      "notFoundTitle": "Not Found",
+      "notFoundDescription": "You just hit a route that doesn&#39;t exist... the sadness."
+    },
+    "book": {
+      "pageTitle": "Book Dream On",
+      "testimonialVideosTitle": "Testimonial Videos"
+    },
+    "join": {
+      "pageTitle": "Join",
+      "joinTheDreamTeamTitle": "Join The Dream Team"
+    },
+    "menu": {
+      "home": "Home",
+      "homeLink": "/",
+      "about": "About",
+      "aboutLink": "/about",
+      "missions": "Missions",
+      "missionsLink": "/missions",
+      "music": "Music",
+      "musicLink": "/music",
+      "speakers": "Speakers",
+      "speakersLink": "/speakers",
+      "events": "Events",
+      "eventsLink": "/events",
+      "store": "Store",
+      "storeLink": "https://shop.dreamon.world/",
+      "contact": "Contact",
+      "contactLink": "/contact"
+    },
+    "footer": {
+      "copyright": "Copyright",
+      "allRightsReserved": "All Rights Reserved."
+    }
+}
