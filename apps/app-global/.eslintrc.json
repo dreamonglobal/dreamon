@@ -9,7 +9,8 @@
     {
       "files": ["*.ts", "*.tsx"],
       "rules": {
-        "@typescript-eslint/camelcase": "off"
+        "@typescript-eslint/camelcase": "off",
+        "react/jsx-no-useless-fragment": "off"
       }
     },
     {
