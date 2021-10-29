@@ -8,27 +8,25 @@
 
 const path = require(`path`)
 
-const webpack= require('webpack');
-exports.onCreateWebpackConfig = ({
-    actions,
-  }) => {
-    actions.setWebpackConfig({
-      plugins: [
-        new webpack.ProvidePlugin({
-          $: 'jquery',
-          jQuery: 'jquery',
-          'window.jQuery': 'jquery'
-        }),
-      ],
-    })
-  }
+const webpack = require('webpack')
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    plugins: [
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery',
+      }),
+    ],
+  })
+}
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
-  const musicianTemplate = path.resolve(`src/templates/MusicMember.js`)
-  const speakerTemplate = path.resolve(`src/templates/SpeakerMember.js`)
-  const eventTemplate = path.resolve(`src/templates/Event.js`)
+  const musicianTemplate = path.resolve(`src/templates/MusicMember.tsx`)
+  const speakerTemplate = path.resolve(`src/templates/SpeakerMember.tsx`)
+  const eventTemplate = path.resolve(`src/templates/Event.tsx`)
 
   const markdownResults = await graphql(`
     {
@@ -66,52 +64,52 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   markdownResults.data.allMarkdownRemark.edges
-    .filter(edge => edge.node.frontmatter.category === 'Musician')
+    .filter((edge) => edge.node.frontmatter.category === 'Musician')
     .forEach(({ node }) => {
       createPage({
         path: node.frontmatter.path,
         component: musicianTemplate,
-        context: {}
+        context: {},
       })
-    });
+    })
 
   markdownResults.data.allMarkdownRemark.edges
-    .filter(edge => edge.node.frontmatter.category === 'Speaker')
+    .filter((edge) => edge.node.frontmatter.category === 'Speaker')
     .forEach(({ node }) => {
       createPage({
         path: node.frontmatter.path,
         component: speakerTemplate,
-        context: {}
+        context: {},
       })
     })
 
   markdownResults.data.allMarkdownRemark.edges
-    .filter(edge => edge.node.frontmatter.category === 'Events')
+    .filter((edge) => edge.node.frontmatter.category === 'Events')
     .forEach(({ node }) => {
       createPage({
         path: node.frontmatter.path,
         component: eventTemplate,
-        context: {}
+        context: {},
       })
     })
 }
 
-const locales = require('./i18n/locales');
+const locales = require('./i18n/locales')
 
 exports.onCreatePage = ({ page, actions }) => {
-  const { createPage, deletePage } = actions;
+  const { createPage, deletePage } = actions
 
   // For each page, we’re deleting it, than creating it again for each
   // language passing the locale to the page context
-  return new Promise(resolve => {
-    deletePage(page);
+  return new Promise((resolve) => {
+    deletePage(page)
 
-    Object.keys(locales).map(lang => {
-      const isDefault = locales[lang].default || false;
+    Object.keys(locales).map((lang) => {
+      const isDefault = locales[lang].default || false
 
       const localizedPath = isDefault
         ? page.path
-        : locales[lang].path + page.path;
+        : locales[lang].path + page.path
 
       return createPage({
         ...page,
@@ -120,9 +118,9 @@ exports.onCreatePage = ({ page, actions }) => {
           locale: lang,
           isDefault,
         },
-      });
-    });
+      })
+    })
 
-    resolve();
-  });
-};
+    resolve()
+  })
+}
