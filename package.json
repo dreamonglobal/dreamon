@@ -5,7 +5,12 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "deploy:app-global": "nx build app-global -- --prod",
+    "lint:affected": "nx affected:lint",
+    "test:affected": "nx affected:test",
+    "build:affected": "nx affected:build",
+    "e2e:app-global:ci": "nx e2e app-global-e2e --headless"
   },
   "private": true,
   "dependencies": {
