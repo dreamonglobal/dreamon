@@ -14,9 +14,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: yarn add & deploy
+      - name: yarn install & deploy
         run: |
-          yarn
+          yarn install --frozen-lockfile
           yarn deploy:app-global
       - name: Upload public dir
         uses: actions/upload-artifact@v1
