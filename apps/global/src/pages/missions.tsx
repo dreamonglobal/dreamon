@@ -34,7 +34,7 @@ const TripPreview = ({
 
   return (
     <div className="col-sm-12">
-      <article className="news-info">
+      {/* <article className="news-info">
         <OutboundLink href={trips.honduras.link}>
           <h2 className="text-center">{trips.honduras.country}</h2>
           <h4 className="text-center">{trips.honduras.date}</h4>
@@ -42,7 +42,7 @@ const TripPreview = ({
             <GatsbyImage image={hondurasImage} alt="Dream On: Honduras" />
           </div>
         </OutboundLink>
-      </article>
+      </article> */}
       <article className="news-info">
         {/* <OutboundLink href="https://dreamon.focusmissions.com/!/#/17348/honduras-2020"> */}
         <h2 className="text-center">{trips.brazil.country}</h2>

@@ -4,10 +4,10 @@ import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import { Frontmatter } from '../../types'
 
 const EventPreview = ({
-  frontmatter: { path, name, photo, title, buy, location, date },
+  event: { path, name, photo, title, buy, location, date },
   html,
 }: {
-  frontmatter: Frontmatter
+  event: Frontmatter
   html: string
 }) => (
   <div className="col">
