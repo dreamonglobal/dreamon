@@ -1,15 +1,15 @@
 {
   "version": 2,
   "projects": {
-    "app-global": {
-      "root": "apps/app-global",
-      "sourceRoot": "apps/app-global/src",
+    "global": {
+      "root": "apps/global",
+      "sourceRoot": "apps/global/src",
       "projectType": "application",
       "targets": {
         "build": {
           "executor": "@nrwl/gatsby:build",
           "options": {
-            "outputPath": "apps/app-global/public",
+            "outputPath": "apps/global/public",
             "uglify": true,
             "color": true,
             "profile": false
@@ -21,11 +21,11 @@
         "serve": {
           "executor": "@nrwl/gatsby:server",
           "options": {
-            "buildTarget": "app-global:build"
+            "buildTarget": "global:build"
           },
           "configurations": {
             "production": {
-              "buildTarget": "app-global:build:production"
+              "buildTarget": "global:build:production"
             }
           }
         },
@@ -33,34 +33,34 @@
           "executor": "@nrwl/linter:eslint",
           "outputs": ["{options.outputFile}"],
           "options": {
-            "lintFilePatterns": ["apps/app-global/**/*.{ts,tsx,js,jsx}"]
+            "lintFilePatterns": ["apps/global/**/*.{ts,tsx,js,jsx}"]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/app-global"],
+          "outputs": ["coverage/apps/global"],
           "options": {
-            "jestConfig": "apps/app-global/jest.config.js",
+            "jestConfig": "apps/global/jest.config.js",
             "passWithNoTests": true
           }
         }
       }
     },
-    "app-global-e2e": {
-      "root": "apps/app-global-e2e",
-      "sourceRoot": "apps/app-global-e2e/src",
+    "global-e2e": {
+      "root": "apps/global-e2e",
+      "sourceRoot": "apps/global-e2e/src",
       "projectType": "application",
       "targets": {
         "e2e": {
           "executor": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/app-global-e2e/cypress.json",
-            "devServerTarget": "app-global:serve",
-            "tsConfig": "apps/app-global-e2e/tsconfig.json"
+            "cypressConfig": "apps/global-e2e/cypress.json",
+            "devServerTarget": "global:serve",
+            "tsConfig": "apps/global-e2e/tsconfig.json"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "app-global:serve:production"
+              "devServerTarget": "global:serve:production"
             }
           }
         },
@@ -68,7 +68,7 @@
           "executor": "@nrwl/linter:eslint",
           "outputs": ["{options.outputFile}"],
           "options": {
-            "lintFilePatterns": ["apps/app-global-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": ["apps/global-e2e/**/*.{js,ts}"]
           }
         }
       }
@@ -89,5 +89,5 @@
       }
     }
   },
-  "defaultProject": "app-global"
+  "defaultProject": "global"
 }
