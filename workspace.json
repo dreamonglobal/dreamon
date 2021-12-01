@@ -1,6 +1,80 @@
 {
   "version": 2,
   "projects": {
+    "conference": {
+      "root": "apps/conference",
+      "sourceRoot": "apps/conference/src",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/gatsby:build",
+          "options": {
+            "outputPath": "apps/conference/public",
+            "uglify": true,
+            "color": true,
+            "profile": false
+          },
+          "configurations": {
+            "production": {}
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/gatsby:server",
+          "options": {
+            "buildTarget": "conference:build"
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "conference:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/conference/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/conference"],
+          "options": {
+            "jestConfig": "apps/conference/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "conference-e2e": {
+      "root": "apps/conference-e2e",
+      "sourceRoot": "apps/conference-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/conference-e2e/cypress.json",
+            "devServerTarget": "conference:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "conference:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/conference-e2e/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["conference"]
+    },
     "global": {
       "root": "apps/global",
       "sourceRoot": "apps/global/src",
@@ -73,21 +147,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "defaultCollection": "@nrwl/gatsby"
-  },
-  "generators": {
-    "@nrwl/react": {
-      "application": {
-        "babel": true
-      }
-    },
-    "@nrwl/gatsby": {
-      "application": {
-        "style": "css"
-      }
-    }
-  },
-  "defaultProject": "global"
+  }
 }

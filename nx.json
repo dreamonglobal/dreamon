@@ -35,5 +35,21 @@
       "tags": [],
       "implicitDependencies": ["global"]
     }
-  }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/gatsby"
+  },
+  "generators": {
+    "@nrwl/react": {
+      "application": {
+        "babel": true
+      }
+    },
+    "@nrwl/gatsby": {
+      "application": {
+        "style": "css"
+      }
+    }
+  },
+  "defaultProject": "global"
 }

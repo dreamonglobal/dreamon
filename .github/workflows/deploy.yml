@@ -17,12 +17,12 @@ jobs:
       - name: yarn install & deploy
         run: |
           yarn install --frozen-lockfile
-          yarn deploy:app-global
+          yarn deploy:global
       - name: Upload public dir
         uses: actions/upload-artifact@v1
         with:
           name: public
-          path: apps/app-global/public
+          path: apps/global/public
         env:
           CI: true
   deploy:

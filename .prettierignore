@@ -6,3 +6,7 @@
 /apps/app-global/node_modules
 /apps/app-global/public
 /apps/app-global/.cache
+
+/apps/conference/node_modules
+/apps/conference/public
+/apps/conference/.cache
