@@ -118,7 +118,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": []
     },
     "global-e2e": {
       "root": "apps/global-e2e",
@@ -145,7 +146,9 @@
             "lintFilePatterns": ["apps/global-e2e/**/*.{js,ts}"]
           }
         }
-      }
+      },
+      "tags": [],
+      "implicitDependencies": ["global"]
     }
   }
 }
