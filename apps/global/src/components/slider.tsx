@@ -40,12 +40,11 @@ const Slider = (): ReactElement => {
                 <div className="single-banner-con">
                   <div className="single-banner-txt">
                     <h1>
-                      <span>dream on:</span> Brazil 2022
+                      <span>{translations.one.title}</span>{' '}
+                      {translations.one.subtitle}
                     </h1>
                     <p className="fadeIn animated animated-08s">
-                      We are excited to announce that we will be traveling to
-                      Brazil to host our very first Dream On Party in Brazil in
-                      March of 2022
+                      {translations.one.description}
                     </p>
                   </div>
                 </div>
@@ -97,7 +96,7 @@ const Slider = (): ReactElement => {
       <div className="item">
         <div
           className="single-banner"
-          style={{ background: "url('../images/banner/06.jpg')" }}
+          style={{ background: "url('../images/banner/hes-here.jpg')" }}
         >
           <div className="container">
             <div className="row">

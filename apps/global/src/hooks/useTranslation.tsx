@@ -14,10 +14,6 @@ const query = graphql`
                   title
                   subtitle
                   description
-                  button
-                  buttonLink
-                  button2
-                  buttonLink
                 }
                 two {
                   title
