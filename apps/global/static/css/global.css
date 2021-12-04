@@ -922,11 +922,11 @@ nav {
 }
 
 button.owl-dot:first-of-type {
-  background: url('../images/banner/01.jpg');
+  background: url('../images/banner/brazil.jpg');
 }
 
 button.owl-dot:nth-child(2) {
-  background: url('../images/banner/06.jpg');
+  background: url('../images/banner/hes-here.jpg');
 }
 
 button.owl-dot:nth-child(3) {

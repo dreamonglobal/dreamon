@@ -29,24 +29,32 @@ const Slider = (): ReactElement => {
       ]}
       nav
     >
-      {/* <div className="item">
-                <div className="single-banner" style={{background: "url('../images/banner/brazil.jpg')"}}>
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-6 col-md-6 col-md-offset-1 col-lg-offset-0 col-sm-8">
-                                <div className="single-banner-con">
-                                    <div className="single-banner-txt">
-                                        <h1><span>dream on:</span> Brazil 2021</h1>
-                                        <p className="fadeIn animated animated-08s">We are excited to announce that we will be traveling to Brazil for the first time in January 2021 to share the Dream On mission with the people of Brazil</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
-
       <div className="item">
+        <div
+          className="single-banner"
+          style={{ background: "url('../images/banner/brazil.jpg')" }}
+        >
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-6 col-md-6 col-md-offset-1 col-lg-offset-0 col-sm-8">
+                <div className="single-banner-con">
+                  <div className="single-banner-txt">
+                    <h1>
+                      <span>{translations.one.title}</span>{' '}
+                      {translations.one.subtitle}
+                    </h1>
+                    <p className="fadeIn animated animated-08s">
+                      {translations.one.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="item">
         <div
           className="single-banner"
           style={{ background: "url('../images/banner/01.jpg')" }}
@@ -83,12 +91,12 @@ const Slider = (): ReactElement => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="item">
         <div
           className="single-banner"
-          style={{ background: "url('../images/banner/06.jpg')" }}
+          style={{ background: "url('../images/banner/hes-here.jpg')" }}
         >
           <div className="container">
             <div className="row">
