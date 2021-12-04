@@ -12,8 +12,6 @@ const EventTemplate = ({
 }: {
   data: Data
 }) => {
-  // const { markdownRemark } = data;
-  // const { frontmatter, html } = markdownRemark;
   const breadcrumbs = [{ name: 'Events', link: '/events' }]
   return (
     <>
@@ -24,7 +22,7 @@ const EventTemplate = ({
           <div className="row">
             <h1 className="text-center">{frontmatter.title}</h1>
             <hr />
-            <EventPreview frontmatter={frontmatter} html={html} />
+            <EventPreview event={frontmatter} html={html} />
           </div>
         </div>
       </div>
