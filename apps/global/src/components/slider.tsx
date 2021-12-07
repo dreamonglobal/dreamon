@@ -32,32 +32,7 @@ const Slider = (): ReactElement => {
       <div className="item">
         <div
           className="single-banner"
-          style={{ background: "url('../images/banner/brazil.jpg')" }}
-        >
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-6 col-md-6 col-md-offset-1 col-lg-offset-0 col-sm-8">
-                <div className="single-banner-con">
-                  <div className="single-banner-txt">
-                    <h1>
-                      <span>{translations.one.title}</span>{' '}
-                      {translations.one.subtitle}
-                    </h1>
-                    <p className="fadeIn animated animated-08s">
-                      {translations.one.description}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* <div className="item">
-        <div
-          className="single-banner"
-          style={{ background: "url('../images/banner/01.jpg')" }}
+          style={{ background: "url('../images/banner/conference.jpg')" }}
         >
           <div className="container">
             <div className="row">
@@ -91,12 +66,11 @@ const Slider = (): ReactElement => {
             </div>
           </div>
         </div>
-      </div> */}
-
+      </div>
       <div className="item">
         <div
           className="single-banner"
-          style={{ background: "url('../images/banner/hes-here.jpg')" }}
+          style={{ background: "url('../images/banner/brazil.jpg')" }}
         >
           <div className="container">
             <div className="row">
@@ -110,13 +84,38 @@ const Slider = (): ReactElement => {
                     <p className="fadeIn animated animated-08s">
                       {translations.two.description}
                     </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="item">
+        <div
+          className="single-banner"
+          style={{ background: "url('../images/banner/hes-here.jpg')" }}
+        >
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-6 col-md-6 col-md-offset-1 col-lg-offset-0 col-sm-8">
+                <div className="single-banner-con">
+                  <div className="single-banner-txt">
+                    <h1>
+                      <span>{translations.three.title}</span>{' '}
+                      {translations.three.subtitle}
+                    </h1>
+                    <p className="fadeIn animated animated-08s">
+                      {translations.three.description}
+                    </p>
                     <OutboundLink
-                      href={translations.two.buttonLink}
+                      href={translations.three.buttonLink}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="tem-btn nav-link move-eff"
                     >
-                      <span>{translations.two.button}</span>
+                      <span>{translations.three.button}</span>
                     </OutboundLink>
                   </div>
                 </div>
@@ -137,17 +136,17 @@ const Slider = (): ReactElement => {
                 <div className="single-banner-con">
                   <div className="single-banner-txt">
                     <h1>
-                      <span>{translations.three.title}</span>{' '}
-                      {translations.three.subtitle}
+                      <span>{translations.four.title}</span>{' '}
+                      {translations.four.subtitle}
                     </h1>
-                    <p>{translations.three.description}</p>
+                    <p>{translations.four.description}</p>
                     <OutboundLink
-                      href={translations.three.buttonLink}
+                      href={translations.four.buttonLink}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="tem-btn nav-link move-eff"
                     >
-                      <span>{translations.three.button}</span>
+                      <span>{translations.four.button}</span>
                     </OutboundLink>
                   </div>
                 </div>
@@ -157,7 +156,7 @@ const Slider = (): ReactElement => {
         </div>
       </div>
 
-      <div className="item">
+      {/* <div className="item">
         <div
           className="single-banner"
           style={{ background: "url('../images/banner/05.jpg')" }}
@@ -190,7 +189,7 @@ const Slider = (): ReactElement => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </OwlCarousel>
   )
 }
