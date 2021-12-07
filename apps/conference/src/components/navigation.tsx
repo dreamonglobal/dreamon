@@ -67,7 +67,7 @@ const Navigation = () => {
           </div>
           <div className="hidden md:flex md:items-center md:space-x-6">
             <OutboundLink
-              href="#"
+              href="https://www.eventbrite.com/e/dream-on-conference-tickets-224197650207"
               className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-yellow-500 hover:bg-yellow-600"
             >
               Register
@@ -119,7 +119,7 @@ const Navigation = () => {
               </div>
               <div className="mt-6 px-5">
                 <OutboundLink
-                  href="#"
+                  href="https://www.eventbrite.com/e/dream-on-conference-tickets-224197650207"
                   className="block text-center w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-medium hover:from-yellow-600 hover:to-yellow-700"
                 >
                   Register

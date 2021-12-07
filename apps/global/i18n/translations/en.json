@@ -3,24 +3,33 @@
     "slider": {
       "one": {
         "title": "Dream On:",
+        "subtitle": "Conference 2022",
+        "description": "5 Year's ago Dream On: Global was founded and kicked off their ministry with the Dream On: Conference. Since then, the Dream On team has ministered to thousands of people all across the globe about God's plans and purposes their lives. The Dream On team is excited to announce that they will be hosting another Dream On: Conference on Saturday February 19, 2022",
+        "button": "Register",
+        "buttonLink": "https://www.eventbrite.com/e/dream-on-conference-tickets-224197650207",
+        "button2": "Conference Website",
+        "button2Link": "https://conference.dreamon.world"
+      },
+      "two": {
+        "title": "Dream On:",
         "subtitle": "Brazil 2022",
         "description": "We are excited to announce that we will be traveling to Brazil to host our very first Dream On Party in Brazil in March of 2022"
       },
-      "two": {
+      "three": {
         "title": "Listen",
         "subtitle": "Today",
         "description": "He's Here - Lucas & Lilli Gray",
         "button": "Listen On Spotify",
         "buttonLink": "https://open.spotify.com/track/4zrTIRGnIZLQACosrL9VJO?si=f670dd1c7a024a68"
       },
-      "three": {
+      "four": {
         "title": "Raise",
         "subtitle": "Your Helping Hands",
         "description": "We aren't able to do any of the things we do without the support of people just like you.",
         "button": "Donate Now",
         "buttonLink": "https://www.paypal.com/donate/?token=_VV4NX2yorvh4-A4aMbH1VJ75nly1JyZae94238oxw6LESsAA7Mgc7OTDhtY0yn_vCMdwG&country.x=US&locale.x=US"
       },
-      "four": {
+      "five": {
         "title": "Dream On:",
         "subtitle": "Music Collective",
         "description": "Dream On: Music Collective is a team of writers, singers, musicians, and worshippers. We are passionate about pursuing the presence of God in every area of our lives and re-sparking the dreams and purposes God has put in each and everyone’s life.",

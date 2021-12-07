@@ -44,7 +44,7 @@ const CTA = () => {
             <div className="inline-flex rounded-md shadow">
               <OutboundLink
                 className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-100"
-                href="#"
+                href="https://www.eventbrite.com/e/dream-on-conference-tickets-224197650207"
               >
                 Register
                 <ChevronRightIcon className="-mr-1 ml-3 h-5 w-5 text-gray-400" />

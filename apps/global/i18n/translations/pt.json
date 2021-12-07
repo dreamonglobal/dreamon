@@ -3,24 +3,33 @@
     "slider": {
       "one": {
         "title": "Dream On:",
+        "subtitle": "Conferência 2022",
+        "description": "5 anos atrás Dream On: Global foi fundada e deu início ao seu ministério com a Dream On: Conference. Desde então, a equipe Dream On tem ministrado a milhares de pessoas em todo o mundo sobre os planos e propósitos de Deus em suas vidas. A equipe do Dream On tem o prazer de anunciar que realizará outra Dream On: Conference no sábado, 19 de fevereiro de 2022",
+        "button": "Registro",
+        "buttonLink": "https://www.eventbrite.com/e/dream-on-conference-tickets-224197650207",
+        "button2": "Site da Conferência",
+        "button2Link": "https://conference.dreamon.world"
+      },
+      "two": {
+        "title": "Dream On:",
         "subtitle": "Brazil 2022",
         "description": "Temos o prazer de anunciar que viajaremos ao Brasil para hospedar nossa primeira Dream On Party no Brasil em março de 2022"
       },
-      "two": {
+      "three": {
         "title": "Ouça",
         "subtitle": "Hoje",
         "description": "Ele está aqui - Lucas & Lilli Gray",
         "button": "Ouça no Spotify",
         "buttonLink": "https://open.spotify.com/track/4zrTIRGnIZLQACosrL9VJO?si=f670dd1c7a024a68"
       },
-      "three": {
+      "four": {
         "title": "Levante",
         "subtitle": "Suas Mãos Amigas",
         "description": "Não podemos fazer nada do que fazemos sem o apoio de pessoas como você.",
         "button": "DOE agora",
         "buttonLink": "https://www.paypal.com/donate/?token=_VV4NX2yorvh4-A4aMbH1VJ75nly1JyZae94238oxw6LESsAA7Mgc7OTDhtY0yn_vCMdwG&country.x=US&locale.x=US"
       },
-      "four": {
+      "five": {
         "title": "Dream On:",
         "subtitle": "Coletivo de música",
         "description": "Dream On: Music Collective é uma equipe de escritores, cantores, músicos e adoradores. Somos apaixonados por buscar a presença de Deus em todas as áreas de nossas vidas e reacender os sonhos e propósitos que Deus colocou na vida de cada um.",
