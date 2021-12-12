@@ -40,6 +40,10 @@ jobs:
       - name: Run Global E2E Tests
         run: yarn e2e:global:ci
 
+      # Run conference e2e tests
+      - name: Run Conference E2E Tests
+        run: yarn e2e:conference:ci
+
       #Run unit tests on codemods lib
       - name: Build
         run: yarn build:affected --base=origin/master
