@@ -51,6 +51,21 @@ const features = [
     description:
       'Rob Kennedy serves as the Senior Pastor at The Rock Community Church & Transformation Center in Saint Petersburg Florida as well as Dream On: Speaker Collective Speaker and Author',
   },
+  {
+    name: 'Judy Zircher',
+    description:
+      'Judy Zircher is the Abstinence Educator at Relationships Under Construction as well as the Founder of Purity Ally and Dream On: Speaker Collective Speaker and Author',
+  },
+  {
+    name: 'Jason Harris',
+    description:
+      'Jason Harris is the Host of the Forecast Podcast and a Dream On: Speaker Collective Speaker',
+  },
+  {
+    name: 'Craig Flack',
+    description:
+      'Craig Flack is the Senior Pastor of Celina First Church of God, Former School Board President and Author',
+  },
 ]
 
 const Speakers = () => {
