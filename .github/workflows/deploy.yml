@@ -18,50 +18,16 @@ jobs:
         run: |
           yarn install --frozen-lockfile
           yarn deploy:global
-      - name: Upload public dir
-        uses: actions/upload-artifact@v1
-        with:
-          name: public
-          path: apps/global/public
-        env:
-          CI: true
-  deploy:
-    name: Deploy
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - name: Download public dir
-        uses: actions/download-artifact@v1
-        with:
-          name: public
-      - name: Upload ftp
-        uses: sebastianpopp/ftp-action@releases/v1
-        with:
-          host: ${{ secrets.FTP_SERVER }}
-          user: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          localDir: 'public'
-          remoteDir: 'public_html'
-  build:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [15.x]
-    steps:
-      - uses: actions/checkout@v1
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-      - name: yarn install & deploy conference
-        run: |
-          yarn install --frozen-lockfile
           yarn deploy:conference
-      - name: Upload public dir
+      - name: Upload global public dir
         uses: actions/upload-artifact@v1
         with:
-          name: public
+          name: global
+          path: apps/global/public
+      - name: Upload conference public dir
+        uses: actions/upload-artifact@v1
+        with:
+          name: conference
           path: apps/conference/public
         env:
           CI: true
@@ -71,10 +37,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Download public dir
+      - name: Download global public dir
         uses: actions/download-artifact@v1
         with:
-          name: public
+          name: global
+      - name: Upload ftp
+        uses: sebastianpopp/ftp-action@releases/v1
+        with:
+          host: ${{ secrets.FTP_SERVER }}
+          user: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          localDir: 'public'
+          remoteDir: 'public_html'
+      - uses: actions/checkout@v1
+      - name: Download conference public dir
+        uses: actions/download-artifact@v1
+        with:
+          name: conference
       - name: Upload ftp
         uses: sebastianpopp/ftp-action@releases/v1
         with:
