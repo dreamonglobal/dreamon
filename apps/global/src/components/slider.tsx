@@ -55,7 +55,7 @@ const Slider = (): ReactElement => {
                       <span>{translations.one.button}</span>
                     </OutboundLink>
                     <OutboundLink
-                      href={translations.one.buttonLink2}
+                      href={translations.one.button2Link}
                       className="tem-btn nav-link move-eff"
                     >
                       <span>{translations.one.button2}</span>
