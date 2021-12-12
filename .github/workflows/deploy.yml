@@ -14,7 +14,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: yarn install & deploy global
+      - name: yarn install & deploy
         run: |
           yarn install --frozen-lockfile
           yarn deploy:global
@@ -47,7 +47,7 @@ jobs:
           host: ${{ secrets.FTP_SERVER }}
           user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          localDir: 'public'
+          localDir: 'global'
           remoteDir: 'public_html'
       - uses: actions/checkout@v1
       - name: Download conference public dir
@@ -60,5 +60,5 @@ jobs:
           host: ${{ secrets.FTP_SERVER }}
           user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          localDir: 'public'
+          localDir: 'conference'
           remoteDir: 'conference.dreamon.world'
