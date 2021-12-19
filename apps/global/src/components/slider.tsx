@@ -95,7 +95,7 @@ const Slider = (): ReactElement => {
       <div className="item">
         <div
           className="single-banner"
-          style={{ background: "url('../images/banner/hes-here.jpg')" }}
+          style={{ background: "url('../images/banner/me-myself-lies.jpg')" }}
         >
           <div className="container">
             <div className="row">
