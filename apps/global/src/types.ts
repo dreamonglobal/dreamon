@@ -4,6 +4,7 @@ export type Musician =
   | 'Lucas Gray'
   | 'Lilli Gray'
   | 'Blake Reynolds'
+  | 'Derek Spencer'
 
 export type Speaker =
   | 'Ty Watson'
