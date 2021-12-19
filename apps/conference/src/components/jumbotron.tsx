@@ -1,7 +1,4 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-import { getImage, IGatsbyImageData } from 'gatsby-plugin-image'
-import BackgroundImage from 'gatsby-background-image'
 
 const Jumbotron = () => {
   return (
