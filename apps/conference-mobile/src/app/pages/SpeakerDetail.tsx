@@ -40,7 +40,6 @@ interface DispatchProps {}
 interface SpeakerDetailProps extends OwnProps, StateProps, DispatchProps {}
 
 const SpeakerDetail: React.FC<SpeakerDetailProps> = ({ speaker }) => {
-  console.log(speaker)
   const [showActionSheet, setShowActionSheet] = useState(false)
   const [actionSheetButtons, setActionSheetButtons] = useState<
     ActionSheetButton[]

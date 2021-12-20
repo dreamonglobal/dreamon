@@ -1,23 +1,13 @@
-import { conferenceSpeakers, Speaker } from '@dreamon/conference-speakers'
-import { Schedule, Session } from '../models/Schedule'
-import { Location } from '../models/Location'
 import { Storage } from '@capacitor/storage'
-
-const dataUrl = '/assets/data/data.json'
-const locationsUrl = '/assets/data/locations.json'
+import { Schedule, schedule, Session } from '@dreamon/conference-schedule'
+import { speakers } from '@dreamon/conference-speakers'
 
 const HAS_LOGGED_IN = 'hasLoggedIn'
 const HAS_SEEN_TUTORIAL = 'hasSeenTutorial'
 const USERNAME = 'username'
 
 export const getConfData = async () => {
-  const response = await Promise.all([fetch(dataUrl), fetch(locationsUrl)])
-  const responseData = await response[0].json()
-  const schedule = responseData.schedule[0] as Schedule
   const sessions = parseSessions(schedule)
-  const speakers = conferenceSpeakers()
-  // const speakers = responseData.speakers as Speaker[]
-  const locations = (await response[1].json()) as Location[]
   const allTracks = sessions
     .reduce((all, session) => all.concat(session.tracks), [] as string[])
     .filter((trackName, index, array) => array.indexOf(trackName) === index)
@@ -26,7 +16,6 @@ export const getConfData = async () => {
   const data = {
     schedule,
     sessions,
-    locations,
     speakers,
     allTracks,
     filteredTracks: [...allTracks],

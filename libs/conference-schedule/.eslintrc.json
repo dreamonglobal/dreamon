@@ -1,5 +1,5 @@
 {
-  "extends": ["plugin:@nrwl/nx/react", "../../.eslintrc.json"],
+  "extends": ["../../.eslintrc.json"],
   "ignorePatterns": ["!**/*"],
   "overrides": [
     {
@@ -12,14 +12,7 @@
     },
     {
       "files": ["*.js", "*.jsx"],
-      "rules": {
-        "@typescript-eslint/no-empty-interface": [
-          "error",
-          {
-            "allowSingleExtends": false
-          }
-        ]
-      }
+      "rules": {}
     }
   ]
 }

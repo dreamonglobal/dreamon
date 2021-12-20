@@ -1,8 +1,7 @@
 import { createSelector } from 'reselect'
-import { Schedule, Session, ScheduleGroup } from '../models/Schedule'
-import { Location } from '../models/Location'
 import { AppState } from './state'
 import { Speaker } from '@dreamon/conference-speakers'
+import { Schedule, ScheduleGroup, Session } from '@dreamon/conference-schedule'
 
 const getSchedule = (state: AppState) => {
   return state.data.schedule
@@ -106,8 +105,8 @@ const getIdParam = (_state: AppState, props: any) => {
 export const getSession = createSelector(
   getSessions,
   getIdParam,
-  (sessions, id) => {
-    return sessions.find((s: Session) => s.id === id)
+  (sessions: Session[], id: string) => {
+    return sessions.find((s: Session) => s.id === Number(id))
   }
 )
 
@@ -133,18 +132,3 @@ export const getSpeakerSessions = createSelector(getSessions, (sessions) => {
   })
   return speakerSessions
 })
-
-export const mapCenter = (state: AppState) => {
-  const item = state.data.locations.find(
-    (l: Location) => l.id === state.data.mapCenterId
-  )
-  if (item == null) {
-    return {
-      id: 1,
-      name: 'Dream On: Conference',
-      lat: 40.468153,
-      lng: -84.171166,
-    }
-  }
-  return item
-}

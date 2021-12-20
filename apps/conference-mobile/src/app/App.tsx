@@ -1,3 +1,4 @@
+import { Schedule } from '@dreamon/conference-schedule'
 import { IonApp, IonRouterOutlet, IonSplitPane } from '@ionic/react'
 import { IonReactRouter } from '@ionic/react-router'
 /* Core CSS required for Ionic components to work properly */
@@ -25,7 +26,6 @@ import {
   setIsLoggedIn,
   setUsername,
 } from './data/user/user.actions'
-import { Schedule } from './models/Schedule'
 import MainTabs from './pages/MainTabs'
 /* Theme variables */
 import './theme/variables.css'

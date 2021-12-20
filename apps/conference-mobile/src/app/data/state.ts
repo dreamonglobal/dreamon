@@ -1,3 +1,4 @@
+import { Schedule, Session } from '@dreamon/conference-schedule'
 import { Speaker } from '@dreamon/conference-speakers'
 import { combineReducers } from './combineReducers'
 import { sessionsReducer } from './sessions/sessions.reducer'
@@ -5,8 +6,8 @@ import { userReducer } from './user/user.reducer'
 
 export const initialState: AppState = {
   data: {
-    schedule: { groups: [] } as any,
-    sessions: [],
+    schedule: { groups: [], date: '' } as Schedule,
+    sessions: [] as Session[],
     speakers: [] as Speaker[],
     favorites: [],
     locations: [],

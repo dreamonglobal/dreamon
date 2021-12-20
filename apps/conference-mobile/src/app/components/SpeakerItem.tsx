@@ -1,5 +1,4 @@
 import React from 'react'
-import { Session } from '../models/Schedule'
 import {
   IonCard,
   IonCardHeader,
@@ -10,6 +9,7 @@ import {
   IonList,
 } from '@ionic/react'
 import { Speaker } from '@dreamon/conference-speakers'
+import { Session } from '@dreamon/conference-schedule'
 
 interface SpeakerItemProps {
   speaker: Speaker
@@ -39,7 +39,7 @@ const SpeakerItem: React.FC<SpeakerItemProps> = ({ speaker, sessions }) => {
 
       <IonCardContent>
         <IonList lines="none">
-          {sessions.map((session) => (
+          {sessions?.map((session) => (
             <IonItem
               detail={false}
               routerLink={`/tabs/speakers/sessions/${session.id}`}

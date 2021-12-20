@@ -1,6 +1,5 @@
+import { Schedule, Session } from '@dreamon/conference-schedule'
 import { Speaker } from '@dreamon/conference-speakers'
-import { Location } from '../../models/Location'
-import { Schedule, Session } from '../../models/Schedule'
 export interface ConfState {
   schedule: Schedule
   sessions: Session[]

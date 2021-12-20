@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef } from 'react'
 import {
   IonItemSliding,
   IonItem,
@@ -6,16 +6,16 @@ import {
   IonItemOptions,
   IonItemOption,
   AlertButton,
-} from "@ionic/react";
-import { Session } from "../models/Schedule";
+} from '@ionic/react'
+import { Session } from '@dreamon/conference-schedule'
 
 interface SessionListItemProps {
-  session: Session;
-  listType: "all" | "favorites";
-  onAddFavorite: (id: number) => void;
-  onRemoveFavorite: (id: number) => void;
-  onShowAlert: (header: string, buttons: AlertButton[]) => void;
-  isFavorite: boolean;
+  session: Session
+  listType: 'all' | 'favorites'
+  onAddFavorite: (id: number) => void
+  onRemoveFavorite: (id: number) => void
+  onShowAlert: (header: string, buttons: AlertButton[]) => void
+  isFavorite: boolean
 }
 
 const SessionListItem: React.FC<SessionListItemProps> = ({
@@ -26,50 +26,50 @@ const SessionListItem: React.FC<SessionListItemProps> = ({
   session,
   listType,
 }) => {
-  const ionItemSlidingRef = useRef<HTMLIonItemSlidingElement>(null);
+  const ionItemSlidingRef = useRef<HTMLIonItemSlidingElement>(null)
 
   const dismissAlert = () => {
-    ionItemSlidingRef.current && ionItemSlidingRef.current.close();
-  };
+    ionItemSlidingRef.current && ionItemSlidingRef.current.close()
+  }
 
   const removeFavoriteSession = () => {
-    onAddFavorite(session.id);
-    onShowAlert("Favorite already added", [
+    onAddFavorite(session.id)
+    onShowAlert('Favorite already added', [
       {
-        text: "Cancel",
+        text: 'Cancel',
         handler: dismissAlert,
       },
       {
-        text: "Remove",
+        text: 'Remove',
         handler: () => {
-          onRemoveFavorite(session.id);
-          dismissAlert();
+          onRemoveFavorite(session.id)
+          dismissAlert()
         },
       },
-    ]);
-  };
+    ])
+  }
 
   const addFavoriteSession = () => {
     if (isFavorite) {
       // woops, they already favorited it! What shall we do!?
       // prompt them to remove it
-      removeFavoriteSession();
+      removeFavoriteSession()
     } else {
       // remember this session as a user favorite
-      onAddFavorite(session.id);
-      onShowAlert("Favorite Added", [
+      onAddFavorite(session.id)
+      onShowAlert('Favorite Added', [
         {
-          text: "OK",
+          text: 'OK',
           handler: dismissAlert,
         },
-      ]);
+      ])
     }
-  };
+  }
 
   return (
     <IonItemSliding
       ref={ionItemSlidingRef}
-      class={"track-" + session.tracks[0].toLowerCase()}
+      class={'track-' + session.tracks[0].toLowerCase()}
     >
       <IonItem routerLink={`/tabs/schedule/${session.id}`}>
         <IonLabel>
@@ -82,7 +82,7 @@ const SessionListItem: React.FC<SessionListItemProps> = ({
         </IonLabel>
       </IonItem>
       <IonItemOptions>
-        {listType === "favorites" ? (
+        {listType === 'favorites' ? (
           <IonItemOption color="danger" onClick={() => removeFavoriteSession()}>
             Remove
           </IonItemOption>
@@ -93,7 +93,7 @@ const SessionListItem: React.FC<SessionListItemProps> = ({
         )}
       </IonItemOptions>
     </IonItemSliding>
-  );
-};
+  )
+}
 
-export default React.memo(SessionListItem);
+export default React.memo(SessionListItem)

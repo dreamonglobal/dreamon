@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 /* eslint-disable @typescript-eslint/no-empty-interface */
+import { Session } from '@dreamon/conference-schedule'
 import {
   IonBackButton,
   IonButton,
@@ -17,7 +18,6 @@ import { RouteComponentProps, withRouter } from 'react-router'
 import { connect } from '../data/connect'
 import * as selectors from '../data/selectors'
 import { addFavorite, removeFavorite } from '../data/sessions/sessions.actions'
-import { Session } from '../models/Schedule'
 import './SessionDetail.scss'
 
 interface OwnProps extends RouteComponentProps {}
@@ -75,14 +75,16 @@ const SessionDetail: React.FC<SessionDetailProps> = ({
       <IonContent>
         <div className="ion-padding">
           <h1>{session.name}</h1>
-          {session.tracks.map((track) => (
-            <span
-              key={track}
-              className={`session-track-${track.toLowerCase()}`}
-            >
-              {track}
-            </span>
-          ))}
+          {session.tracks
+            ? session.tracks.map((track) => (
+                <span
+                  key={track}
+                  className={`session-track-${track.toLowerCase()}`}
+                >
+                  {track}
+                </span>
+              ))
+            : null}
           <p>{session.description}</p>
           <IonText color="medium">
             {session.timeStart} &ndash; {session.timeEnd}

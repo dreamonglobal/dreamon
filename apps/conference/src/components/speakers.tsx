@@ -6,7 +6,7 @@ import {
   ImageDataLike,
 } from 'gatsby-plugin-image'
 import React from 'react'
-import { conferenceSpeakers } from '@dreamon/conference-speakers'
+import { speakers } from '@dreamon/conference-speakers'
 
 const Speakers = () => {
   const data = useStaticQuery(graphql`
@@ -30,8 +30,6 @@ const Speakers = () => {
     )?.node
 
   const image = (slug: string): IGatsbyImageData => getImage(findSpeaker(slug))
-
-  const speakers = conferenceSpeakers()
 
   return (
     <div id="speakers" className="relative bg-white py-16 sm:py-24 lg:py-32">
