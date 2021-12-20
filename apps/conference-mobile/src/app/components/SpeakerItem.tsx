@@ -1,6 +1,5 @@
 import React from 'react'
 import { Session } from '../models/Schedule'
-import { Speaker } from '../models/Speaker'
 import {
   IonCard,
   IonCardHeader,
@@ -10,6 +9,7 @@ import {
   IonCardContent,
   IonList,
 } from '@ionic/react'
+import { Speaker } from '@dreamon/conference-speakers'
 
 interface SpeakerItemProps {
   speaker: Speaker
@@ -25,10 +25,10 @@ const SpeakerItem: React.FC<SpeakerItemProps> = ({ speaker, sessions }) => {
           detail={false}
           lines="none"
           className="speaker-item"
-          routerLink={`/tabs/speakers/${speaker.id}`}
+          routerLink={`/tabs/speakers/${speaker.slug}`}
         >
           <IonAvatar slot="start">
-            <img src={speaker.profilePic} alt="Speaker profile pic" />
+            <img src={speaker.image} alt="Speaker profile pic" />
           </IonAvatar>
           <IonLabel>
             <h2>{speaker.name}</h2>
@@ -50,7 +50,7 @@ const SpeakerItem: React.FC<SpeakerItemProps> = ({ speaker, sessions }) => {
               </IonLabel>
             </IonItem>
           ))}
-          <IonItem detail={false} routerLink={`/tabs/speakers/${speaker.id}`}>
+          <IonItem detail={false} routerLink={`/tabs/speakers/${speaker.slug}`}>
             <IonLabel>
               <h3>About {speaker.name}</h3>
             </IonLabel>

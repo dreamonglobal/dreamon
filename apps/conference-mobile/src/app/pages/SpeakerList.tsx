@@ -13,11 +13,11 @@ import {
   IonCol,
 } from '@ionic/react'
 import SpeakerItem from '../components/SpeakerItem'
-import { Speaker } from '../models/Speaker'
 import { Session } from '../models/Schedule'
 import { connect } from '../data/connect'
 import * as selectors from '../data/selectors'
 import './SpeakerList.scss'
+import { Speaker } from '@dreamon/conference-speakers'
 
 interface OwnProps {}
 

@@ -27,8 +27,7 @@ import {
 
 import { connect } from '../data/connect'
 import * as selectors from '../data/selectors'
-
-import { Speaker } from '../models/Speaker'
+import { Speaker } from '@dreamon/conference-speakers'
 
 interface OwnProps extends RouteComponentProps {
   speaker?: Speaker
@@ -41,6 +40,7 @@ interface DispatchProps {}
 interface SpeakerDetailProps extends OwnProps, StateProps, DispatchProps {}
 
 const SpeakerDetail: React.FC<SpeakerDetailProps> = ({ speaker }) => {
+  console.log(speaker)
   const [showActionSheet, setShowActionSheet] = useState(false)
   const [actionSheetButtons, setActionSheetButtons] = useState<
     ActionSheetButton[]
@@ -102,13 +102,13 @@ const SpeakerDetail: React.FC<SpeakerDetailProps> = ({ speaker }) => {
         </IonHeader>
 
         <div className="speaker-background">
-          <img src={speaker.profilePic} alt={speaker.name} />
+          <img src={speaker.image} alt={speaker.name} />
           <h2>{speaker.name}</h2>
         </div>
 
         <div className="ion-padding speaker-detail">
           <p>
-            {speaker.about} <br />
+            {speaker.description} <br />
           </p>
 
           <hr />

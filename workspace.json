@@ -5,6 +5,7 @@
     "conference-e2e": "apps/conference-e2e",
     "conference-mobile": "apps/conference-mobile",
     "conference-mobile-e2e": "apps/conference-mobile-e2e",
+    "conference-speakers": "libs/conference-speakers",
     "global": "apps/global",
     "global-e2e": "apps/global-e2e"
   }

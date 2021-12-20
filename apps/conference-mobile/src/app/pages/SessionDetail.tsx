@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
+/* eslint-disable @typescript-eslint/no-empty-interface */
 import {
   IonBackButton,
   IonButton,
@@ -8,29 +10,29 @@ import {
   IonPage,
   IonText,
   IonToolbar,
-} from "@ionic/react";
-import { share, star, starOutline } from "ionicons/icons";
-import React from "react";
-import { RouteComponentProps, withRouter } from "react-router";
-import { connect } from "../data/connect";
-import * as selectors from "../data/selectors";
-import { addFavorite, removeFavorite } from "../data/sessions/sessions.actions";
-import { Session } from "../models/Schedule";
-import "./SessionDetail.scss";
+} from '@ionic/react'
+import { share, star, starOutline } from 'ionicons/icons'
+import React from 'react'
+import { RouteComponentProps, withRouter } from 'react-router'
+import { connect } from '../data/connect'
+import * as selectors from '../data/selectors'
+import { addFavorite, removeFavorite } from '../data/sessions/sessions.actions'
+import { Session } from '../models/Schedule'
+import './SessionDetail.scss'
 
 interface OwnProps extends RouteComponentProps {}
 
 interface StateProps {
-  session?: Session;
-  favoriteSessions: number[];
+  session?: Session
+  favoriteSessions: number[]
 }
 
 interface DispatchProps {
-  addFavorite: typeof addFavorite;
-  removeFavorite: typeof removeFavorite;
+  addFavorite: typeof addFavorite
+  removeFavorite: typeof removeFavorite
 }
 
-type SessionDetailProps = OwnProps & StateProps & DispatchProps;
+type SessionDetailProps = OwnProps & StateProps & DispatchProps
 
 const SessionDetail: React.FC<SessionDetailProps> = ({
   session,
@@ -39,15 +41,15 @@ const SessionDetail: React.FC<SessionDetailProps> = ({
   favoriteSessions,
 }) => {
   if (!session) {
-    return <div>Session not found</div>;
+    return <div>Session not found</div>
   }
 
-  const isFavorite = favoriteSessions.indexOf(session.id) > -1;
+  const isFavorite = favoriteSessions.indexOf(session.id) > -1
 
   const toggleFavorite = () => {
-    isFavorite ? removeFavorite(session.id) : addFavorite(session.id);
-  };
-  const shareSession = () => {};
+    isFavorite ? removeFavorite(session.id) : addFavorite(session.id)
+  }
+  const shareSession = () => {}
 
   return (
     <IonPage id="session-detail-page">
@@ -107,8 +109,8 @@ const SessionDetail: React.FC<SessionDetailProps> = ({
         </IonList> */}
       </IonContent>
     </IonPage>
-  );
-};
+  )
+}
 
 export default connect<OwnProps, StateProps, DispatchProps>({
   mapStateToProps: (state, OwnProps) => ({
@@ -120,4 +122,4 @@ export default connect<OwnProps, StateProps, DispatchProps>({
     removeFavorite,
   },
   component: withRouter(SessionDetail),
-});
+})
