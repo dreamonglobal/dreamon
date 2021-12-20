@@ -1,9 +1,10 @@
-import React, { useState } from "react";
-import { RouteComponentProps } from "react-router";
+/* eslint-disable @typescript-eslint/no-empty-interface */
+import React, { useState } from 'react'
+import { RouteComponentProps } from 'react-router'
 
-import "./SpeakerDetail.scss";
+import './SpeakerDetail.scss'
 
-import { ActionSheetButton } from "@ionic/core";
+import { ActionSheetButton } from '@ionic/core'
 import {
   IonActionSheet,
   IonChip,
@@ -16,21 +17,21 @@ import {
   IonButton,
   IonBackButton,
   IonPage,
-} from "@ionic/react";
+} from '@ionic/react'
 import {
   logoFacebook,
   logoInstagram,
   shareOutline,
   shareSharp,
-} from "ionicons/icons";
+} from 'ionicons/icons'
 
-import { connect } from "../data/connect";
-import * as selectors from "../data/selectors";
+import { connect } from '../data/connect'
+import * as selectors from '../data/selectors'
 
-import { Speaker } from "../models/Speaker";
+import { Speaker } from '../models/Speaker'
 
 interface OwnProps extends RouteComponentProps {
-  speaker?: Speaker;
+  speaker?: Speaker
 }
 
 interface StateProps {}
@@ -40,44 +41,44 @@ interface DispatchProps {}
 interface SpeakerDetailProps extends OwnProps, StateProps, DispatchProps {}
 
 const SpeakerDetail: React.FC<SpeakerDetailProps> = ({ speaker }) => {
-  const [showActionSheet, setShowActionSheet] = useState(false);
+  const [showActionSheet, setShowActionSheet] = useState(false)
   const [actionSheetButtons, setActionSheetButtons] = useState<
     ActionSheetButton[]
-  >([]);
-  const [actionSheetHeader, setActionSheetHeader] = useState("");
+  >([])
+  const [actionSheetHeader, setActionSheetHeader] = useState('')
 
   function openSpeakerShare(speaker: Speaker) {
     setActionSheetButtons([
       {
-        text: "Copy Link",
+        text: 'Copy Link',
         handler: () => {
-          console.log("Copy Link clicked");
+          console.log('Copy Link clicked')
         },
       },
       {
-        text: "Share via ...",
+        text: 'Share via ...',
         handler: () => {
-          console.log("Share via clicked");
+          console.log('Share via clicked')
         },
       },
       {
-        text: "Cancel",
-        role: "cancel",
+        text: 'Cancel',
+        role: 'cancel',
         handler: () => {
-          console.log("Cancel clicked");
+          console.log('Cancel clicked')
         },
       },
-    ]);
-    setActionSheetHeader(`Share ${speaker.name}`);
-    setShowActionSheet(true);
+    ])
+    setActionSheetHeader(`Share ${speaker.name}`)
+    setShowActionSheet(true)
   }
 
   function openExternalUrl(url: string) {
-    window.open(url, "_blank");
+    window.open(url, '_blank')
   }
 
   if (!speaker) {
-    return <div>Speaker not found</div>;
+    return <div>Speaker not found</div>
   }
 
   return (
@@ -140,12 +141,12 @@ const SpeakerDetail: React.FC<SpeakerDetailProps> = ({ speaker }) => {
         buttons={actionSheetButtons}
       />
     </IonPage>
-  );
-};
+  )
+}
 
 export default connect({
   mapStateToProps: (state, ownProps) => ({
     speaker: selectors.getSpeaker(state, ownProps),
   }),
   component: SpeakerDetail,
-});
+})

@@ -82,11 +82,7 @@ const About: React.FC<AboutProps> = () => {
           <IonList lines="none">
             <IonItem>
               <IonLabel>Wifi network</IonLabel>
-              <IonLabel className="ion-text-end">OBM Guest</IonLabel>
-            </IonItem>
-            <IonItem>
-              <IonLabel>Password</IonLabel>
-              <IonLabel className="ion-text-end">DreamOn2022</IonLabel>
+              <IonLabel className="ion-text-end">Dream On</IonLabel>
             </IonItem>
           </IonList>
         </div>

@@ -1,18 +1,25 @@
-import React  from 'react';
-import { IonTabs, IonRouterOutlet, IonTabBar, IonTabButton, IonIcon, IonLabel } from '@ionic/react';
-import { Route, Redirect } from 'react-router';
-import { calendar, location, informationCircle, people } from 'ionicons/icons';
-import SchedulePage from './SchedulePage';
-import SpeakerList from './SpeakerList';
-import SpeakerDetail from './SpeakerDetail';
-import SessionDetail from './SessionDetail';
-import MapView from './MapView';
-import About from './About';
+/* eslint-disable @typescript-eslint/no-empty-interface */
+import React from 'react'
+import {
+  IonTabs,
+  IonRouterOutlet,
+  IonTabBar,
+  IonTabButton,
+  IonIcon,
+  IonLabel,
+} from '@ionic/react'
+import { Route, Redirect } from 'react-router'
+import { calendar, location, informationCircle, people } from 'ionicons/icons'
+import SchedulePage from './SchedulePage'
+import SpeakerList from './SpeakerList'
+import SpeakerDetail from './SpeakerDetail'
+import SessionDetail from './SessionDetail'
+import About from './About'
+import MapView from './MapView'
 
-interface MainTabsProps { }
+interface MainTabsProps {}
 
 const MainTabs: React.FC<MainTabsProps> = () => {
-
   return (
     <IonTabs>
       <IonRouterOutlet>
@@ -21,9 +28,21 @@ const MainTabs: React.FC<MainTabsProps> = () => {
           Using the render method prop cuts down the number of renders your components will have due to route changes.
           Use the component prop when your component depends on the RouterComponentProps passed in automatically.
         */}
-        <Route path="/tabs/schedule" render={() => <SchedulePage />} exact={true} />
-        <Route path="/tabs/speakers" render={() => <SpeakerList />} exact={true} />
-        <Route path="/tabs/speakers/:id" component={SpeakerDetail} exact={true} />
+        <Route
+          path="/tabs/schedule"
+          render={() => <SchedulePage />}
+          exact={true}
+        />
+        <Route
+          path="/tabs/speakers"
+          render={() => <SpeakerList />}
+          exact={true}
+        />
+        <Route
+          path="/tabs/speakers/:id"
+          component={SpeakerDetail}
+          exact={true}
+        />
         <Route path="/tabs/schedule/:id" component={SessionDetail} />
         <Route path="/tabs/speakers/sessions/:id" component={SessionDetail} />
         <Route path="/tabs/map" render={() => <MapView />} exact={true} />
@@ -48,7 +67,7 @@ const MainTabs: React.FC<MainTabsProps> = () => {
         </IonTabButton>
       </IonTabBar>
     </IonTabs>
-  );
-};
+  )
+}
 
-export default MainTabs;
+export default MainTabs

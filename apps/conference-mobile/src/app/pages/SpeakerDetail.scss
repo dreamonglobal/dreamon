@@ -34,12 +34,14 @@
 
     height: calc(350px + var(--ion-safe-area-top));
 
-    background: center / cover url("/assets/img/speaker-background.png")
+    background: center / cover url('/assets/img/speaker-background.png')
       no-repeat;
   }
 
   .speaker-background img {
     width: 125px;
+    height: 125px;
+    object-fit: cover;
     border-radius: 50%;
     margin-top: calc(-1 * var(--ion-safe-area-top));
   }

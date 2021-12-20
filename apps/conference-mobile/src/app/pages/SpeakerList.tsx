@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint-disable @typescript-eslint/no-empty-interface */
+import React from 'react'
 import {
   IonHeader,
   IonToolbar,
@@ -10,19 +11,19 @@ import {
   IonGrid,
   IonRow,
   IonCol,
-} from "@ionic/react";
-import SpeakerItem from "../components/SpeakerItem";
-import { Speaker } from "../models/Speaker";
-import { Session } from "../models/Schedule";
-import { connect } from "../data/connect";
-import * as selectors from "../data/selectors";
-import "./SpeakerList.scss";
+} from '@ionic/react'
+import SpeakerItem from '../components/SpeakerItem'
+import { Speaker } from '../models/Speaker'
+import { Session } from '../models/Schedule'
+import { connect } from '../data/connect'
+import * as selectors from '../data/selectors'
+import './SpeakerList.scss'
 
 interface OwnProps {}
 
 interface StateProps {
-  speakers: Speaker[];
-  speakerSessions: { [key: string]: Session[] };
+  speakers: Speaker[]
+  speakerSessions: { [key: string]: Session[] }
 }
 
 interface DispatchProps {}
@@ -66,8 +67,8 @@ const SpeakerList: React.FC<SpeakerListProps> = ({
         </IonGrid>
       </IonContent>
     </IonPage>
-  );
-};
+  )
+}
 
 export default connect<OwnProps, StateProps, DispatchProps>({
   mapStateToProps: (state) => ({
@@ -75,4 +76,4 @@ export default connect<OwnProps, StateProps, DispatchProps>({
     speakerSessions: selectors.getSpeakerSessions(state),
   }),
   component: React.memo(SpeakerList),
-});
+})
