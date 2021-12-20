@@ -1,0 +1,7 @@
+{
+  "name": "conference-mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

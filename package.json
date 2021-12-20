@@ -16,8 +16,14 @@
   },
   "private": true,
   "dependencies": {
+    "@capacitor/core": "^3.2.5",
+    "@capacitor/storage": "^1.2.3",
     "@headlessui/react": "^1.4.2",
     "@heroicons/react": "^1.0.5",
+    "@ionic/react": "^5.8.3",
+    "@ionic/react-router": "^5.8.3",
+    "@nxtend/capacitor": "^12.1.0",
+    "@nxtend/ionic-react": "^12.1.0",
     "@tailwindcss/aspect-ratio": "^0.3.0",
     "@tailwindcss/forms": "^0.3.4",
     "@tailwindcss/typography": "^0.4.1",
@@ -39,6 +45,7 @@
     "gatsby-transformer-json": "^3.14.0",
     "gatsby-transformer-remark": "^4.11.0",
     "gatsby-transformer-sharp": "^4.2.0",
+    "ionicons": "^5.5.3",
     "jquery": "^3.6.0",
     "prop-types": "15.7.2",
     "react": "17.0.2",
@@ -48,11 +55,15 @@
     "react-loadable": "^5.5.0",
     "react-modal": "^3.14.3",
     "react-owl-carousel": "^2.3.3",
+    "react-router-dom": "5.3.0",
     "regenerator-runtime": "0.13.7",
     "tslib": "^2.0.0",
     "webpack": "~5.53.0"
   },
   "devDependencies": {
+    "@capacitor/android": "^3.2.5",
+    "@capacitor/cli": "^3.2.5",
+    "@capacitor/ios": "^3.2.5",
     "@nrwl/cli": "13.2.3",
     "@nrwl/cypress": "13.2.3",
     "@nrwl/eslint-plugin-nx": "13.2.3",
@@ -64,13 +75,16 @@
     "@nrwl/tao": "13.2.3",
     "@nrwl/web": "13.2.3",
     "@nrwl/workspace": "13.2.3",
+    "@nxtend/capacitor": "^12.0.0",
     "@testing-library/react": "11.2.6",
     "@testing-library/react-hooks": "7.0.1",
+    "@types/googlemaps": "^3.43.3",
     "@types/jest": "27.0.2",
     "@types/node": "14.14.33",
     "@types/react": "17.0.3",
     "@types/react-dom": "17.0.3",
     "@types/react-helmet": "^6.1.4",
+    "@types/react-router-dom": "5.3.1",
     "@types/tailwindcss": "^2.2.4",
     "@typescript-eslint/eslint-plugin": "~4.31.1",
     "@typescript-eslint/parser": "~4.31.1",
@@ -96,4 +110,3 @@
     "typescript": "~4.3.5"
   }
 }
-
