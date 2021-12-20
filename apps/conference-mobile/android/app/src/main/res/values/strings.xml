@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Dream On: Conf</string>
+    <string name="title_activity_main">Dream On: Conf</string>
+    <string name="package_name">world.dreamon.conference</string>
+    <string name="custom_url_scheme">world.dreamon.conference</string>
+</resources>
