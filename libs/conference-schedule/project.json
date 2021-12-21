@@ -1,0 +1,23 @@
+{
+  "root": "libs/conference-schedule",
+  "sourceRoot": "libs/conference-schedule/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/conference-schedule/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/conference-schedule"],
+      "options": {
+        "jestConfig": "libs/conference-schedule/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

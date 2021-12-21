@@ -1,0 +1,17 @@
+#map-view {
+  .map-canvas {
+    position: absolute;
+
+    height: 50%;
+    width: 100%;
+
+    background-color: transparent;
+
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+  }
+
+  .show-map {
+    opacity: 1;
+  }
+}

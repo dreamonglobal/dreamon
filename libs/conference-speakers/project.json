@@ -1,0 +1,23 @@
+{
+  "root": "libs/conference-speakers",
+  "sourceRoot": "libs/conference-speakers/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/conference-speakers/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/conference-speakers"],
+      "options": {
+        "jestConfig": "libs/conference-speakers/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
