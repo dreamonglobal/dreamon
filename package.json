@@ -80,7 +80,6 @@
     "@nrwl/tao": "13.2.3",
     "@nrwl/web": "13.2.3",
     "@nrwl/workspace": "13.2.3",
-    "@nxtend/capacitor": "^12.0.0",
     "@testing-library/react": "11.2.6",
     "@testing-library/react-hooks": "7.0.1",
     "@types/googlemaps": "^3.43.3",
