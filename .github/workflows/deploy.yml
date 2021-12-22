@@ -68,11 +68,16 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           localDir: 'conference'
           remoteDir: 'conference.dreamon.world'
+      - uses: actions/checkout@v1
+      - name: Download conference api public dir
+        uses: actions/download-artifact@v1
+        with:
+          name: conference-api
       - name: Upload ftp
         uses: sebastianpopp/ftp-action@releases/v1
         with:
           host: ${{ secrets.FTP_SERVER }}
           user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          localDir: 'conference-api',
+          localDir: 'conference-api'
           remoteDir: 'api.dreamon.world'
