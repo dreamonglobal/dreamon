@@ -19,6 +19,7 @@ jobs:
           yarn install --frozen-lockfile
           yarn deploy:global
           yarn deploy:conference
+          yarn deploy:conference-api
       - name: Upload global public dir
         uses: actions/upload-artifact@v1
         with:
@@ -29,6 +30,11 @@ jobs:
         with:
           name: conference
           path: apps/conference/public
+      - name: Upload conference api public dir
+        uses: actions/upload-artifact@v1
+        with:
+          name: conference-api
+          path: dist/apps/conference-api/
         env:
           CI: true
   deploy:
@@ -62,3 +68,11 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           localDir: 'conference'
           remoteDir: 'conference.dreamon.world'
+      - name: Upload ftp
+        uses: sebastianpopp/ftp-action@releases/v1
+        with:
+          host: ${{ secrets.FTP_SERVER }}
+          user: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          localDir: 'conference-api',
+          remoteDir: 'api.dreamon.world'
