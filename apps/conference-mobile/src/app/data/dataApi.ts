@@ -1,12 +1,22 @@
 import { Storage } from '@capacitor/storage'
-import { Schedule, schedule, Session } from '@dreamon/conference-schedule'
-import { speakers } from '@dreamon/conference-speakers'
+import { Schedule, Session } from '@dreamon/conference-schedule'
+import { Speaker } from '@dreamon/conference-speakers'
+
+const apiBaseUrl = process.env.NX_CONFERENCE_API_BASE_URL
 
 const HAS_LOGGED_IN = 'hasLoggedIn'
 const HAS_SEEN_TUTORIAL = 'hasSeenTutorial'
 const USERNAME = 'username'
+const speakersUrl = `${apiBaseUrl}/api/conference/speakers`
+const scheduleUrl = `${apiBaseUrl}/api/conference/schedule`
 
 export const getConfData = async () => {
+  const response = await Promise.all([fetch(speakersUrl), fetch(scheduleUrl)])
+  const speakerData = await response[0].json()
+  const scheduleData = await response[1].json()
+  const speakers = speakerData as Speaker[]
+  const schedule = scheduleData as Schedule
+
   const sessions = parseSessions(schedule)
   const allTracks = sessions
     .reduce((all, session) => all.concat(session.tracks), [] as string[])
