@@ -17,6 +17,7 @@ type Track =
   | 'Keynote'
   | 'Moms'
   | 'Worship'
+  | 'Parenting'
 
 export type Session = {
   id: number
@@ -61,7 +62,6 @@ export const schedule: Schedule = {
         {
           name: 'Keynote #1',
           location: 'Main Auditorium',
-          description: 'Very powerful keynote featuring speaker ...',
           speakerNames: ['Ashley Powell'],
           timeStart: '9:00 am',
           timeEnd: '10:15 am',
@@ -76,8 +76,6 @@ export const schedule: Schedule = {
         {
           name: 'Dreaming as a Mom',
           location: 'Room 301',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
           speakerNames: ['Ashley Powell', 'Hanna Swartz'],
           timeStart: '10:30 am',
           timeEnd: '11:30 am',
@@ -87,8 +85,6 @@ export const schedule: Schedule = {
         {
           name: 'Dreaming With Worship',
           location: 'Loft',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
           speakerNames: ['Derek Spencer'],
           timeStart: '10:30 am',
           timeEnd: '11:30 am',
@@ -98,8 +94,6 @@ export const schedule: Schedule = {
         {
           name: 'Dreaming With Media',
           location: 'Media Room',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
           speakerNames: ['John Peak'],
           timeStart: '10:30 am',
           timeEnd: '10:30 am',
@@ -109,13 +103,21 @@ export const schedule: Schedule = {
         {
           name: 'The Importance of Purity',
           location: 'Room 303',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
           speakerNames: ['Judy Zircher'],
           timeStart: '10:30 am',
           timeEnd: '11:30 am',
           tracks: ['Youth', 'Moms'],
           id: 6,
+        },
+        {
+          name: 'Engaging With Your Local School',
+          location: 'Choir Room',
+          description:
+            'Whether your children attend private or public school it is crucial that parents, particularly Christian parents, are involved in the district. Whether its being watchmen, serving like Christ, building relationships, or simply being an active parent there are many ways for parents to get involved in their local district. In this breakout we will talk about creative ways to serve your schools, ways to create movements of change, and how to best get plugged in as a parent or community member.',
+          timeStart: '10:30am',
+          timeEnd: '11:30am',
+          tracks: ['Parenting'],
+          id: 7,
         },
       ],
     },
@@ -125,7 +127,6 @@ export const schedule: Schedule = {
         {
           name: 'Lunch',
           location: 'Lobby',
-          description: 'Box Lunch',
           timeStart: '11:45 am',
           timeEnd: '12:45 pm',
           tracks: [],
@@ -134,8 +135,6 @@ export const schedule: Schedule = {
         {
           name: 'Derek Spencer Concert',
           location: 'Main Auditorium',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
           timeStart: '12:15pm',
           timeEnd: '12:45pm',
           tracks: [],
@@ -149,8 +148,6 @@ export const schedule: Schedule = {
         {
           name: 'Keynote #2',
           location: 'Main Auditorium',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
           speakerNames: ['Daniel Lucien'],
           timeStart: '1:00 pm',
           timeEnd: '2:00 pm',
@@ -165,8 +162,6 @@ export const schedule: Schedule = {
         {
           name: 'Engaging with Culture',
           location: 'Loft',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
           speakerNames: ['Rob Kennedy'],
           timeStart: '2:15 pm',
           timeEnd: '3:15 pm',
@@ -176,8 +171,6 @@ export const schedule: Schedule = {
         {
           name: 'Dreaming With Worship',
           location: 'Loft',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
           speakerNames: ['Zac Howard', 'Lucas Gray', 'Lilli Gray'],
           timeStart: '10:30 am',
           timeEnd: '11:30 am',
@@ -192,8 +185,6 @@ export const schedule: Schedule = {
         {
           name: 'Keynote #3',
           location: 'Main Auditorium',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
           speakerNames: ['Ben Swartz'],
           timeStart: '3:30 pm',
           timeEnd: '4:45 pm',
