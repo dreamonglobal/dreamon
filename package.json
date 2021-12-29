@@ -9,6 +9,7 @@
     "deploy:global": "nx build global -- --prod",
     "deploy:conference": "nx build conference -- --prod",
     "deploy:conference-api": "nx build conference-api -- --prod",
+    "start:conference-api": "node dist/apps/conference-api/main.js",
     "lint:affected": "nx affected:lint",
     "test:affected": "nx affected:test",
     "build:affected": "nx affected:build",
