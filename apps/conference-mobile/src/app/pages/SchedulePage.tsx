@@ -28,8 +28,9 @@ import ShareSocialFab from '../components/ShareSocialFab'
 
 import * as selectors from '../data/selectors'
 import { connect } from '../data/connect'
-import { setSearchText } from '../data/sessions/sessions.actions'
+import { loadConfData, setSearchText } from '../data/sessions/sessions.actions'
 import { Schedule } from '@dreamon/conference-schedule'
+import { RefresherEventDetail } from '@ionic/core'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface OwnProps {}
@@ -42,6 +43,7 @@ interface StateProps {
 
 interface DispatchProps {
   setSearchText: typeof setSearchText
+  loadConfData: typeof loadConfData
 }
 
 type SchedulePageProps = OwnProps & StateProps & DispatchProps
@@ -50,22 +52,26 @@ const SchedulePage: React.FC<SchedulePageProps> = ({
   favoritesSchedule,
   schedule,
   setSearchText,
+  loadConfData,
   mode,
 }) => {
   const [segment, setSegment] = useState<'all' | 'favorites'>('all')
   const [showSearchbar, setShowSearchbar] = useState<boolean>(false)
   const [showFilterModal, setShowFilterModal] = useState(false)
-  const ionRefresherRef = useRef<HTMLIonRefresherElement>(null)
   const [showCompleteToast, setShowCompleteToast] = useState(false)
+  const [refreshing, setRefreshing] = useState<boolean>(false)
 
   const pageRef = useRef<HTMLElement>(null)
 
   const ios = mode === 'ios'
 
-  const doRefresh = () => {
+  const doRefresh = (event: CustomEvent<RefresherEventDetail>) => {
+    setRefreshing(true)
+    loadConfData()
     setTimeout(() => {
-      ionRefresherRef.current!.complete()
       setShowCompleteToast(true)
+      setRefreshing(false)
+      event.detail.complete()
     }, 2500)
   }
 
@@ -129,11 +135,7 @@ const SchedulePage: React.FC<SchedulePageProps> = ({
           </IonToolbar>
         </IonHeader>
 
-        <IonRefresher
-          slot="fixed"
-          ref={ionRefresherRef}
-          onIonRefresh={doRefresh}
-        >
+        <IonRefresher slot="fixed" onIonRefresh={doRefresh}>
           <IonRefresherContent />
         </IonRefresher>
 
@@ -144,17 +146,21 @@ const SchedulePage: React.FC<SchedulePageProps> = ({
           onDidDismiss={() => setShowCompleteToast(false)}
         />
 
-        <SessionList
-          schedule={schedule}
-          listType={segment}
-          hide={segment === 'favorites'}
-        />
+        {!refreshing ? (
+          <>
+            <SessionList
+              schedule={schedule}
+              listType={segment}
+              hide={segment === 'favorites'}
+            />
 
-        <SessionList
-          schedule={favoritesSchedule}
-          listType={segment}
-          hide={segment === 'all'}
-        />
+            <SessionList
+              schedule={favoritesSchedule}
+              listType={segment}
+              hide={segment === 'all'}
+            />
+          </>
+        ) : null}
       </IonContent>
 
       <IonModal
@@ -179,6 +185,7 @@ export default connect<OwnProps, StateProps, DispatchProps>({
   }),
   mapDispatchToProps: {
     setSearchText,
+    loadConfData,
   },
   component: React.memo(SchedulePage),
 })
