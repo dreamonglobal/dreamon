@@ -16,8 +16,12 @@ const Footer = (): ReactElement => {
               <div className="col-sm-12 text-center">
                 <div className="copy-right">
                   <p>
-                    {translations.copyright} &copy; {date}{' '}
-                    <Link to="/">| Dream On: Global |</Link>{' '}
+                    {translations.copyright} &copy; {date}
+                    {' | '}
+                    <Link to="/">Dream On: Global </Link>
+                    {' | '}
+                    <Link to="/privacy-policy">Privacy Policy</Link>
+                    {' | '}
                     {translations.allRightsReserved}
                   </p>
                 </div>
