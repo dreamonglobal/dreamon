@@ -1,20 +1,37 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 /* eslint-disable @typescript-eslint/no-empty-interface */
 import { Session } from '@dreamon/conference-schedule'
+import { Speaker } from '@dreamon/conference-speakers'
 import {
   IonBackButton,
   IonButton,
   IonButtons,
+  IonCard,
+  IonCardContent,
+  IonCardHeader,
+  IonCardSubtitle,
+  IonCardTitle,
+  IonChip,
   IonContent,
   IonHeader,
   IonIcon,
+  IonItem,
+  IonLabel,
   IonPage,
   IonText,
   IonToolbar,
 } from '@ionic/react'
-import { share, star, starOutline } from 'ionicons/icons'
+import {
+  share,
+  star,
+  starOutline,
+  schoolOutline,
+  timeOutline,
+  locationOutline,
+} from 'ionicons/icons'
 import React from 'react'
 import { RouteComponentProps, withRouter } from 'react-router'
+import SpeakerSocialChips from '../components/SpeakerSocialChips'
 import { connect } from '../data/connect'
 import * as selectors from '../data/selectors'
 import { addFavorite, removeFavorite } from '../data/sessions/sessions.actions'
@@ -25,6 +42,7 @@ interface OwnProps extends RouteComponentProps {}
 interface StateProps {
   session?: Session
   favoriteSessions: number[]
+  speakers?: Speaker[]
 }
 
 interface DispatchProps {
@@ -37,6 +55,7 @@ type SessionDetailProps = OwnProps & StateProps & DispatchProps
 const SessionDetail: React.FC<SessionDetailProps> = ({
   session,
   addFavorite,
+  speakers,
   removeFavorite,
   favoriteSessions,
 }) => {
@@ -49,7 +68,6 @@ const SessionDetail: React.FC<SessionDetailProps> = ({
   const toggleFavorite = () => {
     isFavorite ? removeFavorite(session.id) : addFavorite(session.id)
   }
-  const shareSession = () => {}
 
   return (
     <IonPage id="session-detail-page">
@@ -66,9 +84,6 @@ const SessionDetail: React.FC<SessionDetailProps> = ({
                 <IonIcon slot="icon-only" icon={starOutline}></IonIcon>
               )}
             </IonButton>
-            <IonButton onClick={() => shareSession}>
-              <IonIcon slot="icon-only" icon={share}></IonIcon>
-            </IonButton>
           </IonButtons>
         </IonToolbar>
       </IonHeader>
@@ -81,34 +96,41 @@ const SessionDetail: React.FC<SessionDetailProps> = ({
                   key={track}
                   className={`session-track-${track.toLowerCase()}`}
                 >
-                  {track}
+                  <IonChip color="warning" outline={true}>
+                    <IonIcon icon={schoolOutline}></IonIcon>
+                    <IonLabel>{track}</IonLabel>
+                  </IonChip>
                 </span>
               ))
             : null}
           <p>{session.description}</p>
+
           <IonText color="medium">
-            {session.timeStart} &ndash; {session.timeEnd}
+            <IonIcon icon={timeOutline}></IonIcon> {session.timeStart} &ndash;{' '}
+            {session.timeEnd}
             <br />
-            {session.location}
+            <IonIcon icon={locationOutline}></IonIcon> {session.location}
           </IonText>
         </div>
-        {/* <IonList>
-          <IonItem onClick={() => sessionClick("add to calendar")} button>
-            <IonLabel color="primary">Add to Calendar</IonLabel>
+        {speakers?.map((speaker: Speaker, key: number) => (
+          <IonItem
+            key={key}
+            button
+            routerLink={`/tabs/speakers/${speaker.slug}`}
+          >
+            <IonCard>
+              <img src={speaker.image} alt={speaker.name} />
+              <IonCardHeader>
+                <IonCardTitle>{speaker.name}</IonCardTitle>
+                <IonCardSubtitle>{speaker.title}</IonCardSubtitle>
+              </IonCardHeader>
+              <IonCardContent>
+                <p>{speaker.description}</p>
+                <SpeakerSocialChips speaker={speaker} />
+              </IonCardContent>
+            </IonCard>
           </IonItem>
-          <IonItem onClick={() => sessionClick("download video")} button>
-            <IonLabel color="primary">Download Video</IonLabel>
-            <IonIcon
-              slot="end"
-              color="primary"
-              size="small"
-              icon={cloudDownload}
-            ></IonIcon>
-          </IonItem>
-          <IonItem onClick={() => sessionClick("leave feedback")} button>
-            <IonLabel color="primary">Leave Feedback</IonLabel>
-          </IonItem>
-        </IonList> */}
+        ))}
       </IonContent>
     </IonPage>
   )
@@ -118,6 +140,7 @@ export default connect<OwnProps, StateProps, DispatchProps>({
   mapStateToProps: (state, OwnProps) => ({
     session: selectors.getSession(state, OwnProps),
     favoriteSessions: state.data.favorites,
+    speakers: selectors.getSessionSpeakers(state, OwnProps),
   }),
   mapDispatchToProps: {
     addFavorite,

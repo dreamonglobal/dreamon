@@ -1,6 +1,6 @@
 import { createSelector } from 'reselect'
 import { AppState } from './state'
-import { Speaker } from '@dreamon/conference-speakers'
+import { Speaker, SpeakerName } from '@dreamon/conference-speakers'
 import {
   Schedule,
   ScheduleGroup,
@@ -113,8 +113,19 @@ const getIdParam = (_state: AppState, props: any) => {
 export const getSession = createSelector(
   getSessions,
   getIdParam,
-  (sessions: Session[], id: string) => {
+  (sessions: Session[], id: string): Session | undefined => {
     return sessions.find((s: Session) => s.id === Number(id))
+  }
+)
+
+export const getSessionSpeakers = createSelector(
+  getSession,
+  getSpeakers,
+  (sessions, speakers): Speaker[] => {
+    return speakers.filter(
+      (speaker: Speaker) =>
+        sessions && sessions?.speakerNames?.includes(speaker.name)
+    )
   }
 )
 
