@@ -19,7 +19,7 @@
     "mobile:open:ios": "nx run conference-mobile:open:ios",
     "mobile:open:android": "nx run conference-mobile:open:android",
     "mobile:sync:ios": "yarn build:mobile && nx run conference-mobile:sync:ios",
-    "mobile:sync:android": "nx run conference-mobile:sync:android"
+    "mobile:sync:android": "yarn build:mobile && nx run conference-mobile:sync:android"
   },
   "private": true,
   "dependencies": {
