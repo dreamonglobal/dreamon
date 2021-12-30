@@ -98,8 +98,16 @@ const SchedulePage: React.FC<SchedulePageProps> = ({
             <IonSearchbar
               showCancelButton="always"
               placeholder="Search"
-              onIonChange={(e: CustomEvent) => setSearchText(e.detail.value)}
-              onIonCancel={() => setShowSearchbar(false)}
+              onIonChange={(e: CustomEvent) => {
+                setRefreshing(true)
+                setSearchText(e.detail.value)
+                setRefreshing(false)
+              }}
+              onIonCancel={() => {
+                setRefreshing(true)
+                setShowSearchbar(false)
+                setRefreshing(false)
+              }}
             ></IonSearchbar>
           )}
 
@@ -146,7 +154,7 @@ const SchedulePage: React.FC<SchedulePageProps> = ({
           onDidDismiss={() => setShowCompleteToast(false)}
         />
 
-        {!refreshing ? (
+        {!refreshing && schedule ? (
           <>
             <SessionList
               schedule={schedule}
@@ -169,7 +177,15 @@ const SchedulePage: React.FC<SchedulePageProps> = ({
         swipeToClose={true}
         presentingElement={pageRef.current!}
       >
-        <SessionListFilter onDismissModal={() => setShowFilterModal(false)} />
+        <SessionListFilter
+          onFilterChange={() => {
+            setRefreshing(true)
+            setTimeout(() => {
+              setRefreshing(false)
+            }, 100)
+          }}
+          onDismissModal={() => setShowFilterModal(false)}
+        />
       </IonModal>
 
       <ShareSocialFab />

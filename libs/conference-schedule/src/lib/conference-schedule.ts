@@ -1,6 +1,6 @@
 import { SpeakerName } from '@dreamon/conference-speakers'
 
-type Location =
+export type Location =
   | 'Main Auditorium'
   | 'Room 301'
   | 'Room 303'
@@ -8,7 +8,7 @@ type Location =
   | 'Choir Room'
   | 'Media Room'
   | 'Lobby'
-type Track =
+export type Track =
   | 'Youth'
   | 'Ministry'
   | 'Media'
