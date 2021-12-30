@@ -79,3 +79,14 @@
     background: var(--ion-color-step-150, #d7d8da);
   }
 }
+
+.speaker-details {
+  .card-content-md {
+    padding: 0;
+    width: 100%;
+  }
+
+  ion-card-header {
+    border-bottom: rgba(0, 0, 0, 0.12) solid 1px;
+  }
+}

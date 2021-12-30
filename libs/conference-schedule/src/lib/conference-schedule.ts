@@ -1,6 +1,6 @@
 import { SpeakerName } from '@dreamon/conference-speakers'
 
-type Location =
+export type Location =
   | 'Main Auditorium'
   | 'Room 301'
   | 'Room 303'
@@ -8,7 +8,7 @@ type Location =
   | 'Choir Room'
   | 'Media Room'
   | 'Lobby'
-type Track =
+export type Track =
   | 'Youth'
   | 'Ministry'
   | 'Media'
@@ -116,6 +116,7 @@ export const schedule: Schedule = {
             'Whether your children attend private or public school it is crucial that parents, particularly Christian parents, are involved in the district. Whether its being watchmen, serving like Christ, building relationships, or simply being an active parent there are many ways for parents to get involved in their local district. In this breakout we will talk about creative ways to serve your schools, ways to create movements of change, and how to best get plugged in as a parent or community member.',
           timeStart: '10:30am',
           timeEnd: '11:30am',
+          speakerNames: ['Craig Flack'],
           tracks: ['Parenting'],
           id: 7,
         },

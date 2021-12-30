@@ -15,11 +15,11 @@
     "build:affected": "nx affected:build",
     "e2e:global:ci": "nx e2e global-e2e --headless",
     "e2e:conference:ci": "nx e2e conference-e2e --headless",
-    "build:mobile": "nx build conference-mobile",
+    "build:mobile": "nx build conference-mobile -- --prod",
     "mobile:open:ios": "nx run conference-mobile:open:ios",
     "mobile:open:android": "nx run conference-mobile:open:android",
     "mobile:sync:ios": "yarn build:mobile && nx run conference-mobile:sync:ios",
-    "mobile:sync:android": "nx run conference-mobile:sync:android"
+    "mobile:sync:android": "yarn build:mobile && nx run conference-mobile:sync:android"
   },
   "private": true,
   "dependencies": {

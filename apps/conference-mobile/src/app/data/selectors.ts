@@ -1,27 +1,36 @@
 import { createSelector } from 'reselect'
 import { AppState } from './state'
-import { Speaker } from '@dreamon/conference-speakers'
-import { Schedule, ScheduleGroup, Session } from '@dreamon/conference-schedule'
+import { Speaker, SpeakerName } from '@dreamon/conference-speakers'
+import {
+  Schedule,
+  ScheduleGroup,
+  Session,
+  Track,
+} from '@dreamon/conference-schedule'
 
-const getSchedule = (state: AppState) => {
+const getSchedule = (state: AppState): Schedule => {
   return state.data.schedule
 }
-export const getSpeakers = (state: AppState) => state.data.speakers
-const getSessions = (state: AppState) => state.data.sessions
-const getFilteredTracks = (state: AppState) => state.data.filteredTracks
-const getFavoriteIds = (state: AppState) => state.data.favorites
-const getSearchText = (state: AppState) => state.data.searchText
+export const getSpeakers = (state: AppState): Speaker[] => state.data.speakers
+const getSessions = (state: AppState): Session[] => state.data.sessions
+const getFilteredTracks = (state: AppState): Track[] =>
+  state.data.filteredTracks
+const getFavoriteIds = (state: AppState): number[] => state.data.favorites
+const getSearchText = (state: AppState): string => state.data.searchText
 
 export const getFilteredSchedule = createSelector(
   getSchedule,
   getFilteredTracks,
-  (schedule, filteredTracks) => {
+  (schedule: Schedule, filteredTracks: Track[]): Schedule => {
     const groups: ScheduleGroup[] = []
     schedule.groups.forEach((group: ScheduleGroup) => {
       const sessions: Session[] = []
       group.sessions.forEach((session) => {
         session.tracks.forEach((track) => {
-          if (filteredTracks.indexOf(track) > -1) {
+          if (
+            filteredTracks.indexOf(track) > -1 &&
+            sessions.indexOf(session) === -1
+          ) {
             sessions.push(session)
           }
         })
@@ -34,7 +43,6 @@ export const getFilteredSchedule = createSelector(
         groups.push(groupToAdd)
       }
     })
-
     return {
       date: schedule.date,
       groups,
@@ -105,8 +113,19 @@ const getIdParam = (_state: AppState, props: any) => {
 export const getSession = createSelector(
   getSessions,
   getIdParam,
-  (sessions: Session[], id: string) => {
+  (sessions: Session[], id: string): Session | undefined => {
     return sessions.find((s: Session) => s.id === Number(id))
+  }
+)
+
+export const getSessionSpeakers = createSelector(
+  getSession,
+  getSpeakers,
+  (sessions, speakers): Speaker[] => {
+    return speakers.filter(
+      (speaker: Speaker) =>
+        sessions && sessions?.speakerNames?.includes(speaker.name)
+    )
   }
 )
 
