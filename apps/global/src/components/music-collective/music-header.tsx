@@ -20,6 +20,9 @@ function getMusicianPageTitleArea(name: Musician) {
     case 'Blake Reynolds':
       return 'page-title-area-blake parralax'
 
+    case 'Derek Spencer':
+      return 'page-title-area-derek parralax'
+
     default:
       return 'page-title-area parralax'
   }

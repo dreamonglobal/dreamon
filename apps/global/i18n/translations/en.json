@@ -18,9 +18,11 @@
       "three": {
         "title": "Listen",
         "subtitle": "Today",
-        "description": "He's Here - Lucas & Lilli Gray",
+        "description": "Me, Myself & Lies - Derek Spencer",
         "button": "Listen On Spotify",
-        "buttonLink": "https://open.spotify.com/track/4zrTIRGnIZLQACosrL9VJO?si=f670dd1c7a024a68"
+        "buttonLink": "https://open.spotify.com/album/0GEbkWOSyKMLyH1lvBLLPl?si=O7TMNB5qTtSJlbnNLUGpcg",
+        "button2": "View Artist",
+        "button2Link": "/music/derek-spencer"
       },
       "four": {
         "title": "Raise",

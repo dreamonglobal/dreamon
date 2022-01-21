@@ -421,6 +421,13 @@ input:focus {
   position: relative;
 }
 
+.page-title-area-derek {
+  background: url('../images/volunteers/derek-spencer-live.jpg') no-repeat
+    scroll center top / cover;
+  padding: 600px 0 100px;
+  position: relative;
+}
+
 .page-title-area-ty {
   background: url('../images/volunteers/tyler-watson-live.jpg') no-repeat scroll
     center top / cover;
@@ -930,7 +937,7 @@ button.owl-dot:nth-child(2) {
 }
 
 button.owl-dot:nth-child(3) {
-  background: url('../images/banner/hes-here.jpg');
+  background: url('../images/banner/me-myself-lies.jpg');
 }
 
 button.owl-dot:nth-child(4) {
