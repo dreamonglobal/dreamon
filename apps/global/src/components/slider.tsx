@@ -1,9 +1,9 @@
 import React, { ReactElement } from 'react'
 import OwlCarousel from 'react-owl-carousel'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
-import { Link } from 'gatsby'
 import { useTranslation } from '../hooks'
 import { Translations } from '../types'
+import { Link } from 'gatsby'
 
 const Slider = (): ReactElement => {
   const {
@@ -117,6 +117,12 @@ const Slider = (): ReactElement => {
                     >
                       <span>{translations.three.button}</span>
                     </OutboundLink>
+                    <Link
+                      to={translations.three.button2Link}
+                      className="tem-btn nav-link move-eff"
+                    >
+                      <span>{translations.three.button2}</span>
+                    </Link>
                   </div>
                 </div>
               </div>

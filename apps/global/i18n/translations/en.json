@@ -20,7 +20,9 @@
         "subtitle": "Today",
         "description": "Me, Myself & Lies - Derek Spencer",
         "button": "Listen On Spotify",
-        "buttonLink": ""
+        "buttonLink": "https://open.spotify.com/album/0GEbkWOSyKMLyH1lvBLLPl?si=O7TMNB5qTtSJlbnNLUGpcg",
+        "button2": "View Artist",
+        "button2Link": "/music/derek-spencer"
       },
       "four": {
         "title": "Raise",
