@@ -67,7 +67,7 @@ const Slider = (): ReactElement => {
           </div>
         </div>
       </div>
-      <div className="item">
+      {/* <div className="item">
         <div
           className="single-banner"
           style={{ background: "url('../images/banner/brazil.jpg')" }}
@@ -90,7 +90,7 @@ const Slider = (): ReactElement => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="item">
         <div
