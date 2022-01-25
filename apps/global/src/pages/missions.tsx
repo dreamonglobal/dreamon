@@ -34,7 +34,7 @@ const TripPreview = ({
 
   return (
     <div className="col-sm-12">
-      <article className="news-info">
+      {/* <article className="news-info">
         <OutboundLink href="https://dreamon.gomethod.app/!/#/23795/honduras-2022">
           <h2 className="text-center">{trips.brazil.country}</h2>
           <h4 className="text-center">{trips.brazil.date}</h4>
@@ -42,7 +42,7 @@ const TripPreview = ({
             <GatsbyImage image={brazilImage} alt="Dream On: Brazil" />
           </div>
         </OutboundLink>
-      </article>
+      </article> */}
       <article className="news-info">
         <OutboundLink href={trips.honduras.link}>
           <h2 className="text-center">{trips.honduras.country}</h2>
