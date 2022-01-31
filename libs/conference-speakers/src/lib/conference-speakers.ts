@@ -12,6 +12,9 @@ export type SpeakerName =
   | 'Craig Flack'
   | 'Jason Harris'
   | 'Garrett Gaton'
+  | 'Jay Turner'
+  | 'Wes Woods'
+  | 'Nathan Thompson'
 
 export type Speaker = {
   name: SpeakerName
