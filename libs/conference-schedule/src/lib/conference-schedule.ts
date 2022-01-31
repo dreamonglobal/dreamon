@@ -16,6 +16,7 @@ export type Track =
   | 'Business'
   | 'Keynote'
   | 'Moms'
+  | 'Men'
   | 'Worship'
   | 'Parenting'
 
@@ -76,7 +77,7 @@ export const schedule: Schedule = {
         {
           name: 'Dreaming as a Mom',
           location: 'Room 301',
-          speakerNames: ['Ashley Powell', 'Hanna Swartz'],
+          speakerNames: ['Hanna Swartz'],
           timeStart: '10:30 am',
           timeEnd: '11:30 am',
           tracks: ['Moms'],
@@ -96,18 +97,9 @@ export const schedule: Schedule = {
           location: 'Media Room',
           speakerNames: ['John Peak'],
           timeStart: '10:30 am',
-          timeEnd: '10:30 am',
+          timeEnd: '11:30 am',
           tracks: ['Media'],
           id: 5,
-        },
-        {
-          name: 'The Importance of Purity',
-          location: 'Room 303',
-          speakerNames: ['Judy Zircher'],
-          timeStart: '10:30 am',
-          timeEnd: '11:30 am',
-          tracks: ['Youth', 'Moms'],
-          id: 6,
         },
         {
           name: 'Engaging With Your Local School',
@@ -118,6 +110,15 @@ export const schedule: Schedule = {
           timeEnd: '11:30am',
           speakerNames: ['Craig Flack'],
           tracks: ['Parenting'],
+          id: 6,
+        },
+        {
+          name: 'Pursuing Your Dreams As A Man',
+          location: 'Room 303',
+          speakerNames: ['Jason Harris'],
+          timeStart: '10:30am',
+          timeEnd: '11:30am',
+          tracks: ['Men'],
           id: 7,
         },
       ],
@@ -161,22 +162,40 @@ export const schedule: Schedule = {
       time: '2:15 pm',
       sessions: [
         {
-          name: 'Engaging with Culture',
-          location: 'Loft',
-          speakerNames: ['Rob Kennedy'],
+          name: 'The Importance of Purity',
+          location: 'Room 303',
+          speakerNames: ['Judy Zircher'],
           timeStart: '2:15 pm',
           timeEnd: '3:15 pm',
-          tracks: ['Missions', 'Ministry'],
+          tracks: ['Youth', 'Men', 'Moms', 'Parenting'],
           id: 11,
         },
         {
           name: 'Dreaming With Worship',
           location: 'Loft',
           speakerNames: ['Zac Howard', 'Lucas Gray', 'Lilli Gray'],
-          timeStart: '10:30 am',
-          timeEnd: '11:30 am',
+          timeStart: '2:15 pm',
+          timeEnd: '3:15 pm',
           tracks: ['Worship'],
           id: 12,
+        },
+        {
+          name: 'Combining Dreams in Business and Ministry',
+          location: 'Room 303',
+          speakerNames: ['Jay Turner', 'Wes Woods', 'Nathan Thompson'],
+          timeStart: '2:15 pm',
+          timeEnd: '3:15 pm',
+          tracks: ['Business', 'Ministry'],
+          id: 13,
+        },
+        {
+          name: 'Dreaming in Business',
+          location: 'Choir Room',
+          speakerNames: ['Garrett Gaton'],
+          timeStart: '2:15 pm',
+          timeEnd: '3:15 pm',
+          tracks: ['Business'],
+          id: 14,
         },
       ],
     },
@@ -190,7 +209,7 @@ export const schedule: Schedule = {
           timeStart: '3:30 pm',
           timeEnd: '4:45 pm',
           tracks: ['Keynote'],
-          id: 13,
+          id: 15,
         },
       ],
     },

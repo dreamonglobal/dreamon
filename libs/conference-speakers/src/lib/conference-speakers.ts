@@ -7,12 +7,14 @@ export type SpeakerName =
   | 'Lilli Gray'
   | 'Derek Spencer'
   | 'John Peak'
-  | 'Ty Watson'
-  | 'Rob Kennedy'
   | 'Judy Zircher'
   | 'Zac Howard'
   | 'Craig Flack'
   | 'Jason Harris'
+  | 'Garrett Gaton'
+  | 'Jay Turner'
+  | 'Wes Woods'
+  | 'Nathan Thompson'
 
 export type Speaker = {
   name: SpeakerName
@@ -135,32 +137,6 @@ export const speakers: Speaker[] = [
     id: 8,
   },
   {
-    name: 'Ty Watson',
-    slug: 'ty-watson',
-    image: 'https://dreamon.world/images/volunteers/ty.jpg',
-    instagram: 'tythebuckeye24',
-    facebook: 'https://www.facebook.com/profile.php?id=100074568648529',
-    description:
-      'Ty Watson serves as a Pastor at New Life Church in Siloam Springs Arkansas and Dream On: Speaker Collective Speaker',
-    title: 'Speaker Collective Speaker',
-    location: 'Arkansas',
-    email: 'ty@dreamon.world',
-    id: 9,
-  },
-  {
-    name: 'Rob Kennedy',
-    slug: 'rob-kennedy',
-    image: 'https://dreamon.world/images/volunteers/rob-kennedy.jpg',
-    instagram: 'robkennedy6.33',
-    facebook: 'https://www.facebook.com/kennedy3',
-    description:
-      'Rob Kennedy serves as the Senior Pastor at The Rock Community Church & Transformation Center in Saint Petersburg Florida as well as Dream On: Speaker Collective International Speaker and Author',
-    title: 'Speaker Collective Speaker',
-    location: 'Florida',
-    email: 'rob@dreamon.world',
-    id: 10,
-  },
-  {
     name: 'Judy Zircher',
     slug: 'judy-zircher',
     image:
@@ -172,7 +148,7 @@ export const speakers: Speaker[] = [
     title: 'Speaker Collective Speaker',
     location: 'Ohio',
     email: 'judy@dreamon.world',
-    id: 11,
+    id: 9,
   },
   {
     name: 'Craig Flack',
@@ -186,7 +162,7 @@ export const speakers: Speaker[] = [
     title: 'Speaker Collective Speaker',
     location: 'Ohio',
     email: 'craigflack@gmail.com',
-    id: 12,
+    id: 10,
   },
   {
     name: 'Jason Harris',
@@ -200,7 +176,7 @@ export const speakers: Speaker[] = [
     title: 'Speaker Collective Speaker',
     location: 'Ohio',
     email: 'jason@dreamon.world',
-    id: 13,
+    id: 11,
   },
   {
     name: 'Zac Howard',
@@ -213,6 +189,19 @@ export const speakers: Speaker[] = [
     title: 'Speaker Collective Speaker',
     location: 'Ohio',
     email: 'zac@dreamon.world',
-    id: 14,
+    id: 12,
+  },
+  {
+    name: 'Garrett Gaton',
+    slug: 'garrett-gaton',
+    image: 'https://dreamon.world/images/volunteers/garrett-gaton.jpg',
+    instagram: 'https://www.instagram.com/gatton_clan_leader/',
+    facebook: 'https://www.facebook.com/garrett.gatton',
+    description:
+      'Garrett Gaton is a realtor in Lima Ohio and a Dream On: Speaker Collective Speaker',
+    title: 'Speaker Collective Speaker',
+    location: 'Ohio',
+    email: 'garrett@dreamon.world',
+    id: 13,
   },
 ]
