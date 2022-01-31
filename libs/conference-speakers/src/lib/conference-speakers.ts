@@ -72,8 +72,7 @@ export const speakers: Speaker[] = [
   {
     name: 'Daniel Lucien',
     slug: 'daniel-lucien',
-    image:
-      'https://scontent-iad3-1.xx.fbcdn.net/v/t1.6435-9/117158952_10158900491012848_3132891314915000015_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=Pvtr0-F62vwAX_08NCZ&_nc_ht=scontent-iad3-1.xx&oh=66f16d19b75b604e969858d48951066a&oe=61D4221C',
+    image: 'https://dreamon.world/images/volunteers/daniel-lucien.jpg',
     instagram: 'dannylucien',
     facebook: 'https://www.facebook.com/danny.lucien',
     description:
@@ -112,8 +111,7 @@ export const speakers: Speaker[] = [
   {
     name: 'Derek Spencer',
     slug: 'derek-spencer',
-    image:
-      'https://scontent-iad3-1.xx.fbcdn.net/v/t1.6435-9/120026914_3875682085780088_336847840537177704_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=174925&_nc_ohc=pqwOv7MBlL0AX8IuFV0&_nc_ht=scontent-iad3-1.xx&oh=f674869e6eba9ff258d1b4e5d7e35cdf&oe=61CD26E6',
+    image: 'https://dreamon.world/images/volunteers/derek-spencer.jpg',
     instagram: 'derekaspencer_',
     facebook: 'https://www.facebook.com/derek.spencer.129',
     description:
@@ -140,7 +138,7 @@ export const speakers: Speaker[] = [
     name: 'Judy Zircher',
     slug: 'judy-zircher',
     image:
-      'https://scontent-iad3-1.xx.fbcdn.net/v/t1.6435-9/71952426_1634553183344720_4963106500353458176_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=QRhJWvlmQOgAX9LtTyF&_nc_ht=scontent-iad3-1.xx&oh=6185b0141ab0eaaadafe7dc167fb656e&oe=61CF0076',
+      'http://localhost:4200/static/fac0ff66950d614ea9d11bb71cfe3c16/4ba8b/judy-zircher.webp',
     instagram: 'purityally',
     facebook: 'https://www.facebook.com/purityallyministries',
     description:
@@ -194,7 +192,8 @@ export const speakers: Speaker[] = [
   {
     name: 'Garrett Gaton',
     slug: 'garrett-gaton',
-    image: 'https://dreamon.world/images/volunteers/garrett-gaton.jpg',
+    image:
+      'http://localhost:4200/static/e0f0984552d894188e957bc6555eaac5/4ba8b/garrett-gaton.webp',
     instagram: 'https://www.instagram.com/gatton_clan_leader/',
     facebook: 'https://www.facebook.com/garrett.gatton',
     description:
@@ -203,5 +202,47 @@ export const speakers: Speaker[] = [
     location: 'Ohio',
     email: 'garrett@dreamon.world',
     id: 13,
+  },
+  {
+    name: 'Jay Turner',
+    slug: 'jay-turner',
+    image:
+      'http://localhost:4200/static/654b183323a8346f0728e16fa5dbfc14/4ba8b/jay-turner.webp',
+    facebook: 'https://www.facebook.com/Jerrad.Turner',
+    instagram: '',
+    description:
+      'Jay Turner and his wife Crissy serve as a member of the United Grounds Non-Profit and the United Grounds Coffee Company',
+    title: 'United Grounds',
+    location: 'Ohio',
+    email: 'admin@unitedgroundsnp.com',
+    id: 14,
+  },
+  {
+    name: 'Wes Woods',
+    slug: 'wes-woods',
+    image:
+      'http://localhost:4200/static/b04d2ce8cffc8b7a364c32f1634e1a94/4ba8b/wes-woods.webp',
+    facebook: 'https://www.facebook.com/hollywes.woods',
+    instagram: 'https://www.instagram.com/woodstrio/',
+    description:
+      'Wes and his wife Holly serve as a member of the United Grounds Non-Profit and the United Grounds Coffee Company',
+    title: 'United Grounds',
+    location: 'Ohio',
+    email: 'admin@unitedgroundsnp.com',
+    id: 15,
+  },
+  {
+    name: 'Nathan Thompson',
+    slug: 'nathan-thompson',
+    image:
+      'http://localhost:4200/static/8e5ad37c024380fecd9c850bc867f06b/4ba8b/nathan-thompson.webp',
+    facebook: 'https://www.facebook.com/thompsonandrea2',
+    instagram: '',
+    description:
+      'Nathan and his wife Andrea serve as a member of the United Grounds Non-Profit and the United Grounds Coffee Company',
+    title: 'United Grounds',
+    location: 'Ohio',
+    email: 'admin@unitedgroundsnp.com',
+    id: 16,
   },
 ]
