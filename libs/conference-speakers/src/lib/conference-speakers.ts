@@ -138,7 +138,7 @@ export const speakers: Speaker[] = [
     name: 'Judy Zircher',
     slug: 'judy-zircher',
     image:
-      'http://localhost:4200/static/fac0ff66950d614ea9d11bb71cfe3c16/4ba8b/judy-zircher.webp',
+      'http://conference.dreamon.world/static/fac0ff66950d614ea9d11bb71cfe3c16/4ba8b/judy-zircher.webp',
     instagram: 'purityally',
     facebook: 'https://www.facebook.com/purityallyministries',
     description:
@@ -193,7 +193,7 @@ export const speakers: Speaker[] = [
     name: 'Garrett Gaton',
     slug: 'garrett-gaton',
     image:
-      'http://localhost:4200/static/e0f0984552d894188e957bc6555eaac5/4ba8b/garrett-gaton.webp',
+      'http://conference.dreamon.world/static/e0f0984552d894188e957bc6555eaac5/4ba8b/garrett-gaton.webp',
     instagram: 'https://www.instagram.com/gatton_clan_leader/',
     facebook: 'https://www.facebook.com/garrett.gatton',
     description:
@@ -207,7 +207,7 @@ export const speakers: Speaker[] = [
     name: 'Jay Turner',
     slug: 'jay-turner',
     image:
-      'http://localhost:4200/static/654b183323a8346f0728e16fa5dbfc14/4ba8b/jay-turner.webp',
+      'http://conference.dreamon.world/static/654b183323a8346f0728e16fa5dbfc14/4ba8b/jay-turner.webp',
     facebook: 'https://www.facebook.com/Jerrad.Turner',
     instagram: '',
     description:
@@ -221,7 +221,7 @@ export const speakers: Speaker[] = [
     name: 'Wes Woods',
     slug: 'wes-woods',
     image:
-      'http://localhost:4200/static/b04d2ce8cffc8b7a364c32f1634e1a94/4ba8b/wes-woods.webp',
+      'http://conference.dreamon.world/static/b04d2ce8cffc8b7a364c32f1634e1a94/4ba8b/wes-woods.webp',
     facebook: 'https://www.facebook.com/hollywes.woods',
     instagram: 'https://www.instagram.com/woodstrio/',
     description:
@@ -235,7 +235,7 @@ export const speakers: Speaker[] = [
     name: 'Nathan Thompson',
     slug: 'nathan-thompson',
     image:
-      'http://localhost:4200/static/8e5ad37c024380fecd9c850bc867f06b/4ba8b/nathan-thompson.webp',
+      'http://conference.dreamon.world/static/8e5ad37c024380fecd9c850bc867f06b/4ba8b/nathan-thompson.webp',
     facebook: 'https://www.facebook.com/thompsonandrea2',
     instagram: '',
     description:
