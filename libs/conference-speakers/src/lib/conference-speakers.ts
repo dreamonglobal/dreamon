@@ -17,6 +17,7 @@ export type SpeakerName =
   | 'Wes Woods'
   | 'Nathan Thompson'
   | 'Joyce Peak'
+  | 'Jordan Powell'
 
 export type Speaker = {
   name: SpeakerName
@@ -259,5 +260,18 @@ export const speakers: Speaker[] = [
     location: 'Ohio',
     email: 'admin@unitedgroundsnp.com',
     id: 17,
+  },
+  {
+    name: 'Jordan Powell',
+    slug: 'jordan-powell',
+    image: '',
+    facebook: 'https://www.facebook.com/jordanpowell88',
+    instagram: 'https://www.instagram.com/thejordanpowell',
+    title: 'Q & A',
+    description:
+      'Jordan is a Co-Founder of Dream On and serves as the Chief Executive Officer',
+    location: 'Ohio',
+    email: 'jordan@dreamon.world',
+    id: 18,
   },
 ]

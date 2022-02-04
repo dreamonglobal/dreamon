@@ -50,6 +50,7 @@ export const schedule: Schedule = {
       sessions: [
         {
           name: 'Registration',
+          description: 'Event registration will be held in the lobby',
           timeStart: '8:00 am',
           timeEnd: '9:00 am',
           location: 'Lobby',
@@ -114,9 +115,13 @@ export const schedule: Schedule = {
           id: 6,
         },
         {
-          name: 'The Importance of Purity',
+          name: 'Dreaming of a Pure Life',
           location: 'Room 303',
           speakerNames: ['Judy Zircher'],
+          description: `In this breakout session, we will discover how to actually possess the promise in Matthew 5:8, “Blessed are the pure in heart, for they shall see God.”  Current culture is filled with messages contrary to the Word of God.  These images and perspectives pollute our God-given identity, and keep us from living the abundant life.  Together we will:
+          layout a biblical blueprint for creating a household of purity,
+          tackle hot-topic issues that interfere with God’s plan for our lives,
+          and Find hope and encouragement knowing we are not alone in the battle to live a pure life.`,
           timeStart: '2:30 pm',
           timeEnd: '3:30 pm',
           tracks: ['Youth', 'Men', 'Moms', 'Parenting'],
@@ -138,6 +143,7 @@ export const schedule: Schedule = {
         {
           name: 'Derek Spencer Concert',
           location: 'Main Auditorium',
+          speakerNames: ['Derek Spencer'],
           timeStart: '12:15pm',
           timeEnd: '12:45pm',
           tracks: [],
@@ -203,22 +209,22 @@ export const schedule: Schedule = {
           tracks: ['Business'],
           id: 14,
         },
-        // {
-        //   name: "You're never too old to dream",
-        //   location: 'Room 303',
-        //   speakerNames: ['Joyce Peak'],
-        //   timeStart: '2:30 pm',
-        //   timeEnd: '3:30 pm',
-        //   tracks: ['Ministry', 'Missions'],
-        //   id: 15,
-        // },
+        {
+          name: "You're never too old to dream",
+          location: 'Room 303',
+          speakerNames: ['Joyce Peak'],
+          timeStart: '2:30 pm',
+          timeEnd: '3:30 pm',
+          tracks: ['Ministry', 'Missions'],
+          id: 15,
+        },
       ],
     },
     {
       time: '3:30',
       sessions: [
         {
-          name: 'Keynote #3',
+          name: 'The Opportunity to Dream with Jesus',
           location: 'Main Auditorium',
           speakerNames: ['Ben Swartz'],
           timeStart: '3:30 pm',
@@ -236,6 +242,12 @@ export const schedule: Schedule = {
           location: 'Main Auditorium',
           description:
             "Here's your chance to ask the Dream On Team your questions",
+          speakerNames: [
+            'Ben Swartz',
+            'Ashley Powell',
+            'Hanna Swartz',
+            'Jordan Powell',
+          ],
           timeStart: '5:00 pm',
           timeEnd: '5:30 pm',
           tracks: ['Keynote'],

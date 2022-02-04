@@ -1,67 +1,41 @@
-import React from 'react'
 import { schedule } from '@dreamon/conference-schedule'
-
-/* This example requires Tailwind CSS v2.0+ */
-// const activityItems = [
-//   {
-//     id: 1,
-//     title: 'Registration',
-//     icon: <NewspaperIcon className="h-6 w-6" />,
-//     description: 'Lobby',
-//     time: '8:00am',
-//   },
-//   {
-//     id: 2,
-//     title: 'Keynote #1',
-//     icon: <SpeakerphoneIcon className="h-6 w-6" />,
-//     description: 'Main Auditorium',
-//     time: '9:00am',
-//   },
-//   {
-//     id: 3,
-//     title: 'Breakout Session #1',
-//     icon: <UserGroupIcon className="h-6 w-6" />,
-//     description: 'Various sessions located throughout the facility',
-//     time: '10:30am',
-//   },
-//   {
-//     id: 4,
-//     title: 'Lunch',
-//     icon: <CakeIcon className="h-6 w-6" />,
-//     description: 'A box lunch included as part of registration',
-//     time: '11:45am',
-//   },
-//   {
-//     id: 5,
-//     title: 'Keynote #2',
-//     icon: <SpeakerphoneIcon className="h-6 w-6" />,
-//     description: 'Main Auditorium',
-//     time: '1:00pm',
-//   },
-//   {
-//     id: 6,
-//     title: 'Breakout Session #2',
-//     icon: <UserGroupIcon className="h-6 w-6" />,
-//     description: 'Various sessions located throughout the facility',
-//     time: '2:15pm',
-//   },
-//   {
-//     id: 7,
-//     title: 'Keynote #3',
-//     icon: <SpeakerphoneIcon className="h-6 w-6" />,
-//     description: 'Main Auditorium',
-//     time: '3:30pm',
-//   },
-//   {
-//     id: 8,
-//     title: 'Q & A',
-//     icon: <ChatAlt2Icon className="h-6 w-6" />,
-//     description: 'Main Auditorium',
-//     time: '4:45pm',
-//   },
-// ]
+import { SpeakerName, speakers } from '@dreamon/conference-speakers'
+import { graphql, useStaticQuery } from 'gatsby'
+import {
+  GatsbyImage,
+  getImage,
+  IGatsbyImageData,
+  ImageDataLike,
+} from 'gatsby-plugin-image'
+import React from 'react'
 
 const Schedule = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      images: allFile(filter: { relativeDirectory: { eq: "speakers" } }) {
+        edges {
+          node {
+            relativePath
+            childImageSharp {
+              gatsbyImageData(width: 300, placeholder: BLURRED)
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const findSlug = (speaker: SpeakerName): string =>
+    speakers.find((s) => s.name === speaker)?.slug
+
+  const findSpeaker = (slug: string): ImageDataLike =>
+    data.images.edges.find(
+      (edge) => edge.node.relativePath === `speakers/${slug}.jpg`
+    )?.node
+
+  const image = (speaker: SpeakerName): IGatsbyImageData =>
+    getImage(findSpeaker(findSlug(speaker)))
+
   return (
     <div
       id="schedule"
@@ -92,8 +66,37 @@ const Schedule = () => {
                           {session.timeStart}
                         </p>
                       </div>
+                      <span className="inline-block relative">
+                        {session.speakerNames?.map((speaker: SpeakerName) =>
+                          image(speaker) ? (
+                            <GatsbyImage
+                              key={findSlug(speaker)}
+                              className="h-6 w-6 rounded-full"
+                              image={image(speaker)}
+                              alt={speaker}
+                            />
+                          ) : null
+                        )}
+                      </span>
                       <p className="text-sm text-gray-500">
                         {session.description}
+                      </p>
+                      <p className="text-sm">
+                        <span className="inline-flex">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-5 w-5"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                          {session.location}
+                        </span>
                       </p>
                       {session.tracks.map((track) => (
                         <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
