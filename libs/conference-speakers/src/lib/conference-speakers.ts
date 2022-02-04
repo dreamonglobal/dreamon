@@ -9,12 +9,15 @@ export type SpeakerName =
   | 'John Peak'
   | 'Judy Zircher'
   | 'Zac Howard'
+  | 'Emily Howard'
   | 'Craig Flack'
   | 'Jason Harris'
   | 'Garrett Gaton'
   | 'Jay Turner'
   | 'Wes Woods'
   | 'Nathan Thompson'
+  | 'Joyce Peak'
+  | 'Jordan Powell'
 
 export type Speaker = {
   name: SpeakerName
@@ -83,6 +86,32 @@ export const speakers: Speaker[] = [
     id: 4,
   },
   {
+    name: 'Zac Howard',
+    slug: 'zac-howard',
+    image: 'https://dreamon.world/images/volunteers/zac-howard.jpg',
+    instagram: 'https://www.instagram.com/zacandemilyhowardworship/',
+    facebook: 'https://www.facebook.com/DOMusicCollective',
+    description:
+      'Zac Howard and his wife Emily serve as the Worship Pastors at Woodlawn Church in Canton Ohio and a Dream On: Music Collective Artists',
+    title: 'Speaker Collective Speaker',
+    location: 'Ohio',
+    email: 'zac@dreamon.world',
+    id: 5,
+  },
+  {
+    name: 'Emily Howard',
+    slug: 'emily-howard',
+    image: 'https://dreamon.world/images/volunteers/emily-howard.jpg',
+    instagram: 'https://www.instagram.com/zacandemilyhowardworship/',
+    facebook: 'https://www.facebook.com/DOMusicCollective',
+    description:
+      'Emily Howard and her husband Zac serve as the Worship Pastors at Woodlawn Church in Canton Ohio and a Dream On: Music Collective Artists',
+    title: 'Speaker Collective Speaker',
+    location: 'Ohio',
+    email: 'zac@dreamon.world',
+    id: 6,
+  },
+  {
     name: 'Lucas Gray',
     slug: 'lucas-gray',
     image: 'https://dreamon.world/images/volunteers/lucas-gray.jpg',
@@ -93,7 +122,7 @@ export const speakers: Speaker[] = [
     title: 'Music Collective Artist',
     location: 'Ohio',
     email: 'lucas@dreamon.world',
-    id: 5,
+    id: 7,
   },
   {
     name: 'Lilli Gray',
@@ -106,7 +135,7 @@ export const speakers: Speaker[] = [
     title: 'Music Collective Artist',
     location: 'Ohio',
     email: 'lilli@dreamon.world',
-    id: 6,
+    id: 8,
   },
   {
     name: 'Derek Spencer',
@@ -119,7 +148,7 @@ export const speakers: Speaker[] = [
     title: 'Music Collective Artist',
     location: 'Kentucky',
     email: 'derek@dreamon.world',
-    id: 7,
+    id: 9,
   },
   {
     name: 'John Peak',
@@ -132,7 +161,7 @@ export const speakers: Speaker[] = [
     title: 'Director of Media',
     location: 'Tennessee',
     email: 'john@dreamon.world',
-    id: 8,
+    id: 10,
   },
   {
     name: 'Judy Zircher',
@@ -146,7 +175,7 @@ export const speakers: Speaker[] = [
     title: 'Speaker Collective Speaker',
     location: 'Ohio',
     email: 'judy@dreamon.world',
-    id: 9,
+    id: 11,
   },
   {
     name: 'Craig Flack',
@@ -160,7 +189,7 @@ export const speakers: Speaker[] = [
     title: 'Speaker Collective Speaker',
     location: 'Ohio',
     email: 'craigflack@gmail.com',
-    id: 10,
+    id: 12,
   },
   {
     name: 'Jason Harris',
@@ -174,20 +203,7 @@ export const speakers: Speaker[] = [
     title: 'Speaker Collective Speaker',
     location: 'Ohio',
     email: 'jason@dreamon.world',
-    id: 11,
-  },
-  {
-    name: 'Zac Howard',
-    slug: 'zac-howard',
-    image: 'https://dreamon.world/images/volunteers/zac-howard.jpg',
-    instagram: 'https://www.instagram.com/zacandemilyhowardworship/',
-    facebook: 'https://www.facebook.com/DOMusicCollective',
-    description:
-      'Zac Howard and his wife Emily serve as the Worship Pastors at Woodlawn Church in Canton Ohio and a Dream On: Music Collective Artists',
-    title: 'Speaker Collective Speaker',
-    location: 'Ohio',
-    email: 'zac@dreamon.world',
-    id: 12,
+    id: 13,
   },
   {
     name: 'Garrett Gaton',
@@ -201,7 +217,7 @@ export const speakers: Speaker[] = [
     title: 'Speaker Collective Speaker',
     location: 'Ohio',
     email: 'garrett@dreamon.world',
-    id: 13,
+    id: 14,
   },
   {
     name: 'Jay Turner',
@@ -215,7 +231,7 @@ export const speakers: Speaker[] = [
     title: 'United Grounds',
     location: 'Ohio',
     email: 'admin@unitedgroundsnp.com',
-    id: 14,
+    id: 15,
   },
   {
     name: 'Wes Woods',
@@ -229,7 +245,7 @@ export const speakers: Speaker[] = [
     title: 'United Grounds',
     location: 'Ohio',
     email: 'admin@unitedgroundsnp.com',
-    id: 15,
+    id: 16,
   },
   {
     name: 'Nathan Thompson',
@@ -243,6 +259,19 @@ export const speakers: Speaker[] = [
     title: 'United Grounds',
     location: 'Ohio',
     email: 'admin@unitedgroundsnp.com',
-    id: 16,
+    id: 17,
+  },
+  {
+    name: 'Jordan Powell',
+    slug: 'jordan-powell',
+    image: '',
+    facebook: 'https://www.facebook.com/jordanpowell88',
+    instagram: 'https://www.instagram.com/thejordanpowell',
+    title: 'Q & A',
+    description:
+      'Jordan is a Co-Founder of Dream On and serves as the Chief Executive Officer',
+    location: 'Ohio',
+    email: 'jordan@dreamon.world',
+    id: 18,
   },
 ]

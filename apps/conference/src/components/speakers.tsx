@@ -55,6 +55,7 @@ const Speakers = () => {
                     </h3>
                     {image(speaker.slug) ? (
                       <GatsbyImage
+                        key={speaker.slug}
                         className="inline-block h-48 w-48 rounded-full"
                         image={image(speaker.slug)}
                         alt={speaker.name}
