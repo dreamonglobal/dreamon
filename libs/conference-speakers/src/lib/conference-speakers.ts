@@ -9,12 +9,14 @@ export type SpeakerName =
   | 'John Peak'
   | 'Judy Zircher'
   | 'Zac Howard'
+  | 'Emily Howard'
   | 'Craig Flack'
   | 'Jason Harris'
   | 'Garrett Gaton'
   | 'Jay Turner'
   | 'Wes Woods'
   | 'Nathan Thompson'
+  | 'Joyce Peak'
 
 export type Speaker = {
   name: SpeakerName
