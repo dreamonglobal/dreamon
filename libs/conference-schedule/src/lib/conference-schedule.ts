@@ -155,11 +155,11 @@ export const schedule: Schedule = {
       time: '1:00 pm',
       sessions: [
         {
-          name: 'Keynote #2',
+          name: 'Resurrecting Dead Dreams',
           location: 'Main Auditorium',
           speakerNames: ['Daniel Lucien'],
           timeStart: '1:00 pm',
-          timeEnd: '2:00 pm',
+          timeEnd: '2:30 pm',
           tracks: ['Keynote'],
           id: 10,
         },
