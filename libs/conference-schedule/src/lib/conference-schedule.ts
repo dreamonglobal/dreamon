@@ -2,13 +2,10 @@ import { SpeakerName } from '@dreamon/conference-speakers'
 
 export type Location =
   | 'Main Auditorium'
-  | 'Room 301'
-  | 'Room 303'
-  | 'Loft'
-  | 'Choir Room'
-  | 'Media Room'
+  | 'Small Auditorium'
+  | 'Pre-K Room'
   | 'Lobby'
-  | 'Clothing Room'
+
 export type Track =
   | 'Youth'
   | 'Ministry'
@@ -66,6 +63,8 @@ export const schedule: Schedule = {
           name: 'The Art of Finding a Dream and Keeping It',
           location: 'Main Auditorium',
           speakerNames: ['Ashley Powell'],
+          description:
+            "Have you ever looked at your life and wondered what happened to the dream you once had? Or maybe you're wondering if that dream you had for your life was ever realistic to begin with. Life has a way of making us feel defeated and inadequate.  The enemy is looking for any and every opportunity to steal your dreams, aspirations, and purpose in Christ. Discovering a dream is often easier than keeping it alive! In this session we'll talk about some big dreamers in the bible and obstacles they faced to keep their dreams alive...just like us!",
           timeStart: '9:00 am',
           timeEnd: '10:15 am',
           tracks: ['Keynote'],
@@ -77,46 +76,38 @@ export const schedule: Schedule = {
       time: '10:30 am',
       sessions: [
         {
-          name: 'Dreaming as an Artist',
-          location: 'Loft',
-          speakerNames: ['Derek Spencer'],
-          timeStart: '10:30 am',
-          timeEnd: '11:30 am',
-          tracks: ['Worship'],
+          name: "You're never too old to dream",
+          location: 'Lobby',
+          speakerNames: ['Joyce Peak'],
+          timeStart: '2:30 pm',
+          timeEnd: '3:30 pm',
+          tracks: ['Ministry', 'Missions'],
           id: 3,
         },
-        {
-          name: 'Dreaming In Media',
-          location: 'Media Room',
-          speakerNames: ['John Peak'],
-          timeStart: '10:30 am',
-          timeEnd: '11:30 am',
-          tracks: ['Media'],
-          id: 4,
-        },
+
         {
           name: 'Engaging With Your Local School',
-          location: 'Choir Room',
+          location: 'Main Auditorium',
           description:
             'Whether your children attend private or public school it is crucial that parents, particularly Christian parents, are involved in the district. Whether its being watchmen, serving like Christ, building relationships, or simply being an active parent there are many ways for parents to get involved in their local district. In this breakout we will talk about creative ways to serve your schools, ways to create movements of change, and how to best get plugged in as a parent or community member.',
           timeStart: '10:30am',
           timeEnd: '11:30am',
           speakerNames: ['Craig Flack'],
           tracks: ['Parenting'],
-          id: 5,
+          id: 4,
         },
         {
           name: 'Pursuing Your Dreams As A Man',
-          location: 'Clothing Room',
+          location: 'Small Auditorium',
           speakerNames: ['Jason Harris'],
           timeStart: '10:30am',
           timeEnd: '11:30am',
           tracks: ['Men'],
-          id: 6,
+          id: 5,
         },
         {
           name: 'Dreaming of a Pure Life',
-          location: 'Room 303',
+          location: 'Pre-K Room',
           speakerNames: ['Judy Zircher'],
           description: `In this breakout session, we will discover how to actually possess the promise in Matthew 5:8, “Blessed are the pure in heart, for they shall see God.”  Current culture is filled with messages contrary to the Word of God.  These images and perspectives pollute our God-given identity, and keep us from living the abundant life.  Together we will:
           layout a biblical blueprint for creating a household of purity,
@@ -125,7 +116,7 @@ export const schedule: Schedule = {
           timeStart: '10:30 am',
           timeEnd: '11:30 am',
           tracks: ['Youth', 'Men', 'Moms', 'Parenting'],
-          id: 7,
+          id: 6,
         },
       ],
     },
@@ -138,7 +129,7 @@ export const schedule: Schedule = {
           timeStart: '11:45 am',
           timeEnd: '12:45 pm',
           tracks: [],
-          id: 8,
+          id: 7,
         },
         {
           name: 'Derek Spencer Concert',
@@ -147,7 +138,7 @@ export const schedule: Schedule = {
           timeStart: '12:15pm',
           timeEnd: '12:45pm',
           tracks: [],
-          id: 9,
+          id: 8,
         },
       ],
     },
@@ -161,7 +152,7 @@ export const schedule: Schedule = {
           timeStart: '1:00 pm',
           timeEnd: '2:30 pm',
           tracks: ['Keynote'],
-          id: 10,
+          id: 9,
         },
       ],
     },
@@ -169,17 +160,8 @@ export const schedule: Schedule = {
       time: '2:30 pm',
       sessions: [
         {
-          name: 'Dreaming as a Mom',
-          location: 'Clothing Room',
-          speakerNames: ['Hanna Swartz', 'Ashley Powell'],
-          timeStart: '2:30 pm',
-          timeEnd: '3:30 pm',
-          tracks: ['Moms'],
-          id: 11,
-        },
-        {
           name: 'Dreaming With Worship',
-          location: 'Loft',
+          location: 'Main Auditorium',
           speakerNames: [
             'Zac Howard',
             'Emily Howard',
@@ -189,34 +171,34 @@ export const schedule: Schedule = {
           timeStart: '2:30 pm',
           timeEnd: '3:30 pm',
           tracks: ['Worship'],
-          id: 12,
+          id: 10,
         },
         {
           name: 'Combining Dreams in Business and Ministry',
-          location: 'Choir Room',
+          location: 'Lobby',
           speakerNames: ['Jay Turner', 'Wes Woods', 'Nathan Thompson'],
           timeStart: '2:30 pm',
           timeEnd: '3:30 pm',
           tracks: ['Business', 'Ministry'],
-          id: 13,
+          id: 11,
         },
         {
-          name: 'Dreaming in Business',
-          location: 'Room 301',
+          name: 'In It and Not of It',
+          location: 'Pre-K Room',
           speakerNames: ['Garrett Gaton'],
           timeStart: '2:30 pm',
           timeEnd: '3:30 pm',
           tracks: ['Business'],
-          id: 14,
+          id: 12,
         },
         {
-          name: "You're never too old to dream",
-          location: 'Room 303',
-          speakerNames: ['Joyce Peak'],
-          timeStart: '2:30 pm',
-          timeEnd: '3:30 pm',
-          tracks: ['Ministry', 'Missions'],
-          id: 15,
+          name: 'Dreaming as a Young Adult',
+          location: 'Small Auditorium',
+          speakerNames: ['Derek Spencer'],
+          timeStart: '10:30 am',
+          timeEnd: '11:30 am',
+          tracks: ['Worship'],
+          id: 13,
         },
       ],
     },
@@ -230,7 +212,7 @@ export const schedule: Schedule = {
           timeStart: '3:30 pm',
           timeEnd: '5:00 pm',
           tracks: ['Keynote'],
-          id: 16,
+          id: 14,
         },
       ],
     },
@@ -247,11 +229,12 @@ export const schedule: Schedule = {
             'Ashley Powell',
             'Hanna Swartz',
             'Jordan Powell',
+            'John Peak',
           ],
           timeStart: '5:00 pm',
           timeEnd: '5:30 pm',
           tracks: ['Keynote'],
-          id: 17,
+          id: 15,
         },
       ],
     },
