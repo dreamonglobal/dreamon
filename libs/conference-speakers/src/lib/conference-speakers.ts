@@ -264,7 +264,8 @@ export const speakers: Speaker[] = [
   {
     name: 'Jordan Powell',
     slug: 'jordan-powell',
-    image: '',
+    image:
+      'http://conference.dreamon.world/static/da88ad5c4c7cc706e069e4f0ca526429/6d09e/jordan-powell.webp',
     facebook: 'https://www.facebook.com/jordanpowell88',
     instagram: 'https://www.instagram.com/thejordanpowell',
     title: 'Q & A',
@@ -273,5 +274,19 @@ export const speakers: Speaker[] = [
     location: 'Ohio',
     email: 'jordan@dreamon.world',
     id: 18,
+  },
+  {
+    name: 'Joyce Peak',
+    slug: 'joyce-peak',
+    image:
+      'http://conference.dreamon.world/static/485f11771a9d6bd72816ee205a9d570f/6d09e/joyce-peak.webp',
+    facebook: '',
+    instagram: '',
+    title: 'You Are Never Too Old To Dream',
+    description:
+      'Joyce is an International Speaker, a member of the Dream On: Speaker Collective and our resident Trip Mom',
+    location: 'Tennessee',
+    email: 'john@dreamon.world',
+    id: 19,
   },
 ]
