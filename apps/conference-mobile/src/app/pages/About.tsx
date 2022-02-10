@@ -69,7 +69,7 @@ const About: React.FC<AboutProps> = () => {
           <IonList lines="none">
             <IonItem>
               <IonLabel>Location</IonLabel>
-              <IonLabel className="ion-text-end">Botkins, Ohio</IonLabel>
+              <IonLabel className="ion-text-end">Lima, Ohio</IonLabel>
             </IonItem>
             <IonItem>
               <IonLabel>Date</IonLabel>
@@ -82,7 +82,7 @@ const About: React.FC<AboutProps> = () => {
           <IonList lines="none">
             <IonItem>
               <IonLabel>Wifi network</IonLabel>
-              <IonLabel className="ion-text-end">Dream On</IonLabel>
+              <IonLabel className="ion-text-end">LFC-Guest</IonLabel>
             </IonItem>
           </IonList>
         </div>

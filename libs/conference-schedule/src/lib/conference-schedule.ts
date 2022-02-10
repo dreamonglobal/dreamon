@@ -102,7 +102,7 @@ export const schedule: Schedule = {
           speakerNames: ['Jay Turner', 'Wes Woods', 'Nathan Thompson'],
           timeStart: '10:30 am',
           timeEnd: '11:30 am',
-          tracks: ['Business', 'Ministry'],
+          tracks: ['Business', 'Missions'],
           id: 5,
         },
         {
@@ -188,7 +188,7 @@ export const schedule: Schedule = {
           speakerNames: ['Garrett Gaton'],
           timeStart: '2:30 pm',
           timeEnd: '3:30 pm',
-          tracks: ['Business'],
+          tracks: ['Men', 'Ministry'],
           id: 12,
         },
         {
