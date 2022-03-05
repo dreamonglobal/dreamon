@@ -32,7 +32,7 @@ const Slider = (): ReactElement => {
       <div className="item">
         <div
           className="single-banner"
-          style={{ background: "url('../images/banner/conference.jpg')" }}
+          style={{ background: "url('../images/banner/01.jpg')" }}
         >
           <div className="container">
             <div className="row">
@@ -54,12 +54,6 @@ const Slider = (): ReactElement => {
                     >
                       <span>{translations.one.button}</span>
                     </OutboundLink>
-                    <OutboundLink
-                      href={translations.one.button2Link}
-                      className="tem-btn nav-link move-eff"
-                    >
-                      <span>{translations.one.button2}</span>
-                    </OutboundLink>
                   </div>
                 </div>
               </div>
@@ -67,7 +61,8 @@ const Slider = (): ReactElement => {
           </div>
         </div>
       </div>
-      {/* <div className="item">
+      
+      <div className="item">
         <div
           className="single-banner"
           style={{ background: "url('../images/banner/brazil.jpg')" }}
@@ -90,7 +85,7 @@ const Slider = (): ReactElement => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
       <div className="item">
         <div
@@ -161,41 +156,6 @@ const Slider = (): ReactElement => {
           </div>
         </div>
       </div>
-
-      {/* <div className="item">
-        <div
-          className="single-banner"
-          style={{ background: "url('../images/banner/05.jpg')" }}
-        >
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-6 col-md-6 col-md-offset-1 col-lg-offset-0 col-sm-8">
-                <div className="single-banner-con">
-                  <div className="single-banner-txt">
-                    <h1>
-                      <span>{translations.four.title}</span>{' '}
-                      {translations.four.subtitle}
-                    </h1>
-                    <p>{translations.four.description}</p>
-                    <Link
-                      to={translations.four.buttonLink}
-                      className="tem-btn move-eff"
-                    >
-                      <span>{translations.four.button}</span>
-                    </Link>
-                    <Link
-                      to={translations.four.button2Link}
-                      className="tem-btn move-eff"
-                    >
-                      <span>{translations.four.button2}</span>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
     </OwlCarousel>
   )
 }
