@@ -80,7 +80,7 @@ const About = ({
                 <i className="fa fa-child" aria-hidden="true"></i>
               </div>
               <p>{joinDescription}</p>
-              <Link to={links.join} className="tem-btn move-eff">
+              <Link to={links.join} className="tem-btn move-eff" data-cy="aboutJoinButton">
                 <span>{buttons.learnMoreButton}</span>
               </Link>
             </div>
@@ -92,7 +92,7 @@ const About = ({
                 <i className="fa fa-globe" aria-hidden="true"></i>
               </div>
               <p>{giveDescription}</p>
-              <OutboundLink href={links.donate} className="tem-btn move-eff">
+              <OutboundLink href={links.donate} className="tem-btn move-eff" target="_blank" data-cy="aboutDonateButton">
                 <span>{buttons.learnMoreButton}</span>
               </OutboundLink>
             </div>
@@ -109,6 +109,7 @@ const About = ({
                 target="_blank"
                 rel="noopener noreferrer"
                 className="tem-btn nav-link move-eff"
+                data-cy="aboutPartnerButton"
               >
                 <span>{buttons.donateNowButton}</span>
               </OutboundLink>

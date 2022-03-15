@@ -15,6 +15,7 @@ const Buckets = (): ReactElement => {
           href={translations.one.buttonLink}
           target="_blank"
           rel="noopener noreferrer"
+          data-cy="joinBucketLink"
           className="tem-btn nav-link move-eff"
         >
           <span>{translations.one.button}</span>
@@ -27,6 +28,7 @@ const Buckets = (): ReactElement => {
           href={translations.three.buttonLink}
           target="_blank"
           rel="noopener noreferrer"
+          data-cy="donateBucketLink"
           className="tem-btn nav-link move-eff"
         >
           <span>{translations.three.button}</span>

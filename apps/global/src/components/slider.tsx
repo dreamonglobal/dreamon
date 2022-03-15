@@ -51,6 +51,7 @@ const Slider = (): ReactElement => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="tem-btn nav-link move-eff"
+                      data-cy="sliderOneBtn"
                     >
                       <span>{translations.one.button}</span>
                     </OutboundLink>
@@ -109,12 +110,14 @@ const Slider = (): ReactElement => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="tem-btn nav-link move-eff"
+                      data-cy="sliderThreeBtn"
                     >
                       <span>{translations.three.button}</span>
                     </OutboundLink>
                     <Link
                       to={translations.three.button2Link}
                       className="tem-btn nav-link move-eff"
+                      data-cy="sliderThreeBtnTwo"
                     >
                       <span>{translations.three.button2}</span>
                     </Link>
@@ -146,6 +149,7 @@ const Slider = (): ReactElement => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="tem-btn nav-link move-eff"
+                      data-cy="sliderFourBtn"
                     >
                       <span>{translations.four.button}</span>
                     </OutboundLink>
