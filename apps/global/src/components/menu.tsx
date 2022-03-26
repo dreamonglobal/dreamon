@@ -7,18 +7,18 @@ import { FeatureTranslations } from '../types'
 
 const ChangeLanguageModal = (): ReactElement => (
   <>
-    <h2>Update Langauge</h2>
+    <h2 data-cy="updateLanguageTitle">Update Language</h2>
     <div>
       <p>
         The Dream On: Global website happily supports the following 3 languages
       </p>
-      <a className="tem-btn nav-link move-eff" href="/">
+      <a className="tem-btn nav-link move-eff" href="/" data-cy="englishBtn" >
         English (en)
       </a>
-      <a className="tem-btn nav-link move-eff" href="/es">
+      <a className="tem-btn nav-link move-eff" href="/es" data-cy="spanishBtn">
         Spanish (es)
       </a>
-      <a className="tem-btn nav-link move-eff" href="/pt">
+      <a className="tem-btn nav-link move-eff" href="/pt" data-cy="portugueseBtn">
         Portuguese (pt)
       </a>
     </div>
@@ -114,6 +114,7 @@ const Menu = (): ReactElement => {
                     className="nav-link button-icon"
                     onClick={openModal}
                     title="Change Language"
+                    data-cy="changeLanguage"
                   >
                     <i className="fa fa-globe fa-2x"></i>
                   </button>
