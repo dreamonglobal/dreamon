@@ -13,7 +13,7 @@ export type Speaker =
   | 'Hanna Swartz'
   | 'Rob Kennedy'
 
-export type Category = 'Team' | 'Events' | 'Musician' | 'Speaker'
+export type Category = 'Team' | 'Events' | 'Musician' | 'Speaker' | 'Films'
 
 export type Socials = {
   facebook?: string

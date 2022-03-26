@@ -75,6 +75,13 @@ module.exports = {
         path: `${__dirname}/src/markdown-pages/events`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `films`,
+        path: `${__dirname}/src/markdown-pages/films`
+      }
+    },
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -92,35 +99,5 @@ module.exports = {
         path: `${__dirname}/i18n`,
       },
     },
-    // {
-    //   resolve: 'gatsby-plugin-svgr',
-    //   options: {
-    //     svgo: false,
-    //     ref: true,
-    //   },
-    // },
-    // `gatsby-plugin-react-helmet`,
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `images`,
-    //     path: `${__dirname}/src/images`,
-    //   },
-    // },
-    // `gatsby-plugin-image`,
-    // `gatsby-transformer-sharp`,
-    // `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     name: `app-global`,
-    //     short_name: `starter`,
-    //     start_url: `/`,
-    //     background_color: `#663399`,
-    //     theme_color: `#663399`,
-    //     display: `minimal-ui`,
-    //     icon: `src/images/logo.svg`,
-    //   },
-    // },
   ],
 }

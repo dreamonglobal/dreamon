@@ -115,6 +115,11 @@ const query = graphql`
               meetTheCollectiveTitle
               meetTheCollectiveDescription
             }
+            films {
+              pageTitle
+              meetTheSuenosCollectiveTitle
+              meetTheSuenosCollectiveDescription
+            }
             events {
               pageTitle
               noUpcomingEvents
@@ -148,6 +153,8 @@ const query = graphql`
               musicLink
               speakers
               speakersLink
+              films
+              filmsLink
               events
               eventsLink
               store
