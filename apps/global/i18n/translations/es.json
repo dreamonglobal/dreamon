@@ -106,6 +106,11 @@
     "meetTheCollectiveTitle": "Conoce a la colectiva",
     "meetTheCollectiveDescription": "Dream On: Speaker Collective es un equipo de autores, oradores y predicadores. Nos apasiona empoderar y enseñar a otros a perseguir sus sueños y propósitos que Dios ha puesto en la vida de todos y cada uno."
   },
+  "films": {
+    "pageTitle": "Dream On: Películas",
+    "meetTheSuenosCollectiveTitle": "Conoce Las Películas Sueños",
+    "meetTheSuenosCollectiveDescription": "Dream On: Sueños es una serie de películas centradas en las escapadas de Dream On alrededor del mundo."
+  },
   "events": {
     "pageTitle": "Próximos Eventos",
     "noUpcomingEvents": "No hay eventos próximos"
@@ -139,6 +144,8 @@
     "musicLink": "/es/music",
     "speakers": "Oradoras",
     "speakersLink": "/es/speakers",
+    "films": "Película",
+    "filmsLink": "/es/films",
     "events": "Oradoras",
     "eventsLink": "/es/events",
     "store": "Tienda",

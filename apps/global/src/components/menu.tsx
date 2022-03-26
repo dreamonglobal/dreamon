@@ -99,6 +99,11 @@ const Menu = (): ReactElement => {
                   </Link>
                 </li>
                 <li>
+                  <Link className="nav-link" to={translations.filmsLink}>
+                    {translations.films}
+                  </Link>
+                </li>
+                <li>
                   <Link className="nav-link" to={translations.eventsLink}>
                     {translations.events}
                   </Link>
