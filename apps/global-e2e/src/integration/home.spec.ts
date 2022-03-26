@@ -1,7 +1,7 @@
 
 const assertUrlSlug = (slug) => cy.url().should('equal', `http://localhost:4200/${slug}`)
 
-const links = ['about', 'missions', 'music', 'speakers', 'events', 'contact'];
+const links = ['about', 'missions', 'music', 'speakers', 'films', 'events', 'contact'];
 
 const uppercaseLink = (link) => link.charAt(0).toUpperCase() + link.slice(1)
 
@@ -83,9 +83,9 @@ describe('Navigation', () => {
         cy.url().should('equal', 'http://localhost:4200/')
         changeLanguage();
         cy.get('[data-cy="spanishBtn"]').click();
-        cy.url().should('equal', 'http://localhost:4200/es')
+        cy.url().should('equal', 'http://localhost:4200/es/')
         changeLanguage();
         cy.get('[data-cy="portugueseBtn"]').click();
-        cy.url().should('equal', 'http://localhost:4200/pt')
+        cy.url().should('equal', 'http://localhost:4200/pt/')
     })
 })
