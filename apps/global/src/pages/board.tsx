@@ -13,7 +13,7 @@ const BoardPage = ({
 }: {
   data: MarkdownRemark
 }) => {
-  const { speakers: translations }: { speakers: FeatureTranslations } =
+  const { board: translations }: { board: FeatureTranslations } =
     useTranslation()
   const BoardMembers: JSX.Element[] = edges
     .filter((edge: Edge) => edge.node.frontmatter.category === 'Board')

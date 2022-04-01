@@ -106,6 +106,11 @@
     "meetTheCollectiveTitle": "Meet The Collective",
     "meetTheCollectiveDescription": "Dream On: Speaker Collective is a team of authors, speakers, and preachers. We are passionate about empowering and teaching others to pursue their dreams and purposes God has put in each and everyone’s life."
   },
+  "board": {
+    "pageTitle": "Dream On: Board Collective",
+    "meetTheCollectiveTitle": "Meet The Collective",
+    "meetTheCollectiveDescription": "Dream On: Board Collective is a team of authors, speakers, and preachers. We are passionate about empowering and teaching others to pursue their dreams and purposes God has put in each and everyone’s life."
+  },
   "films": {
     "pageTitle": "Dream On: Films",
     "meetTheSuenosCollectiveTitle": "Meet The Sueños Films",
@@ -155,6 +160,8 @@
   },
   "footer": {
     "copyright": "Copyright",
-    "allRightsReserved": "All Rights Reserved."
+    "allRightsReserved": "All Rights Reserved.",
+    "board": "Board",
+    "boardLink": "/board"
   }
 }
