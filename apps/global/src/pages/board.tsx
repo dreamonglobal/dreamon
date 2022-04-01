@@ -6,7 +6,7 @@ import PersonPreview from '../components/person-preview'
 import { useTranslation } from '../hooks'
 import { Edge, FeatureTranslations, MarkdownRemark } from '../types'
 
-const SpeakersPage = ({
+const BoardPage = ({
   data: {
     allMarkdownRemark: { edges },
   },
@@ -15,8 +15,8 @@ const SpeakersPage = ({
 }) => {
   const { speakers: translations }: { speakers: FeatureTranslations } =
     useTranslation()
-  const SpeakerMembers: JSX.Element[] = edges
-    .filter((edge: Edge) => edge.node.frontmatter.category === 'Speaker')
+  const BoardMembers: JSX.Element[] = edges
+    .filter((edge: Edge) => edge.node.frontmatter.category === 'Board')
     .map((edge: Edge) => (
       <PersonPreview key={edge.node.id} data={edge.node.frontmatter} />
     ))
@@ -35,7 +35,7 @@ const SpeakersPage = ({
                 </h1>
                 <p>{translations.meetTheCollectiveDescription}</p>
               </div>
-              {SpeakerMembers}
+              {BoardMembers}
             </div>
           </div>
         </div>
@@ -43,7 +43,7 @@ const SpeakersPage = ({
     </>
   )
 }
-export default SpeakersPage
+export default BoardPage
 export const pageQuery = graphql`
   query {
     allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___order] }) {

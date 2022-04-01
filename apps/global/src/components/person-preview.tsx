@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Frontmatter } from '../../types'
+import { Frontmatter } from '../types'
 
-const SpeakerPreview = ({
+const PersonPreview = ({
   data: { name, photo, path },
 }: {
   data: Frontmatter
@@ -18,4 +18,4 @@ const SpeakerPreview = ({
     </article>
   </div>
 )
-export default SpeakerPreview
+export default PersonPreview

@@ -22,6 +22,8 @@ const Footer = (): ReactElement => {
                     {' | '}
                     <Link to="/privacy-policy">Privacy Policy</Link>
                     {' | '}
+                    <Link to="/board">Board Members</Link>
+                    {' | '}
                     {translations.allRightsReserved}
                   </p>
                 </div>
