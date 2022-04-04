@@ -33,7 +33,6 @@ const BoardPage = ({
                 <h1 className="text-center">
                   {translations.meetTheCollectiveTitle}
                 </h1>
-                <p>{translations.meetTheCollectiveDescription}</p>
               </div>
               {BoardMembers}
             </div>

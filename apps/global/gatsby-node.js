@@ -28,7 +28,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const speakerTemplate = path.resolve(`src/templates/SpeakerMember.tsx`)
   const eventTemplate = path.resolve(`src/templates/Event.tsx`)
   const filmTemplate = path.resolve(`src/templates/Film.tsx`);
-  const boardTemplate = path.resolve(`src/templates/BoardMember.tsx`)
 
   const markdownResults = await graphql(`
     {
@@ -71,16 +70,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       createPage({
         path: node.frontmatter.path,
         component: musicianTemplate,
-        context: {},
-      })
-    })
-
-  markdownResults.data.allMarkdownRemark.edges
-    .filter((edge) => edge.node.frontmatter.category === 'Board')
-    .forEach(({ node }) => {
-      createPage({
-        path: node.frontmatter.path,
-        component: boardTemplate,
         context: {},
       })
     })

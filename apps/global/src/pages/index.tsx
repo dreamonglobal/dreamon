@@ -7,7 +7,7 @@ import Contact from '../components/contact'
 import PlayVideo from '../components/play-video'
 import Seo from '../components/seo'
 import Team from '../components/team/team'
-import TeamPreview from '../components/team/team-preview'
+import PersonPreview from '../components/person-preview'
 import { useTranslation } from '../hooks'
 import { MarkdownRemark } from '../types'
 
@@ -26,7 +26,7 @@ const IndexPage = ({
   const TeamMembers = edges
     .filter((edge) => edge.node.frontmatter.category === 'Team')
     .map((edge) => (
-      <TeamPreview key={edge.node.id} data={edge.node.frontmatter} />
+      <PersonPreview key={edge.node.id} data={edge.node.frontmatter} />
     ))
 
   const translations = useTranslation()

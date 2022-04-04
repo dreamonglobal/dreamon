@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Seo from '../components/seo'
 import PageHeader from '../components/page-header'
-import PersonPreview from '../components/person-preview'
+import SpeakerPreview from '../components/speaker-collective/speaker-preview'
 import { useTranslation } from '../hooks'
 import { Edge, FeatureTranslations, MarkdownRemark } from '../types'
 
@@ -18,7 +18,7 @@ const SpeakersPage = ({
   const SpeakerMembers: JSX.Element[] = edges
     .filter((edge: Edge) => edge.node.frontmatter.category === 'Speaker')
     .map((edge: Edge) => (
-      <PersonPreview key={edge.node.id} data={edge.node.frontmatter} />
+      <SpeakerPreview key={edge.node.id} data={edge.node.frontmatter} />
     ))
   return (
     <>

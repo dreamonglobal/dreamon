@@ -1,6 +1,6 @@
 import React from 'react'
 import Seo from '../components/seo'
-import TeamPreview from '../components/team/team-preview'
+import TeamPreview from '../components/person-preview'
 import { graphql } from 'gatsby'
 import { Edge, MarkdownRemark } from '../types'
 

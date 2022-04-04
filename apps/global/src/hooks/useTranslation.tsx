@@ -170,6 +170,8 @@ const query = graphql`
             footer {
               copyright
               allRightsReserved
+              privacyPolicy
+              board
             }
           }
         }

@@ -14,7 +14,12 @@ export type Speaker =
   | 'Rob Kennedy'
 
 export type Board =
-  | 'Bruce Wiggleston'
+  | 'Scott Smith'
+  | 'Landon Neuman'
+  | 'Judy Zircher'
+  | 'John Peak'
+  | 'Dan Lee'
+  | 'Jordan Powell'
 
 export type Category = 'Team' | 'Events' | 'Musician' | 'Speaker' | 'Films' | 'Board'
 

@@ -151,7 +151,7 @@
     "speakersLink": "/es/speakers",
     "films": "Película",
     "filmsLink": "/es/films",
-    "events": "Oradoras",
+    "events": "Eventos",
     "eventsLink": "/es/events",
     "store": "Tienda",
     "storeLink": "https://shop.dreamon.world/",
@@ -161,7 +161,7 @@
   "footer": {
     "copyright": "Derechos De Autor",
     "allRightsReserved": "Reservados todos los derechos.",
-    "board": "Board",
-    "boardLink": "/board"
+    "privacyPolicy": "Política de privacidad",
+    "board": "Conoce a la colectiva"
   }
 }
