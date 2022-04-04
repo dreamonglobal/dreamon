@@ -57,6 +57,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `board`,
+        path: `${__dirname}/src/markdown-pages/board`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `speakers`,
         path: `${__dirname}/src/markdown-pages/speakers`,
       },

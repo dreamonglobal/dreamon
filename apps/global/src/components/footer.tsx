@@ -20,7 +20,9 @@ const Footer = (): ReactElement => {
                     {' | '}
                     <Link to="/">Dream On: Global </Link>
                     {' | '}
-                    <Link to="/privacy-policy">Privacy Policy</Link>
+                    <Link to="/privacy-policy">{translations.privacyPolicy}</Link>
+                    {' | '}
+                    <Link to="/board">{translations.board}</Link>
                     {' | '}
                     {translations.allRightsReserved}
                   </p>

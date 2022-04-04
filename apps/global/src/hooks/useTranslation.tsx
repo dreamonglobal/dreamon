@@ -115,6 +115,11 @@ const query = graphql`
               meetTheCollectiveTitle
               meetTheCollectiveDescription
             }
+            board {
+              pageTitle
+              meetTheCollectiveTitle
+              meetTheCollectiveDescription
+            },
             films {
               pageTitle
               meetTheSuenosCollectiveTitle
@@ -165,6 +170,8 @@ const query = graphql`
             footer {
               copyright
               allRightsReserved
+              privacyPolicy
+              board
             }
           }
         }

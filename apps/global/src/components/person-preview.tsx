@@ -1,8 +1,8 @@
 import React, { ReactElement } from 'react'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
-import { Frontmatter } from '../../types'
+import { Frontmatter } from '../types'
 
-const TeamPreview = ({
+const PersonPreview = ({
   data: { name, title, photo, facebook, twitter, instagram },
 }: {
   data: Frontmatter
@@ -56,4 +56,4 @@ const TeamPreview = ({
     </div>
   </div>
 )
-export default TeamPreview
+export default PersonPreview

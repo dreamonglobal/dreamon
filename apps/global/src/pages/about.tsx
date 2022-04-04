@@ -4,7 +4,7 @@ import About from '../components/about'
 import PageHeader from '../components/page-header'
 import Seo from '../components/seo'
 import Team from '../components/team/team'
-import TeamPreview from '../components/team/team-preview'
+import PersonPreview from '../components/person-preview'
 import { useTranslation } from '../hooks'
 import { Edge, MarkdownRemark, Translations } from '../types'
 
@@ -20,7 +20,7 @@ const AboutPage = ({
   const TeamMembers = edges
     .filter((edge: Edge) => edge.node.frontmatter.category === 'Team')
     .map((edge: Edge) => (
-      <TeamPreview key={edge.node.id} data={edge.node.frontmatter} />
+      <PersonPreview key={edge.node.id} data={edge.node.frontmatter} />
     ))
   return (
     <>

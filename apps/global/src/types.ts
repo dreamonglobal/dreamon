@@ -13,7 +13,15 @@ export type Speaker =
   | 'Hanna Swartz'
   | 'Rob Kennedy'
 
-export type Category = 'Team' | 'Events' | 'Musician' | 'Speaker' | 'Films'
+export type Board =
+  | 'Scott Smith'
+  | 'Landon Neuman'
+  | 'Judy Zircher'
+  | 'John Peak'
+  | 'Dan Lee'
+  | 'Jordan Powell'
+
+export type Category = 'Team' | 'Events' | 'Musician' | 'Speaker' | 'Films' | 'Board'
 
 export type Socials = {
   facebook?: string
