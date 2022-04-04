@@ -10,7 +10,7 @@ const PersonPreview = ({
   <div className="col-md-3 col-sm-6">
     <div className="single-volunteers">
       <div className="volunteers-info">
-        <img src={photo} alt="Ben Swartz - Dream On: Global" />
+        <img src={photo} alt={name} />
         <div className="single-team-con">
           <div className="single-team-txt">
             <ul>
