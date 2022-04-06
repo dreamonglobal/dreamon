@@ -44,6 +44,7 @@ export type Frontmatter = {
   category: Category
   order: number
   author: Speaker
+  language: string
 } & Socials
 
 export type MarkdownRemark = {
