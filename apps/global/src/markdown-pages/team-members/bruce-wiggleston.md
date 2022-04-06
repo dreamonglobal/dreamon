@@ -1,6 +1,6 @@
 ---
 path: '/team/bruce-wiggleston'
-order: 9
+order: 13
 name: 'Bruce Wiggleston'
 title: 'Developer Intern'
 photo: '/images/volunteers/bruce-wiggleston.jpg'
