@@ -2,8 +2,9 @@ import React, { createContext, useState, useContext } from 'react'
 import { useLocation } from '@reach/router'
 
 import allLocales from '../../i18n/locales'
+import { Locale } from '../types'
 
-const LocaleContext = createContext('')
+const LocaleContext = createContext<Locale>('en')
 
 const LocaleProvider = ({ children }) => {
   const { pathname }: { pathname: string } = useLocation()
@@ -17,15 +18,15 @@ const LocaleProvider = ({ children }) => {
   const urlLang: string = pathname.split('/')[1]
 
   // Search if locale matches defined, if not set 'en' as default
-  const currentLang: string = Object.keys(allLocales)
-    .map((lang) => allLocales[lang].path)
-    .includes(urlLang)
-    ? urlLang
-    : defaultLang
+  const currentLang: Locale = Object.keys(allLocales)
+    .map((lang) => allLocales[lang].path as Locale)
+    .includes(urlLang as Locale)
+    ? urlLang as Locale
+    : defaultLang as Locale
 
-  const [locale, setLocale] = useState<string>(currentLang)
+  const [locale, setLocale] = useState<Locale>(currentLang)
 
-  const changeLocale = (lang: string): void => {
+  const changeLocale = (lang: Locale): void => {
     if (lang) {
       setLocale(lang)
     }
@@ -36,8 +37,8 @@ const LocaleProvider = ({ children }) => {
   )
 }
 
-const useLocale = (): string => {
-  const context: string = useContext(LocaleContext)
+const useLocale = (): Locale => {
+  const context: Locale = useContext(LocaleContext)
 
   if (!context) {
     throw new Error('useLocale must be used within an LocaleProvider')

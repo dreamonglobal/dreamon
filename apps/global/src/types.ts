@@ -23,6 +23,8 @@ export type Board =
 
 export type Category = 'Team' | 'Events' | 'Musician' | 'Speaker' | 'Films' | 'Board'
 
+export type Locale = 'en' | 'es' | 'pt'
+
 export type Socials = {
   facebook?: string
   twitter?: string
@@ -44,7 +46,7 @@ export type Frontmatter = {
   category: Category
   order: number
   author: Speaker
-  language: string
+  locale: Locale
 } & Socials
 
 export type MarkdownRemark = {
