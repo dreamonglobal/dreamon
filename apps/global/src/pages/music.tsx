@@ -3,8 +3,8 @@ import { graphql } from 'gatsby'
 import Seo from '../components/seo'
 import PageHeader from '../components/page-header'
 import MusicPreview from '../components/music-collective/music-preview'
-import useTranslation from '../hooks/useTranslation'
-import { Edge, FeatureTranslations, MarkdownRemark } from '../types'
+import { useTranslation, useLocale } from '../hooks'
+import { Edge, FeatureTranslations, Locale, MarkdownRemark } from '../types'
 
 const MusicPage = ({
   data: {
@@ -15,8 +15,10 @@ const MusicPage = ({
 }) => {
   const { music: translations }: { music: FeatureTranslations } =
     useTranslation()
+  const locale: Locale = useLocale()
   const MusicMembers: JSX.Element[] = edges
     .filter((edge: Edge) => edge.node.frontmatter.category === 'Musician')
+    .filter((edge: Edge) => edge.node.frontmatter.locale === locale)
     .map((edge: Edge) => (
       <MusicPreview key={edge.node.id} data={edge.node.frontmatter} />
     ))
@@ -57,6 +59,7 @@ export const pageQuery = graphql`
             photo
             path
             category
+            locale
           }
         }
       }

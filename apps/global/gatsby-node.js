@@ -51,6 +51,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               buy
               videos
               category
+              locale
             }
           }
         }
