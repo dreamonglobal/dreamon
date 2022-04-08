@@ -7,6 +7,7 @@ photo: '/images/volunteers/hanna-swartz.jpg'
 videos: []
 facebook: 'https://www.facebook.com/hanna.hager.37'
 category: 'Speaker'
+locale: 'en'
 ---
 
 # About Hanna Swartz

@@ -9,6 +9,7 @@ facebook: 'https://www.facebook.com/lilli.r.bucher'
 instagram: 'https://www.instagram.com/lillirosegray/'
 spotify: 'https://open.spotify.com/artist/44ltLQQY54ks20N5wrdJ8H?si=7IBZTzoTRjq19OBuOZy1VA'
 category: 'Musician'
+locale: 'en'
 ---
 
 # About Lilli Gray

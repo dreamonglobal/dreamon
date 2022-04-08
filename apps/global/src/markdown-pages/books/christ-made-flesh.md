@@ -5,6 +5,7 @@ title: 'Christ Made Flesh'
 author: 'Rob Kennedy'
 photo: '/images/news/christ-made-flesh.jpg'
 category: 'Books'
+locale: 'en'
 buy: 'https://www.amazon.com/gp/product/B08ZTZ9H16/ref=dbs_a_def_rwt_hsch_vapi_taft_p1_i0'
 ---
 

@@ -8,6 +8,7 @@ videos: []
 facebook: 'https://www.facebook.com/ashley.l.powell.5'
 instagram: 'https://www.instagram.com/ashleyleepowell/'
 category: 'Speaker'
+locale: 'en'
 ---
 
 # About Ashley Powell

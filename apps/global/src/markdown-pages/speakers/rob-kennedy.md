@@ -7,6 +7,7 @@ photo: '/images/volunteers/rob-kennedy.jpg'
 videos: []
 facebook: 'https://www.facebook.com/kennedy3'
 category: 'Speaker'
+locale: 'en'
 ---
 
 # About Rob Kennedy
