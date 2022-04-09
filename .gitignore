@@ -42,14 +42,4 @@ Thumbs.db
 /apps/global/public
 /apps/global/.cache
 
-/apps/conference/node_modules
-/apps/conference/public
-/apps/conference/.cache
-apps/global/src/types.ts
-apps/global/src/markdown-pages/speakers/ashley-powell.es.md
-apps/global/src/markdown-pages/speakers/ben-swarts.es.md
-apps/global/src/markdown-pages/speakers/hanna-swartz.es.md
-apps/global/src/markdown-pages/speakers/hanna-swartz.md
-apps/global/src/markdown-pages/speakers/hanna-swartz.md
-apps/global/src/markdown-pages/speakers/rob-kennedy.es.md
-apps/global/src/markdown-pages/speakers/ty-watson.es.md
+
