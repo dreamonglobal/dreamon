@@ -33,6 +33,7 @@ const MusicMember = ({
           <div className="row">
             <div
               className="col-md-12"
+              data-cy='musicianHtml'
               dangerouslySetInnerHTML={{ __html: html }}
             ></div>
             <div className="col-md-12">

@@ -34,6 +34,7 @@ const SpeakerMember = ({
           <div className="row">
             <div
               className="col-md-12"
+              data-cy='speakerHtml'
               dangerouslySetInnerHTML={{ __html: html }}
             ></div>
             <SpeakerBooks books={books} />

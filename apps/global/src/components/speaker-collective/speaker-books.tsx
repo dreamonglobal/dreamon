@@ -16,7 +16,7 @@ const BookPreview = ({
         <img src={photo} alt={name} />
       </div>
       <div className="col-sm-8">
-        <p dangerouslySetInnerHTML={{ __html: html }}></p>
+        <p data-cy="bookDescription" dangerouslySetInnerHTML={{ __html: html }}></p>
         <OutboundLink href={buy} className="tem-btn nav-link move-eff">
           <span>Purchase</span>
         </OutboundLink>
