@@ -42,4 +42,6 @@ Thumbs.db
 /apps/global/public
 /apps/global/.cache
 
-
+/apps/conference/node_modules
+/apps/conference/public
+/apps/conference/.cache
