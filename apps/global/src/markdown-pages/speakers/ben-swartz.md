@@ -8,6 +8,7 @@ videos: []
 facebook: 'https://www.facebook.com/benjamin.swartz.7'
 instagram: 'https://www.instagram.com/swartzyben/'
 category: 'Speaker'
+locale: 'en'
 ---
 
 # About Ben Swartz

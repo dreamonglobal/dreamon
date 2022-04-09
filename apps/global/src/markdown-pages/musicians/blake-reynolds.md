@@ -17,6 +17,7 @@ instagram: 'https://www.instagram.com/blakereynoldsmusic/'
 youtube: 'https://www.youtube.com/user/blakereynoldz8'
 spotify: 'https://open.spotify.com/artist/2faOvhbTKqxf6qjhmZi6DG?si=jL02CcGETc269PSnjpX4Ew'
 category: 'Musician'
+locale: 'en'
 ---
 
 # About Blake Reynolds

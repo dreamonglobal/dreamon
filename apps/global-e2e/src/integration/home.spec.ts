@@ -30,11 +30,6 @@ const sliderFour = () => {
     cy.get('[data-cy="sliderFourBtn"]').should('have.attr', 'target', '_blank').should('have.attr', 'href', 'https://www.paypal.com/donate/?token=_VV4NX2yorvh4-A4aMbH1VJ75nly1JyZae94238oxw6LESsAA7Mgc7OTDhtY0yn_vCMdwG&country.x=US&locale.x=US').should('contain', 'Donate Now')
 }
 
-const changeLanguage = () => {
-    cy.get('[data-cy="changeLanguage"]').click();
-    cy.get('.ReactModal__Content.ReactModal__Content--after-open').should('be.visible')
-    cy.get('[data-cy="updateLanguageTitle"]').contains('Update Language')
-}
 describe('Navigation', () => {
     beforeEach(() => {
         cy.visit('/')
@@ -78,14 +73,11 @@ describe('Navigation', () => {
     })
 
     it('can change the language', () => {
-        changeLanguage();
-        cy.get('[data-cy="englishBtn"]').click();
+        cy.changeLanguage('english')
         cy.url().should('equal', 'http://localhost:4200/')
-        changeLanguage();
-        cy.get('[data-cy="spanishBtn"]').click();
-        cy.url().should('equal', 'http://localhost:4200/es/')
-        changeLanguage();
-        cy.get('[data-cy="portugueseBtn"]').click();
-        cy.url().should('equal', 'http://localhost:4200/pt/')
+        cy.changeLanguage('spanish');
+        cy.url().should('equal', 'http://localhost:4200/es')
+        cy.changeLanguage('portuguese');
+        cy.url().should('equal', 'http://localhost:4200/pt')
     })
 })

@@ -9,6 +9,7 @@ facebook: 'https://www.facebook.com/DerekASpencerMusic'
 instagram: 'http://instagram.com/derekaspencer_/'
 spotify: 'https://open.spotify.com/artist/7oo6HPTI9Dts7narAYEBOQ?si=upMcELmySXW5HNqWczmr_A'
 category: 'Musician'
+locale: 'en'
 ---
 
 # About Derek Spencer

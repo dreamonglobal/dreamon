@@ -5,6 +5,7 @@ title: 'The Great Shaking Awakening'
 author: 'Rob Kennedy'
 photo: '/images/news/the-great-shaking-awakening.jpg'
 category: 'Books'
+locale: 'en'
 buy: 'https://www.amazon.com/gp/product/B089D3N2CL/ref=dbs_a_def_rwt_hsch_vapi_taft_p1_i1'
 ---
 
