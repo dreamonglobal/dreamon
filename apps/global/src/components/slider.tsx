@@ -29,10 +29,12 @@ const Slider = (): ReactElement => {
       ]}
       nav
     >
+      
+      
       <div className="item">
         <div
           className="single-banner"
-          style={{ background: "url('../images/banner/01.jpg')" }}
+          style={{ background: "url('../images/banner/brazil-cover.jpg')" }}
         >
           <div className="container">
             <div className="row">
@@ -46,15 +48,6 @@ const Slider = (): ReactElement => {
                     <p className="fadeIn animated animated-08s">
                       {translations.one.description}
                     </p>
-                    <OutboundLink
-                      href={translations.one.buttonLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="tem-btn nav-link move-eff"
-                      data-cy="sliderOneBtn"
-                    >
-                      <span>{translations.one.button}</span>
-                    </OutboundLink>
                   </div>
                 </div>
               </div>
@@ -62,11 +55,11 @@ const Slider = (): ReactElement => {
           </div>
         </div>
       </div>
-      
+
       <div className="item">
         <div
           className="single-banner"
-          style={{ background: "url('../images/banner/brazil.jpg')" }}
+          style={{ background: "url('../images/banner/01.jpg')" }}
         >
           <div className="container">
             <div className="row">
@@ -80,6 +73,15 @@ const Slider = (): ReactElement => {
                     <p className="fadeIn animated animated-08s">
                       {translations.two.description}
                     </p>
+                    <OutboundLink
+                      href={translations.two.buttonLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="tem-btn nav-link move-eff"
+                      data-cy="sliderOneBtn"
+                    >
+                      <span>{translations.two.button}</span>
+                    </OutboundLink>
                   </div>
                 </div>
               </div>
