@@ -929,11 +929,11 @@ nav {
 }
 
 button.owl-dot:first-of-type {
-  background: url('../images/banner/01.jpg');
+  background: url('../images/banner/brazil-cover.jpg');
 }
 
 button.owl-dot:nth-child(2) {
-  background: url('../images/banner/brazil.jpg');
+  background: url('../images/banner/01.jpg');
 }
 
 button.owl-dot:nth-child(3) {

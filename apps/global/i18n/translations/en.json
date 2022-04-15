@@ -3,15 +3,15 @@
     "slider": {
       "one": {
         "title": "Dream On:",
+        "subtitle": "Brazil 2022",
+        "description": "We are excited to announce that we will be traveling to Brazil to host our very first Dream On Party in Brazil in June of 2022"
+      },
+      "two": {
+        "title": "Dream On:",
         "subtitle": "Honduras 2022",
         "description": "We are excited to be taking a team with us to Honduras in October. We live to continually impact the local pastors in Honduras, and have come back to the United States excited to learn that Honduras is still dreaming in God through creating their own services full of worship, the Word, and experiencing the life of God.",
         "button": "Sign Up",
         "buttonLink": "https://dreamon.gomethod.app/!/#/23795/honduras-2022"
-      },
-      "two": {
-        "title": "Dream On:",
-        "subtitle": "Brazil 2022",
-        "description": "We are excited to announce that we will be traveling to Brazil to host our very first Dream On Party in Brazil in June of 2022"
       },
       "three": {
         "title": "Listen",

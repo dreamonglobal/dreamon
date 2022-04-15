@@ -14,13 +14,13 @@ const query = graphql`
                   title
                   subtitle
                   description
-                  button
-                  buttonLink
                 }
                 two {
                   title
                   subtitle
                   description
+                  button
+                  buttonLink
                 }
                 three {
                   title
