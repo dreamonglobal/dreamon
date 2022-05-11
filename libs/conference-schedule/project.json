@@ -1,5 +1,4 @@
 {
-  "root": "libs/conference-schedule",
   "sourceRoot": "libs/conference-schedule/src",
   "projectType": "library",
   "targets": {
@@ -14,7 +13,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/libs/conference-schedule"],
       "options": {
-        "jestConfig": "libs/conference-schedule/jest.config.js",
+        "jestConfig": "libs/conference-schedule/jest.config.ts",
         "passWithNoTests": true
       }
     }

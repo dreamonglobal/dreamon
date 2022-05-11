@@ -1,5 +1,4 @@
 {
-  "root": "apps/global-e2e",
   "sourceRoot": "apps/global-e2e/src",
   "projectType": "application",
   "targets": {

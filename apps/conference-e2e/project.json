@@ -1,5 +1,4 @@
 {
-  "root": "apps/conference-e2e",
   "sourceRoot": "apps/conference-e2e/src",
   "projectType": "application",
   "targets": {

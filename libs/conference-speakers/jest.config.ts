@@ -1,6 +1,6 @@
 module.exports = {
-  displayName: 'conference-schedule',
-  preset: '../../jest.preset.js',
+  displayName: 'conference-speakers',
+
   globals: {
     'ts-jest': {
       tsconfig: '<rootDir>/tsconfig.spec.json',
@@ -10,5 +10,6 @@ module.exports = {
     '^.+\\.[tj]sx?$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/libs/conference-schedule',
+  coverageDirectory: '../../coverage/libs/conference-speakers',
+  preset: '../../jest.preset.ts',
 }
