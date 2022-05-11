@@ -9,6 +9,8 @@
     "conference-schedule": "libs/conference-schedule",
     "conference-speakers": "libs/conference-speakers",
     "global": "apps/global",
-    "global-e2e": "apps/global-e2e"
+    "global-e2e": "apps/global-e2e",
+    "store": "apps/store",
+    "store-e2e": "apps/store-e2e"
   }
 }
