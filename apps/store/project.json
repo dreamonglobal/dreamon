@@ -2,7 +2,7 @@
   "projectType": "application",
   "root": "apps/store",
   "sourceRoot": "apps/store/src",
-  "prefix": "dreamon",
+  "prefix": "molla",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
