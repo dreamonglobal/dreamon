@@ -15,8 +15,20 @@
         "tsConfig": "apps/store/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": ["apps/store/src/favicon.ico", "apps/store/src/assets"],
-        "styles": ["apps/store/src/styles.scss"],
-        "scripts": []
+        "styles": [
+          "apps/store/src/assets/css/bootstrap.min.css",
+          "apps/store/src/assets/css/fonts-molla.min.css",
+          "apps/store/src/styles.scss"
+        ],
+        "scripts": [
+          "apps/store/src/assets/js/jquery.min.js",
+          "apps/store/src/assets/js/webfont.js",
+          "apps/store/src/assets/js/owl.carousel.min.js",
+          "apps/store/src/assets/js/bootstrap.bundle.min.js",
+          "node_modules/masonry-layout/dist/masonry.pkgd.min.js",
+          "node_modules/isotope-layout/dist/isotope.pkgd.min.js",
+          "node_modules/imagesloaded/imagesloaded.pkgd.js"
+        ]
       },
       "configurations": {
         "production": {

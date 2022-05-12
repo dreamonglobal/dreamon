@@ -6,7 +6,7 @@ import { environment } from '../../../../../environments/environment';
 
 
 @Component({
-	selector: 'dreamon-molla-newsletter-modal',
+	selector: 'molla-newsletter-modal',
 	templateUrl: './newsletter-modal.component.html',
 	styleUrls: ['./newsletter-modal.component.scss']
 })
