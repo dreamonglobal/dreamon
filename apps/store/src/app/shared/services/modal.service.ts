@@ -1,4 +1,3 @@
-// import * as Cookie from 'js-cookie';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
@@ -13,6 +12,7 @@ import { LoginModalComponent } from '../components/modals/login-modal/login-moda
 import { VideoModalComponent } from '../components/modals/video-modal/video-modal.component';
 
 import { environment } from '../../../environments/environment';
+import { CookieService } from 'ngx-cookie-service';
 
 @Injectable({
 	providedIn: 'root'
@@ -99,26 +99,26 @@ export class ModalService {
 		}
 	};
 
-	constructor(private modalService: NgbModal, private router: Router, private http: HttpClient) {
+	constructor(private modalService: NgbModal, private router: Router, private http: HttpClient, private readonly cookieService: CookieService) {
 	}
 
 	openNewsletter() {
 		if (this.timer) window.clearTimeout(this.timer);
-		// if (!Cookie.get(`hideNewsletter-${environment.demo}`)) {
-		// 	this.timer = window.setTimeout(() => {
-		// 		this.modalService.dismissAll();
-		// 		(document.querySelector('.logo') as HTMLElement).focus({ preventScroll: true });
+		if (!this.cookieService.get(`hideNewsletter-${environment.demo}`)) {
+			this.timer = window.setTimeout(() => {
+				this.modalService.dismissAll();
+				(document.querySelector('.logo') as HTMLElement).focus({ preventScroll: true });
 
-		// 		setTimeout(() => {
-		// 			if (this.router.url === '/' && !document.querySelector('.newsletter-modal')) {
-		// 				this.modalService.open(
-		// 					NewsletterModalComponent,
-		// 					this.modalOption1
-		// 				)
-		// 			}
-		// 		}, 400);
-		// 	}, 5000);
-		// }
+				setTimeout(() => {
+					if (this.router.url === '/' && !document.querySelector('.newsletter-modal')) {
+						this.modalService.open(
+							NewsletterModalComponent,
+							this.modalOption1
+						)
+					}
+				}, 400);
+			}, 5000);
+		}
 	}
 
 	// Show login modal

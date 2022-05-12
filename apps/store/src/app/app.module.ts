@@ -28,6 +28,8 @@ import { cartReducer } from './core/reducers/cart.reducer';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './shared/layout/layout.component';
 
+import { CookieService } from 'ngx-cookie-service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,7 +61,7 @@ import { LayoutComponent } from './shared/layout/layout.component';
     StoreDevtoolsModule.instrument(),
   ],
 
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 

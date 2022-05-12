@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
-// import * as Cookie from 'js-cookie';
+import { CookieService } from 'ngx-cookie-service';
 import { environment } from '../../../../../environments/environment';
 
 
@@ -15,7 +15,7 @@ export class NewsletterModalComponent {
 
 	checkState = false;
 
-	constructor(private modalService: NgbActiveModal) { }
+	constructor(private modalService: NgbActiveModal, private readonly cookieService: CookieService) { }
 
 	changeCheck() {
 		this.checkState = !this.checkState;
@@ -23,6 +23,6 @@ export class NewsletterModalComponent {
 
 	closeModal() {
 		this.modalService.dismiss();
-		// this.checkState && Cookie.set(`hideNewsletter-${environment.demo}`, "true", { expires: 7 });
+		this.checkState && this.cookieService.set(`hideNewsletter-${environment.demo}`, "true", { expires: 7 });
 	}
 }
