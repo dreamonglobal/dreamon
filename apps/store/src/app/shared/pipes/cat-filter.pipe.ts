@@ -14,7 +14,7 @@ export class CatFilterPipe implements PipeTransform {
 
 		return products.filter(item => {
 			for (let i = 0; i < category.length; i++) {
-				if (item.category && item.category.find(cat => cat.slug == category[i])) {
+				if (item.category && item.category.find(cat => cat.slug === category[i])) {
 					if (!flag) return true;
 				} else {
 					if (flag) return false;

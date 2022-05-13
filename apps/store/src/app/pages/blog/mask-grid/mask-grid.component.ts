@@ -8,7 +8,7 @@ import { gridOption } from '../shared/data';
 
 
 @Component({
-	selector: 'blog-mask-grid-page',
+	selector: 'molla-blog-mask-grid-page',
 	templateUrl: './mask-grid.component.html',
 	styleUrls: ['./mask-grid.component.scss']
 })
@@ -33,7 +33,7 @@ export class MaskGridPageComponent {
 				this.counts = [];
 				this.counts.push(this.posts.length);
 
-				this.blogCategories.map((item, index) => {
+				this.blogCategories.map((item) => {
 					this.counts.push(item.count);
 				});
 
@@ -45,7 +45,7 @@ export class MaskGridPageComponent {
 		});
 	}
 
-	trackByFn(index: number, item: any) {
+	trackByFn(_index: number, item: any) {
 		if (!item) return null;
 		return item.slug;
 	}

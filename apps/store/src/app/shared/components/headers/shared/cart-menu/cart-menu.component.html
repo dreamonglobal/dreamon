@@ -7,8 +7,8 @@
     </a>
 
     <div class="dropdown-menu dropdown-menu-right mt-0"
-        [ngClass]="{'text-center': (cartService.cartStream | async).length == 0}">
-        <p *ngIf="(cartService.cartStream | async).length == 0 else elseBlock">No products in the cart.</p>
+        [ngClass]="{'text-center': (cartService.cartStream | async).length === 0}">
+        <p *ngIf="(cartService.cartStream | async).length === 0 else elseBlock">No products in the cart.</p>
 
         <ng-template #elseBlock>
             <div class="dropdown-cart-products">

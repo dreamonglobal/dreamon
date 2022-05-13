@@ -58,7 +58,7 @@ export class LayoutComponent implements OnDestroy {
 	}
 
 	@HostListener('window:resize', ['$event'])
-	handleKeyDown(event: Event) {
+	handleKeyDown() {
 		this.resizeHandle()
 	}
 

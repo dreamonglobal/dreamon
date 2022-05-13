@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
 	selector: 'molla-card',
@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
 	styleUrls: ['./card.component.scss']
 })
 
-export class CardComponent implements OnInit {
+export class CardComponent {
 
 	@Input() adClass: string;
 	@Input() icon: string;
@@ -18,8 +18,5 @@ export class CardComponent implements OnInit {
 
 	constructor() {
 		this.bodyID = 'collapse-' + Math.ceil(Math.random() * 1000);
-	}
-
-	ngOnInit(): void {
 	}
 }

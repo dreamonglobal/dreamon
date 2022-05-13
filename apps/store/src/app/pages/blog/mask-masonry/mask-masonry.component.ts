@@ -8,7 +8,7 @@ import { masonryOption } from '../shared/data';
 
 
 @Component({
-	selector: 'blog-mask-masonry-page',
+	selector: 'molla-blog-mask-masonry-page',
 	templateUrl: './mask-masonry.component.html',
 	styleUrls: ['./mask-masonry.component.scss']
 })
@@ -33,7 +33,7 @@ export class MaskMasonryPageComponent {
 				this.counts = [];
 				this.counts.push(this.posts.length);
 
-				this.blogCategories.map((item, index) => {
+				this.blogCategories.map((item) => {
 					this.counts.push(item.count);
 				});
 
@@ -45,7 +45,7 @@ export class MaskMasonryPageComponent {
 		});
 	}
 
-	trackByFn(index: number, item: any) {
+	trackByFn(_index: number, item: any) {
 		if (!item) return null;
 		return item.slug;
 	}

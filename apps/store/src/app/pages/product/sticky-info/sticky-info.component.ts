@@ -5,7 +5,7 @@ import { ApiService } from '../../../shared/services/api.service';
 
 
 @Component({
-	selector: 'product-sticky-info-page',
+	selector: 'molla-product-sticky-info-page',
 	templateUrl: './sticky-info.component.html',
 	styleUrls: ['./sticky-info.component.scss']
 })

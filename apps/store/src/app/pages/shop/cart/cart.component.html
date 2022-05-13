@@ -18,7 +18,7 @@
     <div class="page-content">
         <div class="cart">
             <div class="container">
-                <div class="row" *ngIf="cartItems.length == 0 else cartBlock">
+                <div class="row" *ngIf="cartItems.length === 0 else cartBlock">
                     <div class="col-12">
                         <div class="cart-empty-page text-center">
                             <i class="cart-empty icon-shopping-cart" style="line-height: 1; font-size: 15rem"></i>

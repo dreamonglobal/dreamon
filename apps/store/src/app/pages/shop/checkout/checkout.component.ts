@@ -7,7 +7,7 @@ import { CartService } from '../../../shared/services/cart.service';
 declare var $: any;
 
 @Component({
-	selector: 'dreamon-shop-checkout-page',
+	selector: 'molla-shop-checkout-page',
 	templateUrl: './checkout.component.html',
 	styleUrls: ['./checkout.component.scss']
 })
@@ -36,7 +36,7 @@ export class CheckoutComponent implements OnInit, OnDestroy {
 
 	clearOpacity() {
 		const input: any = document.querySelector('#checkout-discount-input');
-		if (input && input.value == "") {
+		if (input && input.value === "") {
 			const label: any = document.querySelector('#checkout-discount-form label');
 			label.removeAttribute('style');
 		}

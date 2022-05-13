@@ -31,7 +31,7 @@ export class WishlistComponent implements OnInit, OnDestroy {
 					if (max < item.price) max = item.price;
 				}, []);
 
-				if (product.variants.length == 0) {
+				if (product.variants.length === 0) {
 					min = product.sale_price
 						? product.sale_price
 						: product.price;

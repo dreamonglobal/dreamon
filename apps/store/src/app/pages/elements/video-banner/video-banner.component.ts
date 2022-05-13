@@ -3,7 +3,7 @@ import { ModalService } from '../../../shared/services/modal.service';
 
 
 @Component({
-	selector: 'elements-video-banner-page',
+	selector: 'molla-elements-video-banner-page',
 	templateUrl: './video-banner.component.html',
 	styleUrls: ['./video-banner.component.scss']
 })

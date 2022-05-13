@@ -13,7 +13,7 @@ import { postSlider1 } from '../shared/data';
 
 
 @Component( {
-	selector: 'blog-single-fluid-page',
+	selector: 'molla-blog-single-fluid-page',
 	templateUrl: './single-fluid.component.html',
 	styleUrls: [ './single-fluid.component.scss' ]
 } )

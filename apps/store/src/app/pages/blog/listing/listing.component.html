@@ -22,7 +22,7 @@
                         <div class="skel-list-post mb-6" *ngFor="let item of [1,2,3,4,5,6]"></div>
                     </div>
                     <ng-template #loadedBlock>
-                        <p class="blogs-info" *ngIf="posts.length == 0 else postBlock">No posts were found matching your
+                        <p class="blogs-info" *ngIf="posts.length === 0 else postBlock">No posts were found matching your
                             selection.</p>
                         <ng-template #postBlock>
                             <molla-post-two [post]="post" *ngFor="let post of posts; trackBy : trackByFn" [imageSize]="5">

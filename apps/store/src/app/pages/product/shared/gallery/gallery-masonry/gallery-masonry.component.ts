@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Component, OnInit, Input, HostListener, OnChanges } from '@angular/core';
 import { Lightbox } from 'ngx-lightbox';
 
@@ -8,7 +9,7 @@ import { environment } from '../../../../../../environments/environment';
 declare var $: any;
 
 @Component({
-	selector: 'product-gallery-masonry',
+	selector: 'molla-product-gallery-masonry',
 	templateUrl: './gallery-masonry.component.html',
 	styleUrls: ['./gallery-masonry.component.scss']
 })
@@ -45,7 +46,7 @@ export class GalleryMasonryComponent implements OnInit, OnChanges {
 	}
 
 	@HostListener('window:resize', ['$event'])
-	closeLightBox(event: Event) {
+	closeLightBox() {
 		this.lightBox.close();
 	}
 

@@ -74,6 +74,7 @@ export class RemoveFromCompareAction implements Action {
  */
 export class ClearAllCompareAction implements Action {
     readonly type = types.REMOVE_ALL_COMPARE;
+    // eslint-disable-next-line @typescript-eslint/ban-types
     constructor(public payload: {}) { }
 }
 
@@ -82,5 +83,4 @@ export class ClearAllCompareAction implements Action {
  */
 export class RefreshStoreAction implements Action {
     readonly type = types.REFRESH_STORE;
-    constructor() { }
 }

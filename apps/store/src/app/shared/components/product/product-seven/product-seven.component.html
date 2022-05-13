@@ -3,7 +3,7 @@
         <span class="product-label" *ngIf="product.new">New</span>
         <span class="product-label" *ngIf="product.sale_price">Sale</span>
         <span class="product-label" *ngIf="product.top">Top</span>
-        <span class="product-label" *ngIf="!product.stock || product.stock == 0">Out Of Stock</span>
+        <span class="product-label" *ngIf="!product.stock || product.stock === 0">Out Of Stock</span>
 
         <a [routerLink]="['/product/default/'+ product.slug]">
             <molla-image [src]="SERVER_URL + product.sm_pictures[0].url" alt="Product" class="product-image">
@@ -31,14 +31,14 @@
             <a [routerLink]="['/product/default/'+ product.slug]">{{ product.name }}</a>
         </h3>
 
-        <div class="product-price" *ngIf="!product.stock || product.stock == 0 else elseBlock">
+        <div class="product-price" *ngIf="!product.stock || product.stock === 0 else elseBlock">
             <span class="out-price">${{ product.price.toFixed(2) }}</span>
         </div>
 
         <ng-template #elseBlock>
-            <div class="product-price" *ngIf="minPrice == maxPrice else elseBlock">${{ minPrice.toFixed(2) }}</div>
+            <div class="product-price" *ngIf="minPrice === maxPrice else elseBlock">${{ minPrice.toFixed(2) }}</div>
             <ng-template #elseBlock>
-                <div class="product-price" *ngIf="product.variants.length == 0 else elseBlock">
+                <div class="product-price" *ngIf="product.variants.length === 0 else elseBlock">
                     <span class="new-price">${{ minPrice.toFixed(2) }}</span>
                     <span class="old-price">${{ maxPrice.toFixed(2) }}</span>
                 </div>

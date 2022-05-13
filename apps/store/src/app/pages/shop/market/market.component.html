@@ -11,7 +11,7 @@
                     <a routerLink="/shop/sidebar/list">Shop</a>
                 </li>
                 <li class="breadcrumb-item active">Market</li>
-                <li class="breadcrumb-item" *ngIf="searchTerm != ''">
+                <li class="breadcrumb-item" *ngIf="searchTerm !== ''">
                     <span>Search - {{ searchTerm }}</span>
                 </li>
             </ol>

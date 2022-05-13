@@ -12,7 +12,7 @@ import { environment } from '../../../../../../environments/environment';
 declare var $: any;
 
 @Component({
-	selector: 'product-detail-one',
+	selector: 'molla-product-detail-one',
 	templateUrl: './detail-one.component.html',
 	styleUrls: ['./detail-one.component.scss']
 })
@@ -63,7 +63,7 @@ export class DetailOneComponent implements OnInit {
 			return acc;
 		}, []);
 
-		if (this.product.variants.length == 0) {
+		if (this.product.variants.length === 0) {
 			min = this.product.sale_price
 				? this.product.sale_price
 				: this.product.price;
@@ -77,7 +77,7 @@ export class DetailOneComponent implements OnInit {
 	}
 
 	@HostListener('window:scroll', ['$event'])
-	handleScroll(event: Event) {
+	handleScroll() {
 		if (document.querySelector('.default-page')) {
 			this.scrollHandler()
 		}
@@ -102,7 +102,7 @@ export class DetailOneComponent implements OnInit {
 		}
 
 		this.cartService.addToCart(
-			newProduct, index == 0 ? this.qty : this.qty2
+			newProduct, index === 0 ? this.qty : this.qty2
 		);
 	}
 
@@ -142,7 +142,7 @@ export class DetailOneComponent implements OnInit {
 		}
 
 		this.sizeArray = tempArray.reduce((acc, cur) => {
-			if (acc.findIndex(item => item.size == cur.size) !== -1)
+			if (acc.findIndex(item => item.size === cur.size) !== -1)
 				return acc;
 			return [...acc, cur];
 		}, []);
@@ -159,7 +159,7 @@ export class DetailOneComponent implements OnInit {
 
 		this.colorArray = this.product.variants.reduce((acc, cur) => {
 			if (
-				tempArray.findIndex(item => item.color == cur.color) == -1
+				tempArray.findIndex(item => item.color === cur.color) === -1
 			) {
 				return [
 					...acc,
@@ -195,7 +195,7 @@ export class DetailOneComponent implements OnInit {
 	selectColor(event: Event, item: any) {
 		event.preventDefault();
 
-		if (item.color == this.selectedVariant.color) {
+		if (item.color === this.selectedVariant.color) {
 			this.selectedVariant = {
 				...this.selectedVariant,
 				color: null,
@@ -214,10 +214,10 @@ export class DetailOneComponent implements OnInit {
 	}
 
 	selectSize(event: Event) {
-		if (this.selectedVariant.size == 'null') {
+		if (this.selectedVariant.size === 'null') {
 			this.selectedVariant = { ...this.selectedVariant, size: "" };
 		}
-		if ($(event.target).val() == "") {
+		if ($(event.target).val() === "") {
 			this.selectedVariant = { ...this.selectedVariant, size: "" };
 		} else {
 			this.selectedVariant = { ...this.selectedVariant, size: $(event.target).val() };

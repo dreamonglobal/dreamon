@@ -19,7 +19,7 @@
 		</div>
 		<ng-template #loadedBlock>
 			<figure class="entry-media entry-media-fullwidth" *ngIf="post.image.length <= 1 else carouselBlock"
-				[class.entry-video]="post.type == 'video'" [style.padding-top]="'600px'">
+				[class.entry-video]="post.type === 'video'" [style.padding-top]="'600px'">
 				<a href="javascript:;" *ngIf="post.type !== 'video' else videoBlock">
 					<molla-image [src]="SERVER_URL + post.image[0].url" alt="image desc" fixedPt="600px"></molla-image>
 				</a>

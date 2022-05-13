@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Product } from '../../../../../shared/classes/product';
 
 @Component({
-	selector: 'product-info-two',
+	selector: 'molla-product-info-two',
 	templateUrl: './info-two.component.html',
 	styleUrls: ['./info-two.component.scss']
 })

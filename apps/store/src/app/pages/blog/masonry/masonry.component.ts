@@ -8,7 +8,7 @@ import { UtilsService } from '../../../shared/services/utils.service';
 import { getPostsAmount1, masonryOption, itemsPerRowOption1, pageTitles2 } from '../shared/data';
 
 @Component({
-	selector: 'blog-masonry-page',
+	selector: 'molla-blog-masonry-page',
 	templateUrl: './masonry.component.html',
 	styleUrls: ['./masonry.component.scss']
 })
@@ -54,7 +54,7 @@ export class MasonryPageComponent implements OnInit {
 	}
 
 	@HostListener('window:resize', ['$event'])
-	handleKeyDown(event: Event) {
+	handleKeyDown() {
 		this.resizeHandle()
 	}
 
@@ -70,7 +70,7 @@ export class MasonryPageComponent implements OnInit {
 			this.counts = [];
 			this.counts.push(this.posts.length);
 
-			this.blogCategories.map((item, index) => {
+			this.blogCategories.map((item) => {
 				this.counts.push(item.count);
 			});
 

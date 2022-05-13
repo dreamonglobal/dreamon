@@ -1,6 +1,6 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-
+import { Component } from '@angular/core';
 import { WishlistService } from '../../../../../shared/services/wishlist.service';
+
 
 @Component({
 	selector: 'molla-wishlist-menu',
@@ -8,13 +8,6 @@ import { WishlistService } from '../../../../../shared/services/wishlist.service
 	styleUrls: ['./wishlist-menu.component.scss']
 })
 
-export class WishlistMenuComponent implements OnInit, OnDestroy {
-
+export class WishlistMenuComponent {
 	constructor(public wishlistService: WishlistService) { }
-
-	ngOnInit(): void {
-	}
-
-	ngOnDestroy(): void {
-	}
 }

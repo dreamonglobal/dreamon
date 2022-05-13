@@ -5,7 +5,7 @@ import { ApiService } from '../../../shared/services/api.service';
 
 
 @Component({
-	selector: 'product-masonry-page',
+	selector: 'molla-product-masonry-page',
 	templateUrl: './masonry.component.html',
 	styleUrls: ['./masonry.component.scss']
 })

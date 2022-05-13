@@ -1,5 +1,5 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Router, NavigationStart, NavigationEnd } from '@angular/router';
+import { Component, OnDestroy } from '@angular/core';
+import { NavigationEnd, NavigationStart, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -7,7 +7,7 @@ import { Subscription } from 'rxjs';
 	templateUrl: './main-menu.component.html',
 	styleUrls: ['./main-menu.component.scss']
 })
-export class MainMenuComponent implements OnInit, OnDestroy {
+export class MainMenuComponent implements OnDestroy {
 
 	current = '/';
 
@@ -23,16 +23,13 @@ export class MainMenuComponent implements OnInit, OnDestroy {
 		});
 	}
 
-	ngOnInit(): void {
-	}
-
 	ngOnDestroy(): void {
 		this.subscr.unsubscribe();
 	}
 
 	viewAllDemos(event: any) {
 		event.preventDefault();
-		var list = document.querySelectorAll('.demo-list .hidden');
+		const list = document.querySelectorAll('.demo-list .hidden');
 		for (let i = 0; i < list.length; i++) {
 			list[i].classList.add('show');
 		}

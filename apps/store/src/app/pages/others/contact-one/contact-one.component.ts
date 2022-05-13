@@ -1,17 +1,17 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import { of } from 'rxjs/internal/observable/of';
-import { map, catchError } from 'rxjs/operators';
+import { catchError, map } from 'rxjs/operators';
 
 @Component({
-	selector: 'pages-contact-one',
+	selector: 'molla-pages-contact-one',
 	templateUrl: './contact-one.component.html',
 	styleUrls: ['./contact-one.component.scss'],
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 
-export class ContactOnePageComponent implements OnInit {
+export class ContactOnePageComponent {
 	apiLoaded: Observable<boolean>;
   
 	constructor(httpClient: HttpClient) {
@@ -20,8 +20,5 @@ export class ContactOnePageComponent implements OnInit {
 			map(() => true),
 			catchError(() => of(false)),
 		);
-	}
-	
-	ngOnInit(): void {
 	}
 }

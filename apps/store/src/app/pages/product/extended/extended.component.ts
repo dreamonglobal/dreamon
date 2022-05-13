@@ -5,7 +5,7 @@ import { ApiService } from '../../../shared/services/api.service';
 
 
 @Component({
-	selector: 'product-extended-page',
+	selector: 'molla-product-extended-page',
 	templateUrl: './extended.component.html',
 	styleUrls: ['./extended.component.scss']
 })
@@ -20,7 +20,7 @@ export class ExtendedPageComponent {
 
 	constructor(
 		public apiService: ApiService,
-		private activeRoute: ActivatedRoute,
+		activeRoute: ActivatedRoute,
 		public router: Router
 	) {
 		activeRoute.params.subscribe(params => {

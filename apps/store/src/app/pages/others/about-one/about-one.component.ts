@@ -4,7 +4,7 @@ import { brands, customSay, team } from './about-one-data';
 
 
 @Component( {
-	selector: 'pages-about-page',
+	selector: 'molla-pages-about-page',
 	templateUrl: './about-one.component.html',
 	styleUrls: [ './about-one.component.scss' ],
 	changeDetection: ChangeDetectionStrategy.OnPush

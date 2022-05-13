@@ -7,7 +7,7 @@ import { ApiService } from '../../../shared/services/api.service';
 import { UtilsService } from '../../../shared/services/utils.service';
 
 @Component({
-	selector: 'blog-listing-page',
+	selector: 'molla-blog-listing-page',
 	templateUrl: './listing.component.html',
 	styleUrls: ['./listing.component.scss']
 })
@@ -45,7 +45,7 @@ export class ListingPageComponent implements OnInit {
 	}
 
 	@HostListener('window:resize', ['$event'])
-	resizeHandler(event: Event) {
+	resizeHandler() {
 		this.resizeHandle()
 	}
 

@@ -8,7 +8,7 @@ export interface CompareState extends EntityState<Product> {
 }
 
 function getState ( key: string ) {
-    let initialState = {
+    const initialState = {
         data: []
     };
 
@@ -18,7 +18,7 @@ function getState ( key: string ) {
 export function compareReducer ( state = getState( 'molla' ), action ) {
     switch ( action.type ) {
         case ADD_TO_COMPARE:
-            if ( state.data.findIndex( item => item.id == action.payload.product.id ) == -1 ) {
+            if ( state.data.findIndex( item => item.id === action.payload.product.id ) === -1 ) {
                 return {
                     data: [
                         ...state.data,

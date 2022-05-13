@@ -12,6 +12,7 @@ import { UtilsService } from '../../../../shared/services/utils.service';
 import { WishlistService } from '../../../../shared/services/wishlist.service';
 import { sliderOpt } from '../../../../shared/data';
 
+// eslint-disable-next-line no-var
 declare var $: any;
 
 @Component({
@@ -90,7 +91,7 @@ export class QuickViewTwoComponent implements OnInit {
 				return acc;
 			}, []);
 
-			if (this.product.variants.length == 0) {
+			if (this.product.variants.length === 0) {
 				min = this.product.sale_price
 					? this.product.sale_price
 					: this.product.price;
@@ -104,9 +105,8 @@ export class QuickViewTwoComponent implements OnInit {
 
 			this.refreshSelectableGroup();
 
-			let self = this;
 			imagesLoaded(".quickView-modal").on("done", function () {
-				self.loaded = true;
+				this.loaded = true;
 			})
 		})
 	}
@@ -177,7 +177,7 @@ export class QuickViewTwoComponent implements OnInit {
 		}
 
 		this.sizeArray = tempArray.reduce((acc, cur) => {
-			if (acc.findIndex(item => item.size == cur.size) !== -1)
+			if (acc.findIndex(item => item.size === cur.size) !== -1)
 				return acc;
 			return [...acc, cur];
 		}, []);
@@ -194,7 +194,7 @@ export class QuickViewTwoComponent implements OnInit {
 
 		this.colorArray = this.product.variants.reduce((acc, cur) => {
 			if (
-				tempArray.findIndex(item => item.color == cur.color) == -1
+				tempArray.findIndex(item => item.color === cur.color) === -1
 			) {
 				return [
 					...acc,
@@ -217,7 +217,7 @@ export class QuickViewTwoComponent implements OnInit {
 			];
 		}, []);
 
-		let toggle = this.el.nativeElement.querySelector('.variation-price');
+		const toggle = this.el.nativeElement.querySelector('.variation-price');
 		if (toggle) {
 			if (this.selectedVariant.color && this.selectedVariant.size !== "") {
 				$(toggle).slideDown();
@@ -230,7 +230,7 @@ export class QuickViewTwoComponent implements OnInit {
 	selectColor(event: Event, item: any) {
 		event.preventDefault();
 
-		if (item.color == this.selectedVariant.color) {
+		if (item.color === this.selectedVariant.color) {
 			this.selectedVariant = {
 				...this.selectedVariant,
 				color: null,
@@ -250,10 +250,10 @@ export class QuickViewTwoComponent implements OnInit {
 	}
 
 	selectSize(event: Event) {
-		if (this.selectedVariant.size == 'null') {
+		if (this.selectedVariant.size === 'null') {
 			this.selectedVariant = { ...this.selectedVariant, size: "" };
 		}
-		if ($(event.target).val() == "") {
+		if ($(event.target).val() === "") {
 			this.selectedVariant = { ...this.selectedVariant, size: "" };
 		} else {
 			this.selectedVariant = { ...this.selectedVariant, size: $(event.target).val() };
@@ -277,7 +277,7 @@ export class QuickViewTwoComponent implements OnInit {
 	}
 
 	closeQuickView() {
-		let modal = document.querySelector('.quickView-modal') as HTMLElement;
+		const modal = document.querySelector('.quickView-modal') as HTMLElement;
 		if (modal)
 			modal.click();
 	}

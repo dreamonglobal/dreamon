@@ -1,7 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
-
-import { shopData } from '../../data';
+import { Component, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { shopData } from '../../data';
+
 
 @Component({
 	selector: 'molla-shop-sidebar-three',
@@ -9,7 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 	styleUrls: ['./shop-sidebar-three.component.scss']
 })
 
-export class ShopSidebarThreeComponent implements OnInit {
+export class ShopSidebarThreeComponent {
 
 	@Input() toggle = false;
 
@@ -22,9 +22,6 @@ export class ShopSidebarThreeComponent implements OnInit {
 		})
 	}
 
-	ngOnInit(): void {
-	}
-
 	containsAttrInUrl(type: string, value: string) {
 		const currentQueries = this.params[type] ? this.params[type].split(',') : [];
 		return currentQueries && currentQueries.includes(value);
@@ -32,14 +29,14 @@ export class ShopSidebarThreeComponent implements OnInit {
 
 	containsPriceInUrl(price: any) {
 		let flag = false;
-		if (this.params['minPrice'] && this.params['minPrice'] == price.min)
+		if (this.params['minPrice'] && this.params['minPrice'] === price.min)
 			flag = true;
 		else return false;
 
 		if (price.max) {
 			if (
 				this.params['maxPrice'] &&
-				this.params['maxPrice'] == price.max
+				this.params['maxPrice'] === price.max
 			)
 				flag = true;
 			else return false;

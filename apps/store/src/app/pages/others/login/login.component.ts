@@ -1,18 +1,12 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-	selector: 'pages-login',
+	selector: 'molla-pages-login',
 	templateUrl: './login.component.html',
 	styleUrls: ['./login.component.scss'],
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 
-export class LoginPageComponent implements OnInit {
+export class LoginPageComponent {
 
-	constructor() {
-
-	}
-
-	ngOnInit(): void {
-	}
 }

@@ -1,9 +1,9 @@
-import { Component, OnInit, Input } from '@angular/core';
-
+import { Component, Input } from '@angular/core';
 import { environment } from '../../../../../environments/environment';
 
+
 @Component({
-	selector: 'blog-sidebar',
+	selector: 'molla-blog-sidebar',
 	templateUrl: './blog-sidebar.component.html',
 	styleUrls: ['./blog-sidebar.component.scss']
 })

@@ -5,7 +5,7 @@ import { ApiService } from '../../../shared/services/api.service';
 
 
 @Component({
-	selector: 'product-gallery-page',
+	selector: 'molla-product-gallery-page',
 	templateUrl: './gallery.component.html',
 	styleUrls: ['./gallery.component.scss']
 })
@@ -20,7 +20,7 @@ export class GalleryPageComponent {
 
 	constructor(
 		public apiService: ApiService,
-		private activeRoute: ActivatedRoute,
+		activeRoute: ActivatedRoute,
 		public router: Router
 	) {
 		activeRoute.params.subscribe(params => {

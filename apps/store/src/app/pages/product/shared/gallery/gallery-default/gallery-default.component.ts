@@ -5,7 +5,7 @@ import { Product } from '../../../../../shared/classes/product';
 import { environment } from '../../../../../../environments/environment';
 
 @Component({
-	selector: 'product-gallery-default',
+	selector: 'molla-product-gallery-default',
 	templateUrl: './gallery-default.component.html',
 	styleUrls: ['./gallery-default.component.scss']
 })
@@ -31,7 +31,7 @@ export class GalleryDefaultComponent implements OnInit, OnChanges {
 	constructor(public lightBox: Lightbox) { }
 
 	@HostListener('window:resize', ['$event'])
-	closeLightBox(event: Event) {
+	closeLightBox() {
 		this.lightBox.close();
 	}
 

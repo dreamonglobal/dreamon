@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
 	selector: 'molla-shop-list-one',
@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
 	styleUrls: ['./shop-list-one.component.scss']
 })
 
-export class ShopListOneComponent implements OnInit {
+export class ShopListOneComponent {
 
 	@Input() type: string;
 	@Input() products = [];
@@ -22,11 +22,5 @@ export class ShopListOneComponent implements OnInit {
 		"2cols": [1, 2, 3, 4, 5, 6],
 		"3cols": [1, 2, 3, 4, 5, 6, 7, 8, 9],
 		"4cols": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-	}
-
-	constructor() {
-	}
-
-	ngOnInit(): void {
 	}
 }

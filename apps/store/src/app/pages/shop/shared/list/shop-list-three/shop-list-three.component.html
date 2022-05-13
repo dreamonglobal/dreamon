@@ -1,5 +1,5 @@
 <div class="products mb-3 skeleton-body skel-shop-products" [class.loaded]="loaded">
-    <p class="no-results" *ngIf="(products.length == 0 && loaded) else productBlock">No products were found matching
+    <p class="no-results" *ngIf="(products.length === 0 && loaded) else productBlock">No products were found matching
         your
         selection.</p>
     <ng-template #productBlock>

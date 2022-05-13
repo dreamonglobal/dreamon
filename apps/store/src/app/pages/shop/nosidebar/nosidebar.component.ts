@@ -5,7 +5,7 @@ import { UtilsService } from '../../../shared/services/utils.service';
 
 
 @Component( {
-	selector: 'dreamon-shop-nosidebar-page',
+	selector: 'molla-shop-nosidebar-page',
 	templateUrl: './nosidebar.component.html',
 	styleUrls: [ './nosidebar.component.scss' ]
 } )
@@ -29,7 +29,7 @@ export class NosidebarPageComponent {
 		this.activeRoute.params.subscribe( params => {
 			this.type = params[ 'type' ];
 			this.perPage = 12;
-			if ( this.type == 'boxed' ) {
+			if ( this.type === 'boxed' ) {
 				this.pageTitle = 'Boxed No Sidebar';
 				this.containerClass = 'container';
 				this.cols = "col-6 col-md-4 col-lg-4 col-xl-3";

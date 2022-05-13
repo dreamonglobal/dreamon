@@ -47,6 +47,6 @@ export class WishlistService {
 
 	// Check whether product is in Wishlist or not
 	isInWishlist ( product: Product ): boolean {
-		return this.wishlist.find( item => item.id == product.id ) ? true : false;
+		return this.wishlist.find( item => item.id === product.id ) ? true : false;
 	}
 }

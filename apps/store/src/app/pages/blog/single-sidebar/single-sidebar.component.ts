@@ -13,7 +13,7 @@ import { sliderOpt } from '../../../shared/data';
 import { environment } from '../../../../environments/environment';
 
 @Component({
-	selector: 'blog-single-sidebar-page',
+	selector: 'molla-blog-single-sidebar-page',
 	templateUrl: './single-sidebar.component.html',
 	styleUrls: ['./single-sidebar.component.scss']
 })
@@ -58,7 +58,7 @@ export class SingleSidebarPageComponent implements OnInit {
 	}
 
 	@HostListener('window:resize', ['$event'])
-	resizeHandler(event: Event) {
+	resizeHandler() {
 		this.resizeHandle()
 	}
 

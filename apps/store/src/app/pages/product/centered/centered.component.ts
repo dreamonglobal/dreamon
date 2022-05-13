@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-
 import { Product } from '../../../shared/classes/product';
 import { ApiService } from '../../../shared/services/api.service';
 
+
 @Component({
-	selector: 'product-centered-page',
+	selector: 'molla-product-centered-page',
 	templateUrl: './centered.component.html',
 	styleUrls: ['./centered.component.scss']
 })
@@ -20,7 +20,7 @@ export class CenteredPageComponent {
 
 	constructor(
 		public apiService: ApiService,
-		private activeRoute: ActivatedRoute,
+		activeRoute: ActivatedRoute,
 		public router: Router
 	) {
 		activeRoute.params.subscribe(params => {

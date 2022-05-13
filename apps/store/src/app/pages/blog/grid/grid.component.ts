@@ -8,7 +8,7 @@ import { UtilsService } from '../../../shared/services/utils.service';
 import { getPostsAmount, gridOption, itemsPerRowOption, pageTitles1 } from '../shared/data';
 
 @Component({
-	selector: 'blog-grid-page',
+	selector: 'molla-blog-grid-page',
 	templateUrl: './grid.component.html',
 	styleUrls: ['./grid.component.scss']
 })
@@ -54,7 +54,7 @@ export class GridPageComponent implements OnInit {
 	}
 
 	@HostListener('window:resize', ['$event'])
-	resizeHandler(event: Event) {
+	resizeHandler() {
 		this.resizeHandle()
 	}
 
@@ -70,7 +70,7 @@ export class GridPageComponent implements OnInit {
 			this.counts = [];
 			this.counts.push(this.posts.length);
 
-			this.blogCategories.map((item, index) => {
+			this.blogCategories.map((item) => {
 				this.counts.push(item.count);
 			});
 
@@ -85,7 +85,7 @@ export class GridPageComponent implements OnInit {
 		});
 	}
 
-	trackByFn(index: number, item: any) {
+	trackByFn(_index: number, item: any) {
 		if (!item) return null;
 		return item.slug;
 	}

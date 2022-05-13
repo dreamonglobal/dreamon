@@ -1,20 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component } from '@angular/core';
 import { sliders } from './testimonial-data';
 
+
 @Component({
-	selector: 'elements-testimonial-page',
+	selector: 'molla-elements-testimonial-page',
 	templateUrl: './testimonial.component.html',
 	styleUrls: ['./testimonial.component.scss']
 })
 
-export class TestimonialPageComponent implements OnInit {
+export class TestimonialPageComponent {
 
 	testSliders = sliders;
-
-	constructor() {
-	}
-
-	ngOnInit(): void {
-	}
 }

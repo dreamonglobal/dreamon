@@ -5,7 +5,7 @@ import { ApiService } from '../../../shared/services/api.service';
 import { productSlider1, productSlider2 } from '../shared/data';
 
 @Component({
-	selector: 'element-product-page',
+	selector: 'molla-element-product-page',
 	templateUrl: './product.component.html',
 	styleUrls: ['./product.component.scss']
 })

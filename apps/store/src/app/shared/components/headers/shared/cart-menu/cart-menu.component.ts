@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-
-import { CartService } from '../../../../services/cart.service';
+import { Component } from '@angular/core';
 import { environment } from '../../../../../../environments/environment';
+import { CartService } from '../../../../services/cart.service';
+
 
 @Component({
 	selector: 'molla-cart-menu',
@@ -9,14 +9,11 @@ import { environment } from '../../../../../../environments/environment';
 	styleUrls: ['./cart-menu.component.scss']
 })
 
-export class CartMenuComponent implements OnInit {
+export class CartMenuComponent {
 
 	SERVER_URL = environment.SERVER_URL;
 
 	constructor(public cartService: CartService) {
-	}
-
-	ngOnInit(): void {
 	}
 
 	removeFromCart(event: Event, product: any) {

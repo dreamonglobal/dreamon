@@ -7,7 +7,7 @@ import { animations } from '../data';
 declare var $: any;
 
 @Directive( {
-	selector: '[dreamonContentAnim]'
+	selector: '[mollaContentAnim]'
 } )
 
 export class ContentAnimDirective implements AfterViewInit {
@@ -29,24 +29,23 @@ export class ContentAnimDirective implements AfterViewInit {
 			this.handleAnimation();
 
 			const slider = this.el.nativeElement.closest( 'owl-carousel' );
-			const self = this;
 
 			if ( slider ) {
 				$( slider ).on( 'translate.owl.carousel', () => {
-					if ( self.el.nativeElement.closest( '.owl-item:not(.active)' ) ) {
-						self.el.nativeElement.classList.add( 'appear-animate' );
+					if ( this.el.nativeElement.closest( '.owl-item:not(.active)' ) ) {
+						this.el.nativeElement.classList.add( 'appear-animate' );
 					}
 				} );
 
 				$( slider ).on( 'translated.owl.carousel', () => {
-					if ( self.el.nativeElement.closest( '.owl-item.active' ) ) {
-						if ( self.el.nativeElement.classList.contains( 'appear-animate' ) ) {
-							self.el.nativeElement.classList.remove( 'appear-animate' );
+					if ( this.el.nativeElement.closest( '.owl-item.active' ) ) {
+						if ( this.el.nativeElement.classList.contains( 'appear-animate' ) ) {
+							this.el.nativeElement.classList.remove( 'appear-animate' );
 							this.player.play();
 							this.first = false;
 						}
 					} else {
-						self.el.nativeElement.classList.add( 'appear-animate' );
+						this.el.nativeElement.classList.add( 'appear-animate' );
 					}
 				} )
 			}
@@ -84,10 +83,8 @@ export class ContentAnimDirective implements AfterViewInit {
 			] )
 			.create( this.el.nativeElement );
 
-		const self = this;
-
 		this.player.onStart( function () {
-			self.el.nativeElement.classList.remove( 'appear-animate' );
+			this.el.nativeElement.classList.remove( 'appear-animate' );
 		} );
 	}
 }

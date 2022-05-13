@@ -5,7 +5,7 @@ import { IsotopeGridComponent } from '../../../../shared/components/isotope-grid
 
 
 @Component({
-	selector: 'blog-entry-isotope',
+	selector: 'molla-blog-entry-isotope',
 	templateUrl: './blog-entry-isotope.component.html',
 	styleUrls: ['./blog-entry-isotope.component.scss']
 })
@@ -81,7 +81,7 @@ export class BlogEntryIsotopeComponent implements OnChanges {
 
 		if (filter !== "*") {
 			this.displayPosts = this.posts.filter(post =>
-				post.blog_categories.find(cat => cat.slug == filter.toLowerCase())
+				post.blog_categories.find(cat => cat.slug === filter.toLowerCase())
 			);
 		} else {
 			this.displayPosts = this.posts;

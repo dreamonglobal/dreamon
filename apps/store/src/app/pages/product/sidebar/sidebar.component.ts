@@ -5,7 +5,7 @@ import { ApiService } from '../../../shared/services/api.service';
 
 
 @Component({
-	selector: 'product-sidebar-page',
+	selector: 'molla-product-sidebar-page',
 	templateUrl: './sidebar.component.html',
 	styleUrls: ['./sidebar.component.scss']
 })
@@ -20,7 +20,7 @@ export class SidebarPageComponent implements OnDestroy {
 
 	constructor(
 		public apiService: ApiService,
-		private activeRoute: ActivatedRoute,
+		activeRoute: ActivatedRoute,
 		public router: Router
 	) {
 		activeRoute.params.subscribe(params => {

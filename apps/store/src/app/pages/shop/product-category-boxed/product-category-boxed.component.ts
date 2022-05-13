@@ -1,18 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-	selector: 'shop-product-category-boxed',
+	selector: 'molla-shop-product-category-boxed',
 	templateUrl: './product-category-boxed.component.html',
 	styleUrls: ['./product-category-boxed.component.scss']
 })
 
-export class ProductCategoryBoxedPageComponent implements OnInit {
-
-	constructor() {
-	}
-
-	ngOnInit(): void {
-	}
+export class ProductCategoryBoxedPageComponent {
 
 	toggleSidebar() {
 		if (

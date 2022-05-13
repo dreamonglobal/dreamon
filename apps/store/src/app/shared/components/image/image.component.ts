@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ElementRef, Renderer2 } from '@angular/core';
+import { Component, ElementRef, Input, Renderer2 } from '@angular/core';
 
 @Component({
 	selector: 'molla-image',
@@ -6,7 +6,7 @@ import { Component, OnInit, Input, ElementRef, Renderer2 } from '@angular/core';
 	styleUrls: ['./image.component.scss']
 })
 
-export class ImageComponent implements OnInit {
+export class ImageComponent {
 
 	@Input() src: string;
 	@Input() width: string | number;
@@ -20,13 +20,12 @@ export class ImageComponent implements OnInit {
 
 	constructor(private el: ElementRef, private renderer: Renderer2) { }
 
-	ngOnInit(): void {
-	}
-
 	handler(event: any) {
+		let value: string | number;
+
 		switch (event.reason) {
 			case 'setup':
-				let value: string | number = '100%';
+				value = '100%';
 
 				if (this.fixedPt) {
 					value = this.fixedPt;

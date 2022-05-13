@@ -3,7 +3,7 @@ import { sliderOpt } from '../../../shared/data';
 
 
 @Component({
-	selector: 'elments-product-category-page',
+	selector: 'molla-elments-product-category-page',
 	templateUrl: './product-category.component.html',
 	styleUrls: ['./product-category.component.scss']
 })

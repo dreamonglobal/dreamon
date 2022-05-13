@@ -1,18 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-	selector: 'shop-product-category-fluid',
+	selector: 'molla-shop-product-category-fluid',
 	templateUrl: './product-category-fluid.component.html',
 	styleUrls: ['./product-category-fluid.component.scss']
 })
 
-export class ProductCategoryFluidPageComponent implements OnInit {
-
-	constructor() {
-	}
-
-	ngOnInit(): void {
-	}
+export class ProductCategoryFluidPageComponent {
 
 	toggleSidebar() {
 		if (

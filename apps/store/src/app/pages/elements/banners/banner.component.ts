@@ -1,14 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-	selector: 'elements-banners-page',
+	selector: 'molla-elements-banners-page',
 	templateUrl: './banner.component.html',
 	styleUrls: ['./banner.component.scss']
 })
 
-export class BannersPageComponent implements OnInit {
+export class BannersPageComponent {
 
-	constructor() { }
-
-	ngOnInit(): void { }
 }

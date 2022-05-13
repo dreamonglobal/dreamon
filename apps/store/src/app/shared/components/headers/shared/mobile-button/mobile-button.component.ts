@@ -1,6 +1,6 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
-
+import { Component, Renderer2 } from '@angular/core';
 import { UtilsService } from '../../../../../shared/services/utils.service';
+
 
 @Component({
 	selector: 'molla-mobile-button',
@@ -8,12 +8,9 @@ import { UtilsService } from '../../../../../shared/services/utils.service';
 	styleUrls: ['./mobile-button.component.scss']
 })
 
-export class MobileButtonComponent implements OnInit {
+export class MobileButtonComponent {
 
 	constructor(public utils: UtilsService, public render: Renderer2) { }
-
-	ngOnInit(): void {
-	}
 
 	toggleMenu(event: any) {
 		const body = document.querySelector('body');

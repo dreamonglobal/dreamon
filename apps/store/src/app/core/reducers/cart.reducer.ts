@@ -14,7 +14,7 @@ export interface CartItemState extends EntityState<CartItem> {
 }
 
 function getState(key: string) {
-    let initialState = {
+    const initialState = {
         data: []
     };
 
@@ -22,19 +22,21 @@ function getState(key: string) {
 }
 
 export function cartReducer(state = getState('molla'), action) {
+    let findIndex;
+    let qty;
     switch (action.type) {
         case ADD_TO_CART:
-            var findIndex = state.data.findIndex(item => item.id == action.payload.product.id);
-            let qty = action.payload.qty ? action.payload.qty : 1;
+            findIndex = state.data.findIndex(item => item.id === action.payload.product.id);
+            qty = action.payload.qty ? action.payload.qty : 1;
             if (findIndex !== -1 && action.payload.product.variants.length > 0) {
-                findIndex = state.data.findIndex(item => item.name == action.payload.product.name);
+                findIndex = state.data.findIndex(item => item.name === action.payload.product.name);
             }
 
             if (findIndex !== -1) {
                 return {
                     data: [
                         ...state.data.reduce((acc, product, index) => {
-                            if (findIndex == index) {
+                            if (findIndex === index) {
                                 acc.push({
                                     ...product,
                                     qty: product.qty + qty,

@@ -3,7 +3,7 @@ import { sliderOpt } from '../../../../../shared/data';
 
 
 @Component( {
-	selector: 'related-products-one',
+	selector: 'molla-related-products-one',
 	templateUrl: './related-products-one.component.html',
 	styleUrls: [ './related-products-one.component.scss' ]
 } )

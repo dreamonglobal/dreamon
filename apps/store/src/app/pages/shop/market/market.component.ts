@@ -7,7 +7,7 @@ import { UtilsService } from '../../../shared/services/utils.service';
 import { cats, brands, bannerSlider, brandSlider } from './data';
 
 @Component({
-	selector: 'dreamon-shop-market-page',
+	selector: 'molla-shop-market-page',
 	templateUrl: './market.component.html',
 	styleUrls: ['./market.component.scss']
 })
@@ -65,7 +65,7 @@ export class MarketPageComponent implements OnInit {
 	}
 
 	@HostListener('window: resize', ['$event'])
-	onResize(event: Event) {
+	onResize() {
 		if (window.innerWidth > 991) this.toggle = false;
 		else this.toggle = true;
 	}

@@ -1,7 +1,9 @@
-import { Component, OnInit, Input, ElementRef, AfterViewInit, AfterViewChecked, Renderer2 } from '@angular/core';
+/* eslint-disable no-var */
+import { Component, Input, ElementRef, AfterViewInit, AfterViewChecked, Renderer2 } from '@angular/core';
 
 declare var Isotope: any;
 declare var imagesLoaded: any;
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 declare var $: any;
 
 @Component({
@@ -10,7 +12,7 @@ declare var $: any;
 	styleUrls: ['./isotope-grid.component.scss']
 })
 
-export class IsotopeGridComponent implements OnInit, AfterViewInit, AfterViewChecked {
+export class IsotopeGridComponent implements AfterViewInit, AfterViewChecked {
 
 	@Input() dataChange = false;
 	@Input() adClass = "";
@@ -21,16 +23,12 @@ export class IsotopeGridComponent implements OnInit, AfterViewInit, AfterViewChe
 
 	constructor(private el: ElementRef, private renderer: Renderer2) { }
 
-	ngOnInit(): void {
-	}
-
 	ngAfterViewInit() {
-		let self = this;
 		this.renderer.setAttribute(this.el.nativeElement, 'style', 'display: block; overflow: hidden;');
-		self.isotope = new Isotope(this.el.nativeElement, self.options);
+		this.isotope = new Isotope(this.el.nativeElement, this.options);
 
-		imagesLoaded(this.el.nativeElement, function (el) {
-			self.isotope.layout();
+		imagesLoaded(this.el.nativeElement, function () {
+			this.isotope.layout();
 		});
 	}
 
@@ -46,31 +44,30 @@ export class IsotopeGridComponent implements OnInit, AfterViewInit, AfterViewChe
 				}
 			}
 
-			let self = this;
 			imagesLoaded(this.el.nativeElement, function (el) {
-				let items = self.isotope.getItemElements();
-				children = el.elements[0].querySelectorAll(self.options.itemSelector);
+				const items = this.isotope.getItemElements();
+				children = el.elements[0].querySelectorAll(this.options.itemSelector);
 
-				if (self.dataChange) {
-					self.isotope.reloadItems();
-					self.isotope.arrange();
-					self.dataChange = false;
+				if (this.dataChange) {
+					this.isotope.reloadItems();
+					this.isotope.arrange();
+					this.dataChange = false;
 				} else {
 					for (let i = 0; i < items.length; i++) {
 						if (!el.elements[0].contains(items[i])) {
-							self.isotope.remove(items[i]);
+							this.isotope.remove(items[i]);
 						}
 					}
-					self.isotope.layout();
+					this.isotope.layout();
 					for (let i = 0; i < children.length; i++) {
 						if (items.indexOf(children[i]) < 0) {
 							children[i].setAttribute('style', 'opacity: 1');
-							self.isotope.appended(children[i]);
+							this.isotope.appended(children[i]);
 						}
 					}
 				}
 
-				self.isotope.layout();
+				this.isotope.layout();
 			});
 
 			this.isReset = false;
@@ -82,11 +79,10 @@ export class IsotopeGridComponent implements OnInit, AfterViewInit, AfterViewChe
 	}
 
 	layout() {
-		let self = this;
 		this.renderer.setAttribute(this.el.nativeElement, 'style', 'display: block;');
 
 		imagesLoaded(this.el.nativeElement, function (el) {
-			self.isotope = new Isotope(el.elements[0], self.options);
+			this.isotope = new Isotope(el.elements[0], this.options);
 		});
 	}
 

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ElementRef, Renderer2, HostListener } from '@angular/core';
+import { Component, ElementRef, HostListener, Input, Renderer2 } from '@angular/core';
 
 @Component({
 	selector: 'molla-count-to',
@@ -6,7 +6,7 @@ import { Component, OnInit, Input, ElementRef, Renderer2, HostListener } from '@
 	styleUrls: ['./count-to.component.scss']
 })
 
-export class CountToComponent implements OnInit {
+export class CountToComponent {
 
 	@Input() to: number;
 	@Input() from: number;
@@ -21,13 +21,13 @@ export class CountToComponent implements OnInit {
 	@HostListener('window:scroll', ['$event'])
 
 	scrollHandler() {
-		let pt = 0,
-			amount = this.to - this.from,
-			height = this.renderer.parentNode(this.renderer.parentNode(this.renderer.parentNode(this.elRef.nativeElement))).offsetTop
+		let pt = 0;
+			const amount = this.to - this.from;
+			const height = this.renderer.parentNode(this.renderer.parentNode(this.renderer.parentNode(this.elRef.nativeElement))).offsetTop
 
 		if (!this.isExcuted && pt <= this.speed && height >= window.pageYOffset) {
 			if (!this.isExcuted) {
-				let timer = setInterval(() => {
+				const timer = setInterval(() => {
 					if (pt >= this.speed) {
 						clearInterval(timer);
 					}
@@ -39,8 +39,5 @@ export class CountToComponent implements OnInit {
 
 			this.isExcuted = true;
 		}
-	}
-
-	ngOnInit(): void {
 	}
 }

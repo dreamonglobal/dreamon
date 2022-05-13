@@ -53,7 +53,7 @@
         <ng-template #elseBlock>
             <div class="product-price" *ngIf="minPrice === maxPrice else elseBlock">${{ minPrice.toFixed(2) }}</div>
             <ng-template #elseBlock>
-                <div class="product-price" *ngIf="product.variants.length == 0 else elseBlock">
+                <div class="product-price" *ngIf="product.variants.length === 0 else elseBlock">
                     <span class="new-price">${{ minPrice.toFixed(2) }}</span>
                     <span class="old-price">${{ maxPrice.toFixed(2) }}</span>
                 </div>

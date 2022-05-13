@@ -42,7 +42,7 @@ export class ProductSevenComponent implements OnInit {
 			if (max < item.price) max = item.price;
 		}, []);
 
-		if (this.product.variants.length == 0) {
+		if (this.product.variants.length === 0) {
 			min = this.product.sale_price
 				? this.product.sale_price
 				: this.product.price;

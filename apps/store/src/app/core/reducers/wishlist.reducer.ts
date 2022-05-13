@@ -18,7 +18,7 @@ function getState(key: string) {
 export function wishlistReducer(state = getState('molla'), action) {
     switch (action.type) {
         case ADD_TO_WISHLIST:
-            if (state.data.findIndex(item => item.id === action.payload.product.id) == -1) {
+            if (state.data.findIndex(item => item.id === action.payload.product.id) === -1) {
                 return {
                     data: [
                         ...state.data,

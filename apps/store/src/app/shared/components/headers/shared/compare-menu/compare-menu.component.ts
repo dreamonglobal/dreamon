@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component } from '@angular/core';
 import { Product } from '../../../../../shared/classes/product';
 import { CompareService } from '../../../../../shared/services/compare.service';
+
 
 @Component({
 	selector: 'molla-compare-menu',
@@ -9,12 +9,9 @@ import { CompareService } from '../../../../../shared/services/compare.service';
 	styleUrls: ['./compare-menu.component.scss']
 })
 
-export class CompareMenuComponent implements OnInit {
+export class CompareMenuComponent {
 
 	constructor(public compareService: CompareService) { }
-
-	ngOnInit(): void {
-	}
 
 	removeFromCompare($event: Event, product: Product) {
 		$event.preventDefault();

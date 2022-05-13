@@ -1,21 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component } from '@angular/core';
 import { itemNames, tabContent } from './title-data';
 
+
 @Component({
-	selector: 'elements-titles-page',
+	selector: 'molla-elements-titles-page',
 	templateUrl: './title.component.html',
 	styleUrls: ['./title.component.scss']
 })
 
-export class TitlesPageComponent implements OnInit {
+export class TitlesPageComponent {
 
 	public itemNames = itemNames;
 	public tabContent = tabContent;
 
-	constructor() {
-	}
-
-	ngOnInit(): void {
-	}
 }

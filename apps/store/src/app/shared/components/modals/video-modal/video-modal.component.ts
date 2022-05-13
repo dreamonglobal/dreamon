@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component( {
@@ -7,12 +7,9 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 	styleUrls: [ './video-modal.component.scss' ]
 } )
 
-export class VideoModalComponent implements OnInit {
+export class VideoModalComponent {
 
 	constructor ( private modalService: NgbActiveModal ) {
-	}
-
-	ngOnInit (): void {
 	}
 
 	closeModal () {

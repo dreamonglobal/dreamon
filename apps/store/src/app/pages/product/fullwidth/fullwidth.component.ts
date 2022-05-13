@@ -5,7 +5,7 @@ import { ApiService } from '../../../shared/services/api.service';
 
 
 @Component({
-	selector: 'product-fullwidth-page',
+	selector: 'molla-product-fullwidth-page',
 	templateUrl: './fullwidth.component.html',
 	styleUrls: ['./fullwidth.component.scss']
 })

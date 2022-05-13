@@ -38,7 +38,7 @@ export class AppComponent {
 		navigationEnd.pipe(first()).subscribe(() => {
 			document.querySelector('body')?.classList.add('loaded');
 			const timer = setInterval(() => {
-				if( window.getComputedStyle( document.querySelector('body') ).visibility == 'visible') {
+				if( window.getComputedStyle( document.querySelector('body') ).visibility === 'visible') {
 					clearInterval(timer);
 					$('.owl-carousel').trigger('refresh.owl.carousel');
 				}
@@ -61,7 +61,7 @@ export class AppComponent {
 	}
 
 	@HostListener('window: scroll', ['$event'])
-	onWindowScroll(e: Event) {
+	onWindowScroll() {
 		this.utilsService.setStickyHeader();
 	}
 

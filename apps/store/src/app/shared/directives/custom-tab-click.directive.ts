@@ -1,7 +1,7 @@
 import { Directive, Renderer2, HostListener } from '@angular/core';
 
 @Directive({
-	selector: '[tabClick]'
+	selector: '[mollaTabClick]'
 })
 
 export class TabClickDirective {

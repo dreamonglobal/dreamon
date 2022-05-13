@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter, OnChanges } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, Output } from '@angular/core';
 
 @Component( {
 	selector: 'molla-quantity-input',
@@ -6,7 +6,7 @@ import { Component, OnInit, Input, Output, EventEmitter, OnChanges } from '@angu
 	styleUrls: [ './quantity-input.component.scss' ]
 } )
 
-export class QuantityInputComponent implements OnInit, OnChanges {
+export class QuantityInputComponent implements OnChanges {
 
 	@Input() value = 1;
 	@Input() max = 10000;
@@ -21,9 +21,6 @@ export class QuantityInputComponent implements OnInit, OnChanges {
 
 	ngOnChanges (): void {
 		this.current = this.value;
-	}
-
-	ngOnInit (): void {
 	}
 
 	increment () {

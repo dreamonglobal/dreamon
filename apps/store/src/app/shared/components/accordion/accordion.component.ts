@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component( {
 	selector: 'molla-accordion',
@@ -6,13 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
 	styleUrls: [ './accordion.component.scss' ]
 } )
 
-export class AccordionComponent implements OnInit {
+export class AccordionComponent {
 
 	@Input() accordionID: string;
 	@Input() adClass: string;
 
-	constructor () { }
-
-	ngOnInit (): void {
-	}
 }

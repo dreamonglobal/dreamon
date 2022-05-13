@@ -1,7 +1,7 @@
-import { Component, OnInit, Input, ViewChild } from '@angular/core';
-
-import { shopData } from '../../data';
+import { Component, Input, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { shopData } from '../../data';
+
 
 @Component({
 	selector: 'molla-shop-sidebar-one',
@@ -9,7 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 	styleUrls: ['./shop-sidebar-one.component.scss']
 })
 
-export class ShopSidebarOneComponent implements OnInit {
+export class ShopSidebarOneComponent {
 
 	@Input() toggle = false;
 	shopData = shopData;
@@ -36,9 +36,6 @@ export class ShopSidebarOneComponent implements OnInit {
 		})
 	}
 
-	ngOnInit(): void {
-	}
-
 	containsAttrInUrl(type: string, value: string) {
 		const currentQueries = this.params[type] ? this.params[type].split(',') : [];
 		return currentQueries && currentQueries.includes(value);
@@ -51,7 +48,7 @@ export class ShopSidebarOneComponent implements OnInit {
 	}
 
 	onAttrClick(attr: string, value: string) {
-		let url = this.getUrlForAttrs(attr, value);
+		// let url = this.getUrlForAttrs(attr, value);
 		this.router.navigate([], { queryParams: { [attr]: this.getUrlForAttrs(attr, value), page: 1 }, queryParamsHandling: 'merge' });
 	}
 

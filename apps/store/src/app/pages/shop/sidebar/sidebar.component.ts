@@ -5,7 +5,7 @@ import { ApiService } from '../../../shared/services/api.service';
 import { UtilsService } from '../../../shared/services/utils.service';
 
 @Component({
-	selector: 'dreamon-shop-sidebar-page',
+	selector: 'molla-shop-sidebar-page',
 	templateUrl: './sidebar.component.html',
 	styleUrls: ['./sidebar.component.scss'],
 })
@@ -26,13 +26,13 @@ export class SidebarPageComponent implements OnInit {
 		this.activeRoute.params.subscribe(params => {
 			this.type = params['type'];
 
-			if (this.type == 'list') {
+			if (this.type === 'list') {
 				this.pageTitle = 'List';
-			} else if (this.type == '2cols') {
+			} else if (this.type === '2cols') {
 				this.pageTitle = 'Grid 2 Columns';
-			} else if (this.type == '3cols') {
+			} else if (this.type === '3cols') {
 				this.pageTitle = 'Grid 3 Columns';
-			} else if (this.type == '4cols') {
+			} else if (this.type === '4cols') {
 				this.pageTitle = 'Grid 4 Columns';
 			}
 		});
@@ -72,7 +72,7 @@ export class SidebarPageComponent implements OnInit {
 	}
 
 	@HostListener('window: resize', ['$event'])
-	onResize(event: Event) {
+	onResize() {
 		if (window.innerWidth > 991) this.toggle = false;
 		else this.toggle = true;
 	}

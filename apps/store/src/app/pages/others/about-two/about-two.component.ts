@@ -1,16 +1,16 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
+import { brands, counters, iconBoxes, members } from './about-two-data';
 
-import { iconBoxes, counters, brands, members } from './about-two-data';
 
 @Component({
-	selector: 'pages-about-two-page',
+	selector: 'molla-pages-about-two-page',
 	templateUrl: './about-two.component.html',
 	styleUrls: ['./about-two.component.scss'],
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 
-export class AboutTwoPageComponent implements OnInit {
+export class AboutTwoPageComponent {
 
 	iconBoxes = iconBoxes;
 	brands = brands;
@@ -18,8 +18,5 @@ export class AboutTwoPageComponent implements OnInit {
 	counters = counters;
 
 	constructor(public sanitizer: DomSanitizer) {
-	}
-
-	ngOnInit(): void {
 	}
 }

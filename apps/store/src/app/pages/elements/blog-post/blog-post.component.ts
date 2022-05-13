@@ -4,7 +4,7 @@ import { Subscription } from 'rxjs';
 import { ApiService } from '../../../shared/services/api.service';
 
 @Component({
-	selector: 'element-blog-post-page',
+	selector: 'molla-element-blog-post-page',
 	templateUrl: './blog-post.component.html',
 	styleUrls: ['./blog-post.component.scss']
 })

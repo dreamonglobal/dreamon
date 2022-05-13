@@ -64,18 +64,18 @@ export class CartService {
 
 	// Check whether product is in Cart or not
 	isInCart(product: Product): boolean {
-		return this.cartItems.find(item => item.id == product.id) ? true : false;
+		return this.cartItems.find(item => item.id === product.id) ? true : false;
 	}
 
 	// Check where product could be added to the cart
 	canAddToCart(product: Product, qty = 1) {
-		const find = this.cartItems.find(item => item.id == product.id);
+		const find = this.cartItems.find(item => item.id === product.id);
 
 		if (find) {
-			if (product.stock == 0 || (product.stock && product.stock < (find.qty + qty))) return false;
+			if (product.stock === 0 || (product.stock && product.stock < (find.qty + qty))) return false;
 			else return true;
 		} else {
-			if (product.stock == 0 || (product.stock && product.stock < qty)) return false;
+			if (product.stock === 0 || (product.stock && product.stock < qty)) return false;
 			else return true;
 		}
 	}

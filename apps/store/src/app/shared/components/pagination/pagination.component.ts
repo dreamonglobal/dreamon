@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, OnChanges } from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -7,7 +7,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 	styleUrls: ['./pagination.component.scss']
 })
 
-export class PaginationComponent implements OnInit, OnChanges {
+export class PaginationComponent implements OnChanges {
 
 	@Input() adClass = '';
 	@Input() perPage = 12;
@@ -30,9 +30,6 @@ export class PaginationComponent implements OnInit, OnChanges {
 		this.refresh();
 	}
 
-	ngOnInit(): void {
-	}
-
 	refresh() {
 		this.currentPage = this.params['page'] ? parseInt(this.params['page']) : 1;
 		this.lastPage = Math.floor(this.total / this.perPage) + (this.total % this.perPage ? 1 : 0);
@@ -40,7 +37,7 @@ export class PaginationComponent implements OnInit, OnChanges {
 
 		this.pagesToBeShown = [];
 
-		let pageCount =
+		const pageCount =
 			Math.floor(this.total / this.perPage) +
 			(0 < this.total % this.perPage ? 1 : 0);
 

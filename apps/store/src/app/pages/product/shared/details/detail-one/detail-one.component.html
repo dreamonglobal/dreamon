@@ -9,14 +9,14 @@
         <span class="ratings-text">( {{ product.review }} Reviews )</span>
     </div>
 
-    <div class="product-price" *ngIf="!product.stock || product.stock == 0 else elseBlock">
+    <div class="product-price" *ngIf="!product.stock || product.stock === 0 else elseBlock">
         <span class="out-price">${{ product.price.toFixed(2) }}</span>
     </div>
 
     <ng-template #elseBlock>
-        <div class="product-price" *ngIf="minPrice == maxPrice else elseBlock">${{ minPrice.toFixed(2) }}</div>
+        <div class="product-price" *ngIf="minPrice === maxPrice else elseBlock">${{ minPrice.toFixed(2) }}</div>
         <ng-template #elseBlock>
-            <div class="product-price" *ngIf="product.variants.length == 0 else elseBlock">
+            <div class="product-price" *ngIf="product.variants.length === 0 else elseBlock">
                 <span class="new-price">${{ minPrice.toFixed(2) }}</span>
                 <span class="old-price">${{ maxPrice.toFixed(2) }}</span>
             </div>
@@ -34,7 +34,7 @@
         <div class="details-filter-row details-row-size">
             <label>Color:</label>
             <div class="product-nav product-nav-dots">
-                <a href="javascript:;" [class.active]="item.color == selectedVariant.color"
+                <a href="javascript:;" [class.active]="item.color === selectedVariant.color"
                     [class.disabled]="item.disabled" [style.background-color]="item.color"
                     *ngFor="let item of colorArray" (click)="selectColor($event, item)"></a>
             </div>
@@ -45,15 +45,15 @@
             <div class="select-custom">
                 <select name="size" id="size" class="form-control" [value]="selectedVariant.size"
                     (change)="selectSize($event)">
-                    <option value="" [selected]="'' == selectedVariant.size">Select a size</option>
+                    <option value="" [selected]="'' === selectedVariant.size">Select a size</option>
                     <option [value]="item.size" *ngFor="let item of sizeArray"
-                        [selected]="item.size == selectedVariant.size">{{ item.size }}</option>
+                        [selected]="item.size === selectedVariant.size">{{ item.size }}</option>
                 </select>
             </div>
 
             <a href="javascript:;" class="size-guide mr-4"><i class="icon-th-list"></i>size guide</a>
             <a href="javascript:;" (click)="clearSelection()"
-                *ngIf="selectedVariant.color || selectedVariant.size != ''">clear</a>
+                *ngIf="selectedVariant.color || selectedVariant.size !== ''">clear</a>
         </div>
     </div>
 
@@ -71,7 +71,7 @@
 
     <div class="product-details-action">
         <a href="javascript:;" class="btn-product btn-cart"
-            [class.btn-disabled]="!cartService.canAddToCart( product, qty ) || ( product.variants.length > 0 && !( selectedVariant.color && selectedVariant.size != '' ) )"
+            [class.btn-disabled]="!cartService.canAddToCart( product, qty ) || ( product.variants.length > 0 && !( selectedVariant.color && selectedVariant.size !== '' ) )"
             (click)="addCart( $event, 0 )"><span>add to cart</span></a>
 
         <div class="details-action-wrapper">
@@ -114,19 +114,19 @@
                     </h3>
                 </div>
                 <div class="col-6 justify-content-end">
-                    <div class="product-price" *ngIf="selectedVariant.color && selectedVariant.size != '' else variationPrice">
+                    <div class="product-price" *ngIf="selectedVariant.color && selectedVariant.size !== '' else variationPrice">
                         ${{ selectedVariant.price ? selectedVariant.price.toFixed( 2 ) : 0 }}
                     </div>
                     <ng-template #variationPrice>
-                        <div class="product-price" *ngIf="!product.stock || product.stock == 0 else elseBlock">
+                        <div class="product-price" *ngIf="!product.stock || product.stock === 0 else elseBlock">
                             <span class="out-price">${{ product.price.toFixed(2) }}</span>
                         </div>
 
                         <ng-template #elseBlock>
-                            <div class="product-price" *ngIf="minPrice == maxPrice else elseBlock">
+                            <div class="product-price" *ngIf="minPrice === maxPrice else elseBlock">
                                 ${{ minPrice.toFixed(2) }}</div>
                             <ng-template #elseBlock>
-                                <div class="product-price" *ngIf="product.variants.length == 0 else elseBlock">
+                                <div class="product-price" *ngIf="product.variants.length === 0 else elseBlock">
                                     <span class="new-price">${{ minPrice.toFixed(2) }}</span>
                                     <span class="old-price">${{ maxPrice.toFixed(2) }}</span>
                                 </div>
@@ -143,7 +143,7 @@
 
                     <div class="product-details-action">
                         <a href="javascript:;" class="btn-product btn-cart"
-                            [class.btn-disabled]="!cartService.canAddToCart( product, qty2 ) || ( product.variants.length > 0 && !( selectedVariant.color && selectedVariant.size != '' ) )"
+                            [class.btn-disabled]="!cartService.canAddToCart( product, qty2 ) || ( product.variants.length > 0 && !( selectedVariant.color && selectedVariant.size !== '' ) )"
                             (click)="addCart( $event, 1 )"><span>add to cart</span></a>
 
                         <div class="details-action-wrapper ml-0">

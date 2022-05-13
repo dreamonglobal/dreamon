@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
 	selector: 'molla-login-modal',
@@ -6,15 +6,9 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: ['./login-modal.component.scss']
 })
 
-export class LoginModalComponent implements OnInit {
-
-	constructor() { }
-
-	ngOnInit(): void {
-	}
-
+export class LoginModalComponent  {
 	closeModal() {
-		let modal = document.querySelector('.login-modal') as HTMLElement;
+		const modal = document.querySelector('.login-modal') as HTMLElement;
 		if (modal)
 			modal.click();
 	}

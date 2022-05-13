@@ -46,6 +46,6 @@ export class CompareService {
 
 	// Check whether product is in Compare or not
 	isInCompare(product: Product) {
-		return this.compareItems.find(item => item.id == product.id) ? true : false;
+		return this.compareItems.find(item => item.id === product.id) ? true : false;
 	}
 }

@@ -5,7 +5,7 @@ import { ApiService } from '../../../shared/services/api.service';
 
 
 @Component({
-	selector: 'product-default-page',
+	selector: 'molla-product-default-page',
 	templateUrl: './default.component.html',
 	styleUrls: ['./default.component.scss']
 })
@@ -20,7 +20,7 @@ export class DefaultPageComponent {
 
 	constructor(
 		public apiService: ApiService,
-		private activeRoute: ActivatedRoute,
+		activeRoute: ActivatedRoute,
 		public router: Router
 	) {
 		activeRoute.params.subscribe(params => {

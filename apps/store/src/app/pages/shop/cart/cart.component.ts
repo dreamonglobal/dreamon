@@ -8,7 +8,7 @@ import { environment } from '../../../../environments/environment';
 import { Product } from '../../../shared/classes/product';
 
 @Component({
-	selector: 'dreamon-shop-cart-page',
+	selector: 'molla-shop-cart-page',
 	templateUrl: './cart.component.html',
 	styleUrls: ['./cart.component.scss']
 })

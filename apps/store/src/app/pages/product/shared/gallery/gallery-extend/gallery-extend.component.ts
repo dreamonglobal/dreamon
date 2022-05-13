@@ -7,7 +7,7 @@ import { sliderOpt } from '../../../../../shared/data';
 
 
 @Component( {
-	selector: 'product-gallery-extend',
+	selector: 'molla-product-gallery-extend',
 	templateUrl: './gallery-extend.component.html',
 	styleUrls: [ './gallery-extend.component.scss' ]
 } )

@@ -52,7 +52,7 @@ export class HeaderSearchComponent implements OnInit, OnDestroy {
 									max = item.price;
 							}, []);
 
-							if (cur.variants.length == 0) {
+							if (cur.variants.length === 0) {
 								min = cur.sale_price
 									? cur.sale_price
 									: cur.price;
@@ -78,7 +78,7 @@ export class HeaderSearchComponent implements OnInit, OnDestroy {
 	}
 
 	matchEmphasize(name: string) {
-		var regExp = new RegExp(this.searchTerm, 'i');
+		const regExp = new RegExp(this.searchTerm, 'i');
 		return name.replace(
 			regExp,
 			match => '<strong>' + match + '</strong>'
@@ -88,7 +88,7 @@ export class HeaderSearchComponent implements OnInit, OnDestroy {
 	goProductPage() {
 		this.searchTerm = '';
 		this.suggestions = [];
-		var inputElement: any = document.querySelector('.header-search .form-control');
+		const inputElement: any = document.querySelector('.header-search .form-control');
 		inputElement.value = "";
 		this.closeSearchForm();
 	}

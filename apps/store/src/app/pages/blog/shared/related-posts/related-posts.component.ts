@@ -3,7 +3,7 @@ import { Post } from '../../../../shared/classes/post';
 
 
 @Component({
-	selector: 'blog-related-posts',
+	selector: 'molla-blog-related-posts',
 	templateUrl: './related-posts.component.html',
 	styleUrls: ['./related-posts.component.scss']
 })

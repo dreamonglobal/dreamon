@@ -5,7 +5,7 @@ import { Product } from '../../../../../shared/classes/product';
 import { environment } from '../../../../../../environments/environment';
 
 @Component({
-	selector: 'product-gallery-sticky',
+	selector: 'molla-product-gallery-sticky',
 	templateUrl: './gallery-sticky.component.html',
 	styleUrls: ['./gallery-sticky.component.scss']
 })
@@ -29,7 +29,7 @@ export class GalleryStickyComponent implements OnInit, OnChanges {
 	constructor(public lightBox: Lightbox) { }
 
 	@HostListener('window:resize', ['$event'])
-	closeLightBox(event: Event) {
+	closeLightBox() {
 		this.lightBox.close();
 	}
 

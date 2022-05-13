@@ -1,7 +1,8 @@
-import { ChangeDetectionStrategy, Component, OnInit, OnDestroy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnDestroy } from '@angular/core';
 import { Router, NavigationStart } from '@angular/router';
 import { Subscription } from 'rxjs';
 
+// eslint-disable-next-line no-var
 declare var $: any;
 
 @Component({
@@ -11,7 +12,7 @@ declare var $: any;
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 
-export class MobileMenuComponent implements OnInit, OnDestroy {
+export class MobileMenuComponent implements OnDestroy {
 
 	searchTerm = "";
 
@@ -23,9 +24,6 @@ export class MobileMenuComponent implements OnInit, OnDestroy {
 				this.hideMobileMenu();
 			}
 		});
-	}
-
-	ngOnInit(): void {
 	}
 
 	ngOnDestroy(): void {

@@ -22,7 +22,7 @@ export class ApiService {
 			temp += '?';
 		}
 
-		for (let key in params) {
+		for (const key in params) {
 			temp += key + '=' + params[key] + '&';
 		}
 
@@ -48,7 +48,7 @@ export class ApiService {
 			temp += '?';
 		}
 
-		for (let key in params) {
+		for (const key in params) {
 			temp += key + '=' + params[key] + '&';
 		}
 

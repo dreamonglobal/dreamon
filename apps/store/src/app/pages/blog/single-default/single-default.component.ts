@@ -13,7 +13,7 @@ import { sliderOpt } from '../../../shared/data';
 import { environment } from '../../../../environments/environment';
 
 @Component({
-	selector: 'blog-single-default-page',
+	selector: 'molla-blog-single-default-page',
 	templateUrl: './single-default.component.html',
 	styleUrls: ['./single-default.component.scss']
 })
@@ -59,7 +59,7 @@ export class SingleDefaultPageComponent implements OnInit {
 	}
 
 	@HostListener('window:resize', ['$event'])
-	resizeHandler(event: Event) {
+	resizeHandler() {
 		this.resizeHandle()
 	}
 

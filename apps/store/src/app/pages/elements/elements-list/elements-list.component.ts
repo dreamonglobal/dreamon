@@ -1,15 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-	selector: 'elements-list-page',
+	selector: 'molla-elements-list-page',
 	templateUrl: './elements-list.component.html',
 	styleUrls: ['./elements-list.component.scss']
 })
 
-export class ElementsListPageComponent implements OnInit {
-
-	constructor() { }
-
-	ngOnInit(): void {
-	}
+export class ElementsListPageComponent {
 }

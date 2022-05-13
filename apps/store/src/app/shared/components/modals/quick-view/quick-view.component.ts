@@ -16,7 +16,7 @@ import { sliderOpt } from '../../../../shared/data';
 declare var $: any;
 
 @Component({
-	selector: 'dreamon-molla-quick-view',
+	selector: 'molla-quick-view',
 	templateUrl: './quick-view.component.html',
 	styleUrls: ['./quick-view.component.scss'],
 	encapsulation: ViewEncapsulation.None
@@ -91,7 +91,7 @@ export class QuickViewComponent implements OnInit {
 				return acc;
 			}, []);
 
-			if (this.product.variants.length == 0) {
+			if (this.product.variants.length === 0) {
 				min = this.product.sale_price
 					? this.product.sale_price
 					: this.product.price;
@@ -177,7 +177,7 @@ export class QuickViewComponent implements OnInit {
 		}
 
 		this.sizeArray = tempArray.reduce((acc, cur) => {
-			if (acc.findIndex(item => item.size == cur.size) !== -1)
+			if (acc.findIndex(item => item.size === cur.size) !== -1)
 				return acc;
 			return [...acc, cur];
 		}, []);
@@ -194,7 +194,7 @@ export class QuickViewComponent implements OnInit {
 
 		this.colorArray = this.product.variants.reduce((acc, cur) => {
 			if (
-				tempArray.findIndex(item => item.color == cur.color) == -1
+				tempArray.findIndex(item => item.color === cur.color) === -1
 			) {
 				return [
 					...acc,
@@ -230,7 +230,7 @@ export class QuickViewComponent implements OnInit {
 	selectColor(event: Event, item: any) {
 		event.preventDefault();
 
-		if (item.color == this.selectedVariant.color) {
+		if (item.color === this.selectedVariant.color) {
 			this.selectedVariant = {
 				...this.selectedVariant,
 				color: null,
@@ -250,10 +250,10 @@ export class QuickViewComponent implements OnInit {
 	}
 
 	selectSize(event: Event) {
-		if (this.selectedVariant.size == 'null') {
+		if (this.selectedVariant.size === 'null') {
 			this.selectedVariant = { ...this.selectedVariant, size: "" };
 		}
-		if ($(event.target).val() == "") {
+		if ($(event.target).val() === "") {
 			this.selectedVariant = { ...this.selectedVariant, size: "" };
 		} else {
 			this.selectedVariant = { ...this.selectedVariant, size: $(event.target).val() };

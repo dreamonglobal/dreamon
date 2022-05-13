@@ -3,7 +3,7 @@ import { Component, OnInit, HostListener, Input } from '@angular/core';
 import { environment } from '../../../../../environments/environment';
 
 @Component({
-	selector: 'product-toggle-sidebar',
+	selector: 'molla-product-toggle-sidebar',
 	templateUrl: './toggle-sidebar.component.html',
 	styleUrls: ['./toggle-sidebar.component.scss']
 })

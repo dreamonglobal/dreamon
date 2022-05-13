@@ -1,19 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component } from '@angular/core';
 import { iconBoxes } from './icon-box-data';
 
+
 @Component({
-	selector: 'elements-icon-boxes-page',
+	selector: 'molla-elements-icon-boxes-page',
 	templateUrl: './icon-box.component.html',
 	styleUrls: ['./icon-box.component.scss']
 })
 
-export class IconBoxesPageComponent implements OnInit {
+export class IconBoxesPageComponent {
 
 	public items = iconBoxes;
 
-	constructor() { }
-
-	ngOnInit(): void {
-	}
 }

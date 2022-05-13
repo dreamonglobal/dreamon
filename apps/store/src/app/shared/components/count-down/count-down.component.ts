@@ -42,8 +42,8 @@ export class CountDownComponent implements OnInit {
 				break;
 		}
 
-		let until: any = new Date(this.until);
-		let current: any = new Date();
+		const until: any = new Date(this.until);
+		const current: any = new Date();
 		let time = (until - current) / 1000;
 
 		if (this.until.substring(0, 1) === '+') time = this.time;
@@ -54,8 +54,8 @@ export class CountDownComponent implements OnInit {
 		this.seconds = Math.floor(time % 60);
 
 		setInterval(() => {
-			let until: any = new Date(this.until);
-			let current: any = new Date();
+			const until: any = new Date(this.until);
+			const current: any = new Date();
 			let time = (until - current) / 1000;
 
 			if (this.until.substring(0, 1) === '+') time = this.time;
