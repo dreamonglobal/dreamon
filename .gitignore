@@ -45,3 +45,5 @@ Thumbs.db
 /apps/conference/node_modules
 /apps/conference/public
 /apps/conference/.cache
+
+.angular

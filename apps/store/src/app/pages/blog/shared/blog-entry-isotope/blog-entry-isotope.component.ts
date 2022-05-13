@@ -1,0 +1,93 @@
+import { Component, Input, OnChanges, ViewChild } from '@angular/core';
+import { Post } from '../../../../shared/classes/post';
+import { IsotopeGridComponent } from '../../../../shared/components/isotope-grid/isotope-grid.component';
+
+
+
+@Component({
+	selector: 'molla-blog-entry-isotope',
+	templateUrl: './blog-entry-isotope.component.html',
+	styleUrls: ['./blog-entry-isotope.component.scss']
+})
+
+export class BlogEntryIsotopeComponent implements OnChanges {
+
+	@Input() posts: Post[] = [];
+	@Input() counts: number[];
+	@Input() gridOptions;
+	@Input() itemsPerRow: number;
+	@Input() justifyClass: string;
+	@Input() postType: number;
+	@Input() isContent = true;
+	@Input() showNav: boolean;
+	@ViewChild('blogIsotope') blogIsotope: IsotopeGridComponent;
+
+	filters = ['*', '.Lifestyle', '.Shopping', '.Travel', '.Hobbies', '.Fashion'];
+	navText = ['All Blog Posts', 'Lifestyle', 'Shopping', 'Travel', 'Hobbies', 'Fashion'];
+	displayPosts: Post[];
+	isFirst = true;
+	maxCount: number;
+	paginationCount: number;
+	start = 0;
+
+	ngOnChanges(): void {
+		if (!this.posts) return;
+
+		this.displayPosts = this.posts;
+		this.paginationCount = this.counts[0];
+
+		if (this.itemsPerRow !== 4) {
+			this.maxCount = this.itemsPerRow * 3;
+		} else {
+			this.maxCount = this.itemsPerRow * 2;
+		}
+
+		if (!this.showNav) {
+			this.maxCount = 8;
+		}
+
+		if (!this.isFirst) {
+			this.blogIsotope.isReset = true;
+		} else {
+			this.isFirst = false;
+		}
+	}
+
+	onChangePage(current: number) {
+		// display loading overlay
+
+		this.start = current;
+		this.blogIsotope.isReset = true;
+
+		window.scrollTo({
+			top: 0
+		});
+	}
+
+	getPostCategory(post) {
+		return post.blog_categories.reduce((acc, cur) => {
+			return acc + " " + cur.slug;
+		}, "");
+	}
+
+	filterBlogs(e) {
+		let filter = e.target.getAttribute('data-filter');
+
+		this.blogIsotope.isReset = true;
+
+		if (filter && filter !== "*") {
+			filter = filter.substring(1);
+		}
+
+		if (filter !== "*") {
+			this.displayPosts = this.posts.filter(post =>
+				post.blog_categories.find(cat => cat.slug === filter.toLowerCase())
+			);
+		} else {
+			this.displayPosts = this.posts;
+		}
+
+		this.paginationCount = this.displayPosts.length;
+		this.start = 0;
+	}
+}
