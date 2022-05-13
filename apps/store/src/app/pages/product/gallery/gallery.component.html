@@ -9,8 +9,8 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="skel-product-gallery"></div>
-                            <product-gallery-extend [product]="product" *ngIf="loaded">
-                            </product-gallery-extend>
+                            <molla-product-gallery-extend [product]="product" *ngIf="loaded">
+                            </molla-product-gallery-extend>
                         </div>
 
                         <div class="col-12">
@@ -41,15 +41,15 @@
                     </div>
                 </div>
 
-                <product-detail-three [product]="product" *ngIf="loaded"></product-detail-three>
+                <molla-product-detail-three [product]="product" *ngIf="loaded"></molla-product-detail-three>
             </div>
 
             <div class="skel-pro-tabs" *ngIf="!loaded else infoBlock"></div>
             <ng-template #infoBlock>
-                <product-info-one [product]="product"></product-info-one>
+                <molla-product-info-one [product]="product"></molla-product-info-one>
             </ng-template>
 
-            <related-products-one [products]="related" [loaded]="loaded"></related-products-one>
+            <molla-related-products-one [products]="related" [loaded]="loaded"></molla-related-products-one>
         </div>
     </div>
 </main>

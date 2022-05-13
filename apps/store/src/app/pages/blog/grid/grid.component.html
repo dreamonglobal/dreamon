@@ -25,9 +25,9 @@
                     </div>
                 </div>
                 <ng-template #loadedBlock>
-                    <blog-entry-isotope [posts]="posts" [counts]="counts" [postType]="1" [showNav]="true"
+                    <molla-blog-entry-isotope [posts]="posts" [counts]="counts" [postType]="1" [showNav]="true"
                         [gridOptions]="isotopeOptions" [itemsPerRow]="itemsPerRow" justifyClass="text-center">
-                    </blog-entry-isotope>
+                    </molla-blog-entry-isotope>
                 </ng-template>
             </div>
             <ng-template #sidebarBlock>
@@ -40,9 +40,9 @@
                             </div>
                         </div>
                         <ng-template #loadedBlock>
-                            <blog-entry-isotope [posts]="posts" [counts]="counts" [postType]="1" [showNav]=false
+                            <molla-blog-entry-isotope [posts]="posts" [counts]="counts" [postType]="1" [showNav]=false
                                 [gridOptions]="isotopeOptions" [itemsPerRow]="itemsPerRow">
-                            </blog-entry-isotope>
+                            </molla-blog-entry-isotope>
                         </ng-template>
                     </div>
 
@@ -54,7 +54,7 @@
                             <div class="skel-widget"></div>
                         </div>
                         <ng-template #sidebarLoaded>
-                            <blog-sidebar [categories]="blogCategories" [toggle]="toggle"></blog-sidebar>
+                            <molla-blog-sidebar [categories]="blogCategories" [toggle]="toggle"></molla-blog-sidebar>
 
                             <button class="sidebar-fixed-toggler right" (click)="toggleSidebar()" *ngIf="toggle">
                                 <i class="icon-cog"></i>

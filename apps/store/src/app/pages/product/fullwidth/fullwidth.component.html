@@ -10,8 +10,8 @@
                         <div class="row skel-pro-single fullwidth" [class.loaded]="loaded">
                             <div class="col-md-6 col-lg-7">
                                 <div class="skel-product-gallery"></div>
-                                <product-gallery-default [product]="product" *ngIf="loaded" adClass="">
-                                </product-gallery-default>
+                                <molla-product-gallery-default [product]="product" *ngIf="loaded" adClass="">
+                                </molla-product-gallery-default>
                             </div>
 
                             <div class="col-md-6 col-lg-5">
@@ -23,11 +23,11 @@
                                         <div class="entry-summary2"></div>
                                     </div>
                                 </div>
-                                <product-detail-one [product]="product" *ngIf="loaded"></product-detail-one>
+                                <molla-product-detail-one [product]="product" *ngIf="loaded"></molla-product-detail-one>
 
                                 <div class="skel-pro-tabs" *ngIf="!loaded else infoBlock"></div>
                                 <ng-template #infoBlock>
-                                    <product-info-three [product]="product"></product-info-three>
+                                    <molla-product-info-three [product]="product"></molla-product-info-three>
                                 </ng-template>
                             </div>
                         </div>
@@ -38,7 +38,7 @@
                     <div class="sidebar sticky-content skel-pro-single" [class.loaded]="loaded">
                         <div class="skel-widget"></div>
                         <div class="skel-widget"></div>
-                        <product-toggle-sidebar [products]="related" *ngIf="loaded"></product-toggle-sidebar>
+                        <molla-product-toggle-sidebar [products]="related" *ngIf="loaded"></molla-product-toggle-sidebar>
                     </div>
                 </div>
             </div>
