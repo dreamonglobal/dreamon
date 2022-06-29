@@ -27,16 +27,14 @@
         "subtitle": "Your Helping Hands",
         "description": "We aren't able to do any of the things we do without the support of people just like you.",
         "button": "Donate Now",
-        "buttonLink": "https://www.paypal.com/donate/?token=_VV4NX2yorvh4-A4aMbH1VJ75nly1JyZae94238oxw6LESsAA7Mgc7OTDhtY0yn_vCMdwG&country.x=US&locale.x=US"
+        "buttonLink": "https://trellis.org/dream-on"
       },
       "five": {
-        "title": "Dream On:",
-        "subtitle": "Music Collective",
-        "description": "Dream On: Music Collective is a team of writers, singers, musicians, and worshippers. We are passionate about pursuing the presence of God in every area of our lives and re-sparking the dreams and purposes God has put in each and everyone’s life.",
-        "button": "View The Artists",
-        "buttonLink": "/music",
-        "button2": "Upcoming Events",
-        "button2Link": "/events"
+        "title": "Nights of Praise",
+        "subtitle": "Presented by Dream On",
+        "description": "Night of Praise is a movement that encourages church in the community to unite and dream again!",
+        "button": "Learn More",
+        "buttonLink": "/events/"
       }
     },
     "bucket": {
@@ -48,7 +46,7 @@
       "three": {
         "title": "WE NEED YOUR HELP CHANGING THE WORLD",
         "button": "Donate",
-        "buttonLink": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCJ6SAWVF5U5Q"
+        "buttonLink": "https://trellis.org/dream-on"
       }
     },
     "playVideo": "Play Video"
@@ -73,7 +71,7 @@
     },
     "links": {
       "join": "/join",
-      "donate": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCJ6SAWVF5U5Q"
+      "donate": "https://trellis.org/dream-on"
     },
     "team": {
       "title": "The Dream Team"
@@ -155,7 +153,9 @@
     "store": "Store",
     "storeLink": "https://shop.dreamon.world/",
     "contact": "Contact",
-    "contactLink": "/contact"
+    "contactLink": "/contact",
+    "donate": "Donate",
+    "donateLink": "https://trellis.org/dream-on"
   },
   "footer": {
     "copyright": "Copyright",

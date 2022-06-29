@@ -1,6 +1,6 @@
 ---
 path: '/team/ty-watson'
-order: 5
+order: 6
 name: 'Ty Watson'
 title: 'Tour Pastor'
 photo: '/images/volunteers/ty.jpg'

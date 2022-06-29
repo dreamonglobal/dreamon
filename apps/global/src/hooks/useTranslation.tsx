@@ -44,8 +44,6 @@ const query = graphql`
                   description
                   button
                   buttonLink
-                  button2
-                  button2Link
                 }
               }
               bucket {
@@ -166,6 +164,8 @@ const query = graphql`
               storeLink
               contact
               contactLink
+              donate
+              donateLink
             }
             footer {
               copyright

@@ -31,7 +31,7 @@ const Slider = (): ReactElement => {
     >
       
       
-      <div className="item">
+      {/* <div className="item">
         <div
           className="single-banner"
           style={{ background: "url('../images/banner/brazil-cover.jpg')" }}
@@ -48,6 +48,38 @@ const Slider = (): ReactElement => {
                     <p className="fadeIn animated animated-08s">
                       {translations.one.description}
                     </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> */}
+
+<div className="item">
+        <div
+          className="single-banner"
+          style={{ background: "url('../images/banner/night-of-praise.jpg')" }}
+        >
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-6 col-md-6 col-md-offset-1 col-lg-offset-0 col-sm-8">
+                <div className="single-banner-con">
+                  <div className="single-banner-txt">
+                    <h1>
+                      <span>{translations.five.title}</span>{' '}
+                      {translations.five.subtitle}
+                    </h1>
+                    <p className="fadeIn animated animated-08s">
+                      {translations.five.description}
+                    </p>
+                    <Link
+                      to={translations.five.buttonLink}
+                      className="tem-btn nav-link move-eff"
+                      data-cy="sliderThreeBtnTwo"
+                    >
+                      <span>{translations.five.button}</span>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -82,47 +114,6 @@ const Slider = (): ReactElement => {
                     >
                       <span>{translations.two.button}</span>
                     </OutboundLink>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="item">
-        <div
-          className="single-banner"
-          style={{ background: "url('../images/banner/me-myself-lies.jpg')" }}
-        >
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-6 col-md-6 col-md-offset-1 col-lg-offset-0 col-sm-8">
-                <div className="single-banner-con">
-                  <div className="single-banner-txt">
-                    <h1>
-                      <span>{translations.three.title}</span>{' '}
-                      {translations.three.subtitle}
-                    </h1>
-                    <p className="fadeIn animated animated-08s">
-                      {translations.three.description}
-                    </p>
-                    <OutboundLink
-                      href={translations.three.buttonLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="tem-btn nav-link move-eff"
-                      data-cy="sliderThreeBtn"
-                    >
-                      <span>{translations.three.button}</span>
-                    </OutboundLink>
-                    <Link
-                      to={translations.three.button2Link}
-                      className="tem-btn nav-link move-eff"
-                      data-cy="sliderThreeBtnTwo"
-                    >
-                      <span>{translations.three.button2}</span>
-                    </Link>
                   </div>
                 </div>
               </div>

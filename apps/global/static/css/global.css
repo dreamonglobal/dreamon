@@ -929,7 +929,7 @@ nav {
 }
 
 button.owl-dot:first-of-type {
-  background: url('../images/banner/brazil-cover.jpg');
+  background: url('../images/banner/night-of-praise.jpg');
 }
 
 button.owl-dot:nth-child(2) {
@@ -937,7 +937,7 @@ button.owl-dot:nth-child(2) {
 }
 
 button.owl-dot:nth-child(3) {
-  background: url('../images/banner/me-myself-lies.jpg');
+  background: url('../images/banner/02.jpg');
 }
 
 button.owl-dot:nth-child(4) {
@@ -1469,6 +1469,15 @@ button.owl-dot:nth-child(4) {
   transform-origin: left;
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.single-volunteers {
+  margin-bottom:30px;
+  border-bottom: solid 1px #333;
+}
+.single-volunteers:hover {
+  color: #cc446c;
+  transition: all 0.5s ease-in-out;
 }
 
 .single-volunteers:hover .single-team-con {

@@ -1,6 +1,6 @@
 ---
 path: '/team/brie-sanders'
-order: 6
+order: 7
 name: 'Brie Sanders'
 title: 'Director of Social Media'
 photo: '/images/volunteers/brie.jpg'
