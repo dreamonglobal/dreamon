@@ -164,6 +164,8 @@ const query = graphql`
               storeLink
               contact
               contactLink
+              donate
+              donateLink
             }
             footer {
               copyright

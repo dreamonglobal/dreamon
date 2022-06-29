@@ -4,6 +4,7 @@ import React, { ReactElement, useState } from 'react'
 import { useTranslation } from '../hooks'
 import Modal from 'react-modal'
 import { FeatureTranslations } from '../types'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const ChangeLanguageModal = (): ReactElement => (
   <>
@@ -108,11 +109,15 @@ const Menu = (): ReactElement => {
                     {translations.events}
                   </Link>
                 </li>
-                {/* <li><OutboundLink className="nav-link" href="https://shop.dreamon.world">store</OutboundLink></li> */}
                 <li>
                   <Link className="nav-link" to={translations.contactLink}>
                     {translations.contact}
                   </Link>
+                </li>
+                <li>
+                  <OutboundLink className="nav-link" target='_blank' href={translations.donateLink}>
+                    {translations.donate}
+                  </OutboundLink>
                 </li>
                 <li>
                   <button
