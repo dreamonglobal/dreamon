@@ -1471,6 +1471,15 @@ button.owl-dot:nth-child(4) {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.single-volunteers {
+  margin-bottom:30px;
+  border-bottom: solid 1px #333;
+}
+.single-volunteers:hover {
+  color: #cc446c;
+  transition: all 0.5s ease-in-out;
+}
+
 .single-volunteers:hover .single-team-con {
   transform: rotateY(0);
   opacity: 1;
