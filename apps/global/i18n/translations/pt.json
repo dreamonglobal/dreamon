@@ -30,13 +30,11 @@
         "buttonLink": "https://www.paypal.com/donate/?token=_VV4NX2yorvh4-A4aMbH1VJ75nly1JyZae94238oxw6LESsAA7Mgc7OTDhtY0yn_vCMdwG&country.x=US&locale.x=US"
       },
       "five": {
-        "title": "Dream On:",
-        "subtitle": "Coletivo de música",
-        "description": "Dream On: Music Collective é uma equipe de escritores, cantores, músicos e adoradores. Somos apaixonados por buscar a presença de Deus em todas as áreas de nossas vidas e reacender os sonhos e propósitos que Deus colocou na vida de cada um.",
-        "button": "Veja os artistas",
-        "buttonLink": "/pt/music",
-        "button2": "próximos eventos",
-        "button2Link": "/pt/events"
+        "title": "Noites de louvor",
+        "subtitle": "Apresentado por Dream On",
+        "description": "Noite de Louvor é um movimento que incentiva a igreja da comunidade a se unir e sonhar novamente!",
+        "button": "Saber mais",
+        "buttonLink": "/events"
       }
     },
     "bucket": {

@@ -44,8 +44,6 @@ const query = graphql`
                   description
                   button
                   buttonLink
-                  button2
-                  button2Link
                 }
               }
               bucket {

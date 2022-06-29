@@ -30,13 +30,11 @@
         "buttonLink": "https://www.paypal.com/donate/?token=_VV4NX2yorvh4-A4aMbH1VJ75nly1JyZae94238oxw6LESsAA7Mgc7OTDhtY0yn_vCMdwG&country.x=US&locale.x=US"
       },
       "five": {
-        "title": "Dream On:",
-        "subtitle": "Colectivo de música",
-        "description": "Dream On: Music Collective es un equipo de escritores, cantantes, músicos y adoradores. Nos apasiona buscar la presencia de Dios en cada área de nuestras vidas y reavivar los sueños y propósitos que Dios ha puesto en la vida de todos y cada uno.",
-        "button": "Ver las artistas",
-        "buttonLink": "/es/music",
-        "button2": "Próximos Eventos",
-        "button2Link": "/es/events"
+        "title": "Noches de Alabanza",
+        "subtitle": "Presentado por Dream On",
+        "description": "Night of Praise es un movimiento que anima a la iglesia en la comunidad a unirse y soñar de nuevo.",
+        "button": "Aprende más",
+        "buttonLink": "/events"
       }
     },
     "bucket": {
