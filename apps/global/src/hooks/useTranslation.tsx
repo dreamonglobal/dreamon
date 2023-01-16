@@ -45,6 +45,13 @@ const query = graphql`
                   button
                   buttonLink
                 }
+                six {
+                  title
+                  subtitle
+                  description
+                  button
+                  buttonLink
+                }
               }
               bucket {
                 one {

@@ -1,12 +1,12 @@
 ---
-path: '/events/dream-session-07'
-date: '2020-03-20'
-title: 'Dream Session: Lock In'
-photo: '/images/events/dream-session-7.jpg'
-location: 'Celina, OH'
+path: '/events/dream-session-08'
+date: '2023-02-24'
+title: 'Dream Session: Featuring Wilmer Godoy'
+photo: '/images/events/dream-sessions-lima.jpg'
+location: 'Lima, OH'
 videos: []
-buy: ''
+buy: 'https://www.eventbrite.com/e/dream-session-with-wilmer-godoy-tickets-516847122657'
 category: 'Events'
 ---
 
-Dream On: Global is partnering with area youth ministries to present Dream Session: Lock In in Ceina, Ohio on Friday March 20th from 6:00pm - 12:am. The night will feature free food, games and live worship from Dream On's Music Collective featuring Zac & Emily Howard as well as Lucas & Lilli Gray.
+J﻿oin us for a Dream Session on Friday February 24 in Lima Ohio. The night will feature worship from the Dream On: Music Collective and special guest speaker Wilmer Godoy from Honduras.

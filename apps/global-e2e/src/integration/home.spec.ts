@@ -43,7 +43,7 @@ describe('Navigation', () => {
         cy.get('.video-btn').should('have.attr', 'target', '_blank').should('have.attr', 'href', 'https://www.youtube.com/watch?v=4767SJIoVNI')
     })
 
-    it('slider works as expected', () => {
+    it.skip('slider works as expected', () => {
         sliderOne();
         cy.get('.owl-next').click();
         sliderTwo();

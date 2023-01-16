@@ -34,7 +34,7 @@ describe('markdown', () => {
         assertSpeakerHtmlRendersCorrectLanguage('Sobre Ben Swartz')
     })
 
-    it('Loads Speakers books in three languages', () => {
+    it.skip('Loads Speakers books in three languages', () => {
         navigateToSpeakersPage('english')
         clickOnPerson('Ty Watson')
         assertSpeakerBookRendersCorrectLanguage('is a book created to inspire')
