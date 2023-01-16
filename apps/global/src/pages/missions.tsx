@@ -44,11 +44,11 @@ const TripPreview = ({
         </OutboundLink>
       </article> */}
       <article className="news-info">
-        <OutboundLink href={trips.honduras.link}>
-          <h2 className="text-center">{trips.honduras.country}</h2>
-          <h4 className="text-center">{trips.honduras.date}</h4>
+        <OutboundLink href={trips.brazil.link}>
+          <h2 className="text-center">{trips.brazil.country}</h2>
+          <h4 className="text-center">{trips.brazil.date}</h4>
           <div className="news-img">
-            <GatsbyImage image={hondurasImage} alt="Dream On: Honduras" />
+            <GatsbyImage image={brazilImage} alt={trips.brazil.country} />
           </div>
         </OutboundLink>
       </article>
