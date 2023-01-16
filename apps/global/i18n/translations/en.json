@@ -3,12 +3,12 @@
     "slider": {
       "one": {
         "title": "Dream On:",
-        "subtitle": "Brazil 2022",
-        "description": "We are excited to announce that we will be traveling to Brazil to host our very first Dream On Party in Brazil in June of 2022"
+        "subtitle": "Brazil 2023",
+        "description": "We are excited to announce that we will be returning to Campinas Brazil for a Dream On Party on May 12 and 13"
       },
       "two": {
         "title": "Dream On:",
-        "subtitle": "Honduras 2022",
+        "subtitle": "Honduras 202",
         "description": "We are excited to be taking a team with us to Honduras in October. We live to continually impact the local pastors in Honduras, and have come back to the United States excited to learn that Honduras is still dreaming in God through creating their own services full of worship, the Word, and experiencing the life of God.",
         "button": "Sign Up",
         "buttonLink": "https://dreamon.gomethod.app/!/#/23795/honduras-2022"
@@ -35,6 +35,13 @@
         "description": "Night of Praise is a movement that encourages church in the community to unite and dream again!",
         "button": "Learn More",
         "buttonLink": "/events/"
+      },
+      "six": {
+        "title": "Dream Session",
+        "subtitle": "Featuring Wilmer Godoy",
+        "description": "Join us for a Dream Session on Friday February 24 in Lima Ohio. The night will feature worship from the Dream On: Music Collective and special guest speaker Wilmer Godoy from Honduras.",
+        "button": "Learn More",
+        "buttonLink": "https://www.eventbrite.com/e/dream-session-with-wilmer-godoy-tickets-516847122657"
       }
     },
     "bucket": {

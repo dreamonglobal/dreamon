@@ -3,8 +3,8 @@
     "slider": {
       "one": {
         "title": "Dream On:",
-        "subtitle": "Brazil 2022",
-        "description": "Nos complace anunciar que viajaremos a Brasil para organizar nuestra primera Dream On Party en Brasil en junio de 2022."
+        "subtitle": "Brazil 2023",
+        "description": "Estamos emocionados de anunciar que regresaremos a Campinas Brasil para una fiesta Dream On el 12 y 13 de mayo."
       },
       "two": {
         "title": "Dream On:",
@@ -35,6 +35,13 @@
         "description": "Night of Praise es un movimiento que anima a la iglesia en la comunidad a unirse y soñar de nuevo.",
         "button": "Aprende más",
         "buttonLink": "/events"
+      },
+      "six": {
+        "title": "Dream Session",
+        "subtitle": "Con Wilmer Godoy",
+        "description": "Únase a nosotros para una sesión de ensueño el viernes 24 de febrero en Lima Ohio. La noche contará con la adoración de Dream On: Music Collective y el orador invitado especial Wilmer Godoy de Honduras.",
+        "button": "Aprende más",
+        "buttonLink": "https://www.eventbrite.com/e/dream-session-with-wilmer-godoy-tickets-516847122657"
       }
     },
     "bucket": {

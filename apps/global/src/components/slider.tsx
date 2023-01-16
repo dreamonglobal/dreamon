@@ -29,9 +29,43 @@ const Slider = (): ReactElement => {
       ]}
       nav
     >
+
+       <div className="item">
+        <div
+          className="single-banner"
+          style={{ background: "url('../images/banner/dream-session.jpg')" }}
+        >
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-6 col-md-6 col-md-offset-1 col-lg-offset-0 col-sm-8">
+                <div className="single-banner-con">
+                  <div className="single-banner-txt">
+                    <h1>
+                      <span>{translations.six.title}</span>{' '}
+                      {translations.six.subtitle}
+                    </h1>
+                    <p className="fadeIn animated animated-08s">
+                      {translations.six.description}
+                    </p>
+                    <OutboundLink
+                      href={translations.six.buttonLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="tem-btn nav-link move-eff"
+                      data-cy="sliderOneBtn"
+                    >
+                      <span>{translations.six.button}</span>
+                    </OutboundLink>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       
       
-      {/* <div className="item">
+      <div className="item">
         <div
           className="single-banner"
           style={{ background: "url('../images/banner/brazil-cover.jpg')" }}
@@ -54,9 +88,9 @@ const Slider = (): ReactElement => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
-<div className="item">
+      <div className="item">
         <div
           className="single-banner"
           style={{ background: "url('../images/banner/night-of-praise.jpg')" }}
@@ -88,7 +122,7 @@ const Slider = (): ReactElement => {
         </div>
       </div>
 
-      <div className="item">
+      {/* <div className="item">
         <div
           className="single-banner"
           style={{ background: "url('../images/banner/01.jpg')" }}
@@ -120,7 +154,7 @@ const Slider = (): ReactElement => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="item">
         <div

@@ -3,8 +3,8 @@
     "slider": {
       "one": {
         "title": "Dream On:",
-        "subtitle": "Brazil 2022",
-        "description": "Temos o prazer de anunciar que viajaremos ao Brasil para hospedar nossa primeira Dream On Party no Brasil em junho de 2022"
+        "subtitle": "Brazil 2023",
+        "description": "Temos o prazer de anunciar que retornaremos a Campinas, Brasil, para uma Dream On Party nos dias 12 e 13 de maio."
       },
       "two": {
         "title": "Dream On:",
@@ -35,6 +35,13 @@
         "description": "Noite de Louvor é um movimento que incentiva a igreja da comunidade a se unir e sonhar novamente!",
         "button": "Saber mais",
         "buttonLink": "/events"
+      },
+      "six": {
+        "title": "Dream Session",
+        "subtitle": "Com Wilmer Godoy",
+        "description": "Junte-se a nós para uma Dream Session na sexta-feira, 24 de fevereiro, em Lima, Ohio. A noite contará com a adoração do Dream On: Music Collective e o orador convidado especial Wilmer Godoy de Honduras.",
+        "button": "Saber mais",
+        "buttonLink": "https://www.eventbrite.com/e/dream-session-with-wilmer-godoy-tickets-516847122657"
       }
     },
     "bucket": {

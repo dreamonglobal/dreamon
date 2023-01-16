@@ -929,15 +929,15 @@ nav {
 }
 
 button.owl-dot:first-of-type {
-  background: url('../images/banner/night-of-praise.jpg');
+  background: url('../images/banner/dream-session.jpg');
 }
 
 button.owl-dot:nth-child(2) {
-  background: url('../images/banner/01.jpg');
+  background: url('../images/banner/brazil-cover.jpg');
 }
 
 button.owl-dot:nth-child(3) {
-  background: url('../images/banner/02.jpg');
+  background: url('../images/banner/night-of-praise.jpg');
 }
 
 button.owl-dot:nth-child(4) {
