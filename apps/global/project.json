@@ -1,5 +1,4 @@
 {
-  "root": "apps/global",
   "sourceRoot": "apps/global/src",
   "projectType": "application",
   "targets": {
@@ -37,7 +36,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/apps/global"],
       "options": {
-        "jestConfig": "apps/global/jest.config.js",
+        "jestConfig": "apps/global/jest.config.ts",
         "passWithNoTests": true
       }
     }

@@ -1,5 +1,4 @@
 {
-  "root": "apps/conference",
   "sourceRoot": "apps/conference/src",
   "projectType": "application",
   "targets": {
@@ -37,7 +36,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/apps/conference"],
       "options": {
-        "jestConfig": "apps/conference/jest.config.js",
+        "jestConfig": "apps/conference/jest.config.ts",
         "passWithNoTests": true
       }
     }

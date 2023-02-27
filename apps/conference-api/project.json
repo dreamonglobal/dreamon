@@ -1,10 +1,9 @@
 {
-  "root": "apps/conference-api",
   "sourceRoot": "apps/conference-api/src",
   "projectType": "application",
   "targets": {
     "build": {
-      "executor": "@nrwl/node:build",
+      "executor": "@nrwl/node:webpack",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/conference-api",
@@ -27,7 +26,7 @@
       }
     },
     "serve": {
-      "executor": "@nrwl/node:execute",
+      "executor": "@nrwl/node:node",
       "options": {
         "buildTarget": "conference-api:build"
       }
@@ -43,7 +42,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/apps/conference-api"],
       "options": {
-        "jestConfig": "apps/conference-api/jest.config.js",
+        "jestConfig": "apps/conference-api/jest.config.ts",
         "passWithNoTests": true
       }
     }

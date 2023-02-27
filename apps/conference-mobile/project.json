@@ -1,10 +1,9 @@
 {
-  "root": "apps/conference-mobile",
   "sourceRoot": "apps/conference-mobile/src",
   "projectType": "application",
   "targets": {
     "build": {
-      "executor": "@nrwl/web:build",
+      "executor": "@nrwl/web:webpack",
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
@@ -49,14 +48,18 @@
         "production": {
           "buildTarget": "conference-mobile:build:production",
           "hmr": false
+        },
+        "development": {
+          "buildTarget": "conference-mobile:build:development"
         }
-      }
+      },
+      "defaultConfiguration": "development"
     },
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/apps/conference-mobile"],
       "options": {
-        "jestConfig": "apps/conference-mobile/jest.config.js",
+        "jestConfig": "apps/conference-mobile/jest.config.ts",
         "passWithNoTests": true
       }
     },

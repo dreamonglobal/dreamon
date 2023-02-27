@@ -1,6 +1,5 @@
 {
   "projectType": "application",
-  "root": "apps/store",
   "sourceRoot": "apps/store/src",
   "prefix": "molla",
   "targets": {
@@ -94,7 +93,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/apps/store"],
       "options": {
-        "jestConfig": "apps/store/jest.config.js",
+        "jestConfig": "apps/store/jest.config.ts",
         "passWithNoTests": true
       }
     }
