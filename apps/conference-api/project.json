@@ -3,13 +3,15 @@
   "projectType": "application",
   "targets": {
     "build": {
-      "executor": "@nrwl/node:webpack",
+      "executor": "@nrwl/webpack:webpack",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/conference-api",
         "main": "apps/conference-api/src/main.ts",
         "tsConfig": "apps/conference-api/tsconfig.app.json",
-        "assets": ["apps/conference-api/src/assets"]
+        "assets": ["apps/conference-api/src/assets"],
+        "target": "node",
+        "compiler": "tsc"
       },
       "configurations": {
         "production": {
