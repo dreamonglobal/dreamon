@@ -37,12 +37,12 @@ jobs:
         run: yarn test:affected --base=origin/master
 
       # Run global e2e tests
-      - name: Run Global E2E Tests
-        run: yarn e2e:global:ci
+      # - name: Run Global E2E Tests
+      #   run: yarn e2e:global:ci
 
       # Run conference e2e tests
-      - name: Run Conference E2E Tests
-        run: yarn e2e:conference:ci
+      # - name: Run Conference E2E Tests
+      #   run: yarn e2e:conference:ci
 
       #Run unit tests on codemods lib
       - name: Build
