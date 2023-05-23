@@ -1,0 +1,44 @@
+.form-select:focus {
+    box-shadow: none;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.slick-slide div {
+    outline: none;
+}
+select:focus {
+    outline: none;
+}
+
+select option {
+    font-size: 15px;
+}
+// masonry css
+.masonry-grid {
+    display: flex;
+    margin-left: -40px; /* adjust to match your grid gap */
+    width: auto;
+}
+
+.masonry-grid-column {
+    margin-left: 40px; /* adjust to match your grid gap */
+    background-clip: padding-box;
+}
+
+@media (max-width: 768px) {
+    .masonry-grid {
+        margin-left: 0;
+    }
+
+    .masonry-grid-column {
+        margin-left: 0;
+    }
+}
+
+.feedback_slider_one.custom {
+    .slick-slide img {
+        position: relative;
+        bottom: 12px;
+    }
+}
