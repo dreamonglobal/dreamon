@@ -1,13 +1,15 @@
 {
-  "root": "apps/store-e2e",
+  "name": "store-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/store-e2e/src",
   "projectType": "application",
   "targets": {
     "e2e": {
       "executor": "@nrwl/cypress:cypress",
       "options": {
-        "cypressConfig": "apps/store-e2e/cypress.json",
-        "devServerTarget": "store:serve:development"
+        "cypressConfig": "apps/store-e2e/cypress.config.ts",
+        "devServerTarget": "store:serve:development",
+        "testingType": "e2e"
       },
       "configurations": {
         "production": {

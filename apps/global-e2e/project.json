@@ -1,14 +1,16 @@
 {
-  "root": "apps/global-e2e",
+  "name": "global-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/global-e2e/src",
   "projectType": "application",
   "targets": {
     "e2e": {
       "executor": "@nrwl/cypress:cypress",
       "options": {
-        "cypressConfig": "apps/global-e2e/cypress.json",
+        "cypressConfig": "apps/global-e2e/cypress.config.ts",
         "devServerTarget": "global:serve",
-        "tsConfig": "apps/global-e2e/tsconfig.json"
+        "tsConfig": "apps/global-e2e/tsconfig.json",
+        "testingType": "e2e"
       },
       "configurations": {
         "production": {

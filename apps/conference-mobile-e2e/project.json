@@ -1,13 +1,15 @@
 {
-  "root": "apps/conference-mobile-e2e",
+  "name": "conference-mobile-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/conference-mobile-e2e/src",
   "projectType": "application",
   "targets": {
     "e2e": {
       "executor": "@nrwl/cypress:cypress",
       "options": {
-        "cypressConfig": "apps/conference-mobile-e2e/cypress.json",
-        "devServerTarget": "conference-mobile:serve"
+        "cypressConfig": "apps/conference-mobile-e2e/cypress.config.ts",
+        "devServerTarget": "conference-mobile:serve",
+        "testingType": "e2e"
       },
       "configurations": {
         "production": {

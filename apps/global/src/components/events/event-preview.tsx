@@ -3,6 +3,10 @@ import { Link } from 'gatsby'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import { Frontmatter } from '../../types'
 
+const formatDate = (date: string) => (
+  new Date(date).toDateString()
+)
+
 const EventPreview = ({
   event: { path, name, photo, title, buy, location, date },
   html,
@@ -21,7 +25,7 @@ const EventPreview = ({
 
       <h3 className="text-center">{title}</h3>
       <h4 className="text-center">
-        {date} - {location}
+        {formatDate(date)} - {location}
       </h4>
       <p dangerouslySetInnerHTML={{ __html: html }}></p>
 
