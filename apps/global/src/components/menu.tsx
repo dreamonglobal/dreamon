@@ -85,11 +85,11 @@ const Menu = (): ReactElement => {
                   </Link>
                 </li>
                 <li>
-                  <Link className="nav-link" to={translations.missionsLink}>
+                  <OutboundLink className="nav-link" href={translations.missionsLink} target='_blank'>
                     {translations.missions}
-                  </Link>
+                  </OutboundLink>
                 </li>
-                <li>
+                {/* <li>
                   <Link className="nav-link" to={translations.musicLink}>
                     {translations.music}
                   </Link>
@@ -98,7 +98,7 @@ const Menu = (): ReactElement => {
                   <Link className="nav-link" to={translations.speakersLink}>
                     {translations.speakers}
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link className="nav-link" to={translations.filmsLink}>
                     {translations.films}

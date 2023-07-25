@@ -7,11 +7,11 @@
         "description": "Estamos emocionados de anunciar que regresaremos a Campinas Brasil para una fiesta Dream On el 12 y 13 de mayo."
       },
       "two": {
-        "title": "Dream On:",
-        "subtitle": "Honduras 2022",
-        "description": "Estamos emocionados de llevar un equipo con nosotros a Honduras en octubre. Vivimos para impactar continuamente a los pastores locales en Honduras, y hemos regresado a los Estados Unidos emocionados de saber que Honduras todavía sueña en Dios creando sus propios servicios llenos de adoración, la Palabra y experimentando la vida de Dios.",
+        "title": "Únete a nosotros:",
+        "subtitle": "En nuestro próximo viaje misionero",
+        "description": "Queremos que te unas a nosotros en lo que Dios está haciendo en nuestro próximo viaje misionero.",
         "button": "Inscribirse",
-        "buttonLink": "https://dreamon.gomethod.app/!/#/23795/honduras-2022"
+        "buttonLink": "https://dreamon.gomethod.app"
       },
       "three": {
         "title": "Escuche",
@@ -27,7 +27,7 @@
         "subtitle": "Sus Manos Amigas",
         "description": "No podemos hacer ninguna de las cosas que hacemos sin el apoyo de personas como usted.",
         "button": "Done ahora",
-        "buttonLink": "https://trellis.org/dream-on"
+        "buttonLink": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCJ6SAWVF5U5Q"
       },
       "five": {
         "title": "Noches de Alabanza",
@@ -48,12 +48,12 @@
       "one": {
         "title": "OBTENGA DETALLES SOBRE UNIRSE A NUESTRO PRÓXIMO VIAJE",
         "button": "Entrar",
-        "buttonLink": "https://dreamon.gomethod.app/!/#/23795/honduras-2022"
+        "buttonLink": "https://dreamon.gomethod.app/"
       },
       "three": {
         "title": "NECESITAMOS TU AYUDA PARA CAMBIAR EL MUNDO",
         "button": "Donar",
-        "buttonLink": "https://trellis.org/dream-on"
+        "buttonLink": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCJ6SAWVF5U5Q"
       }
     },
     "playVideo": "Reproduce el video"
@@ -78,7 +78,7 @@
     },
     "links": {
       "join": "/es/join",
-      "donate": "https://trellis.org/dream-on"
+      "donate": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCJ6SAWVF5U5Q"
     },
     "team": {
       "title": "El equipo de ensueño"
@@ -149,7 +149,7 @@
     "about": "Sobre",
     "aboutLink": "/es/about",
     "missions": "Misiones",
-    "missionsLink": "/es/missions",
+    "missionsLink": "https://dreamon.gomethod.app/",
     "music": "Música",
     "musicLink": "/es/music",
     "speakers": "Oradoras",
@@ -163,7 +163,7 @@
     "contact": "Contacto",
     "contactLink": "/es/contact",
     "donate": "Donar",
-    "donateLink": "https://trellis.org/dream-on"
+    "donateLink": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCJ6SAWVF5U5Q"
   },
   "footer": {
     "copyright": "Derechos De Autor",
