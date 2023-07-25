@@ -933,16 +933,17 @@ button.owl-dot:first-of-type {
 }
 
 button.owl-dot:nth-child(2) {
-  background: url('../images/banner/brazil-cover.jpg');
+  background: url('../images/banner/missions.jpg');
 }
 
 button.owl-dot:nth-child(3) {
-  background: url('../images/banner/night-of-praise.jpg');
-}
-
-button.owl-dot:nth-child(4) {
   background: url('../images/banner/02.jpg');
 }
+
+/* /* button.owl-dot:nth-child(3) {
+  background: url('../images/banner/brazil-cover.jpg');
+} */
+
 
 /*  ==========================
         donate wraper area
