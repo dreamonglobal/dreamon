@@ -1,5 +1,6 @@
 {
-  "root": "apps/global",
+  "name": "global",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/global/src",
   "projectType": "application",
   "targets": {

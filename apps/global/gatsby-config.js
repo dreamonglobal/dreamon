@@ -6,7 +6,7 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: require.resolve(`@nrwl/gatsby/plugins/nx-gatsby-ext-plugin`),
+      resolve: require.resolve(`@nx/gatsby`),
       options: {
         path: __dirname,
       },

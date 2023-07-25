@@ -1,9 +1,0 @@
-{
-	"appId": "world.dreamon.conference",
-	"appName": "Dream On: Conf",
-	"webDir": "../../dist/apps/conference-mobile",
-	"bundledWebRuntime": false,
-	"plugins": {
-		"Storage": {}
-	}
-}

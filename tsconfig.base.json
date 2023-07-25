@@ -13,11 +13,7 @@
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "paths": {
-      "@dreamon/conference-schedule": ["libs/conference-schedule/src/index.ts"],
-      "@dreamon/conference-speakers": ["libs/conference-speakers/src/index.ts"]
-    }
+    "baseUrl": "."
   },
   "exclude": ["node_modules", "tmp"]
 }
