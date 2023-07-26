@@ -89,16 +89,6 @@ const Menu = (): ReactElement => {
                     {translations.missions}
                   </OutboundLink>
                 </li>
-                {/* <li>
-                  <Link className="nav-link" to={translations.musicLink}>
-                    {translations.music}
-                  </Link>
-                </li>
-                <li>
-                  <Link className="nav-link" to={translations.speakersLink}>
-                    {translations.speakers}
-                  </Link>
-                </li> */}
                 <li>
                   <Link className="nav-link" to={translations.filmsLink}>
                     {translations.films}
@@ -115,9 +105,9 @@ const Menu = (): ReactElement => {
                   </Link>
                 </li>
                 <li>
-                  <OutboundLink className="nav-link" target='_blank' href={translations.donateLink}>
+                  <Link className="nav-link" target='_blank' to={translations.donateLink}>
                     {translations.donate}
-                  </OutboundLink>
+                  </Link>
                 </li>
                 <li>
                   <button

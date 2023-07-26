@@ -27,7 +27,7 @@
         "subtitle": "Your Helping Hands",
         "description": "We aren't able to do any of the things we do without the support of people just like you.",
         "button": "Donate Now",
-        "buttonLink": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCJ6SAWVF5U5Q"
+        "buttonLink": "/donate"
       },
       "five": {
         "title": "Nights of Praise",
@@ -53,7 +53,7 @@
       "three": {
         "title": "WE NEED YOUR HELP CHANGING THE WORLD",
         "button": "Donate",
-        "buttonLink": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCJ6SAWVF5U5Q"
+        "buttonLink": "/donate"
       }
     },
     "playVideo": "Play Video"
@@ -78,7 +78,7 @@
     },
     "links": {
       "join": "/join",
-      "donate": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCJ6SAWVF5U5Q"
+      "donate": "/donate"
     },
     "team": {
       "title": "The Dream Team"
@@ -124,6 +124,15 @@
     "pageTitle": "Upcoming Events",
     "noUpcomingEvents": "No upcoming events"
   },
+  "donate": {
+    "pageTitle": "Donate",
+    "financialTransparency": "Your generosity changes communities, generations, and nations.  We want you to know there are currently 3 primary giving lanes Dream On uses donations: local outreach, mission trips, and mass international evangelism.  Effective January 1, 2023, 5% of all transactions are retained for operational costs.  Our vision is that all ministry overhead would be covered, so that 100% of giving would go straight to the front lines of the vision.",
+    "waysToGiveTitle": "There are 2 simple ways that you can financially contribute to Dream On",
+    "addressTitle": "Mail your tax deductible donation to: ",
+    "address": "Dream On: Global <br />830 Glynwood Road <br />Wapakoneta, Ohio 45895",
+    "paypal": "Make your tax deductible donation online:",
+    "donateLink": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCJ6SAWVF5U5Q"
+  },
   "contact": {
     "pageTitle": "Contact",
     "contactUs": "Contact Us",
@@ -162,7 +171,7 @@
     "contact": "Contact",
     "contactLink": "/contact",
     "donate": "Donate",
-    "donateLink": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCJ6SAWVF5U5Q"
+    "donateLink": "/donate"
   },
   "footer": {
     "copyright": "Copyright",
