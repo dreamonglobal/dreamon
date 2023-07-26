@@ -27,7 +27,7 @@
         "subtitle": "Sus Manos Amigas",
         "description": "No podemos hacer ninguna de las cosas que hacemos sin el apoyo de personas como usted.",
         "button": "Done ahora",
-        "buttonLink": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCJ6SAWVF5U5Q"
+        "buttonLink": "/es/donate"
       },
       "five": {
         "title": "Noches de Alabanza",
@@ -53,7 +53,7 @@
       "three": {
         "title": "NECESITAMOS TU AYUDA PARA CAMBIAR EL MUNDO",
         "button": "Donar",
-        "buttonLink": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCJ6SAWVF5U5Q"
+        "buttonLink": "/es/donate"
       }
     },
     "playVideo": "Reproduce el video"
@@ -78,7 +78,7 @@
     },
     "links": {
       "join": "/es/join",
-      "donate": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCJ6SAWVF5U5Q"
+      "donate": "/es/donate"
     },
     "team": {
       "title": "El equipo de ensueño"
@@ -125,6 +125,15 @@
     "pageTitle": "Próximos Eventos",
     "noUpcomingEvents": "No hay eventos próximos"
   },
+  "donate": {
+    "pageTitle": "Donar",
+    "financialTransparency": "Tu generosidad cambia comunidades, generaciones y naciones. Queremos que sepa que actualmente hay 3 vías principales de donación que Dream On usa donaciones: alcance local, viajes misioneros y evangelismo internacional masivo. A partir del 1 de enero de 2023, el 5% de todas las transacciones se retienen para costos operativos. Nuestra visión es que se cubran todos los gastos generales del ministerio, de modo que el 100 % de las donaciones vaya directamente al frente de la visión.",
+    "waysToGiveTitle": "Hay 2 formas simples en las que puede contribuir financieramente a Dream On",
+    "addressTitle": "Envíe su donación deducible de impuestos a:",
+    "address": "Dream On: Global <br />830 Glynwood Road <br />Wapakoneta, Ohio 45895",
+    "paypal": "Haz tu donación deducible de impuestos en línea:",
+    "donateLink": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCJ6SAWVF5U5Q"
+  },
   "contact": {
     "pageTitle": "Contacto",
     "contactUs": "Contacta con nosotras",
@@ -163,7 +172,7 @@
     "contact": "Contacto",
     "contactLink": "/es/contact",
     "donate": "Donar",
-    "donateLink": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCJ6SAWVF5U5Q"
+    "donateLink": "/es/donate"
   },
   "footer": {
     "copyright": "Derechos De Autor",

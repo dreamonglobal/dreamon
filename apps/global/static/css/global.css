@@ -709,8 +709,13 @@ nav {
   z-index: 99;
 }
 
+.logo img {
+  padding-top: 10px
+}
+
 .fixed-menu .logo img {
-  width: 200px;
+  width: 100px;
+  padding-top: 10px
 }
 
 .fixed-menu .main-menu ul li {
@@ -1000,6 +1005,11 @@ button.owl-dot:nth-child(3) {
   width: 100%;
   height: 100%;
   content: '';
+}
+
+.donate-number {
+  font-size: 6em;
+  font-weight: bolder;
 }
 
 /*  ==========================

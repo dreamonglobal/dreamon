@@ -9,7 +9,7 @@ const Logo = (): ReactElement => {
     query {
       logoImage: file(relativePath: { eq: "logo.png" }) {
         childImageSharp {
-          gatsbyImageData(width: 200, placeholder: BLURRED)
+          gatsbyImageData(width: 100, placeholder: NONE, quality: 100)
         }
       }
     }

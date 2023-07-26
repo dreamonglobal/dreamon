@@ -1,7 +1,7 @@
 const assertUrlSlug = (slug) =>
   cy.url().should('equal', `http://localhost:4200/${slug}`)
 
-const links = ['about', 'films', 'events', 'contact']
+const links = ['about', 'films', 'events', 'contact', 'donate']
 
 const uppercaseLink = (link) => link.charAt(0).toUpperCase() + link.slice(1)
 
@@ -28,12 +28,7 @@ const sliderTwo = () => {
 const sliderThree = () => {
   cy.get('h1').contains('Raise Your Helping Hands')
   cy.get('[data-cy="sliderThreeBtn"]')
-    .should('have.attr', 'target', '_blank')
-    .should(
-      'have.attr',
-      'href',
-      'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCJ6SAWVF5U5Q'
-    )
+    .should('have.attr', 'href', '/donate')
     .should('contain', 'Donate Now')
 }
 
@@ -50,28 +45,22 @@ describe('Navigation', () => {
     cy.get('[data-cy="joinBucketLink"]')
       .should('have.attr', 'target', '_blank')
       .should('have.attr', 'href', 'https://dreamon.gomethod.app/')
-    cy.get('[data-cy="donateBucketLink"]')
-      .should('have.attr', 'target', '_blank')
-      .should(
-        'have.attr',
-        'href',
-        'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCJ6SAWVF5U5Q'
-      )
+    cy.get('[data-cy="donateBucketLink"]').should(
+      'have.attr',
+      'href',
+      '/donate'
+    )
     cy.get('[data-cy="aboutJoinButton"]').should('have.attr', 'href', '/join')
-    cy.get('[data-cy="aboutDonateButton"]')
-      .should('have.attr', 'target', '_blank')
-      .should(
-        'have.attr',
-        'href',
-        'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCJ6SAWVF5U5Q'
-      )
-    cy.get('[data-cy="aboutPartnerButton"]')
-      .should('have.attr', 'target', '_blank')
-      .should(
-        'have.attr',
-        'href',
-        'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCJ6SAWVF5U5Q'
-      )
+    cy.get('[data-cy="aboutDonateButton"]').should(
+      'have.attr',
+      'href',
+      '/donate'
+    )
+    cy.get('[data-cy="aboutPartnerButton"]').should(
+      'have.attr',
+      'href',
+      '/donate'
+    )
     cy.get('.video-btn')
       .should('have.attr', 'target', '_blank')
       .should(
@@ -104,8 +93,8 @@ describe('Navigation', () => {
     cy.changeLanguage('english')
     cy.url().should('equal', 'http://localhost:4200/')
     cy.changeLanguage('spanish')
-    cy.url().should('equal', 'http://localhost:4200/es')
+    cy.url().should('equal', 'http://localhost:4200/es/')
     cy.changeLanguage('portuguese')
-    cy.url().should('equal', 'http://localhost:4200/pt')
+    cy.url().should('equal', 'http://localhost:4200/pt/')
   })
 })

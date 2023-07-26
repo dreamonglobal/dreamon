@@ -139,6 +139,15 @@ const query = graphql`
               contactUs
               loading
             }
+            donate {
+              pageTitle
+              financialTransparency
+              waysToGiveTitle
+              addressTitle
+              address
+              paypal
+              donateLink
+            }
             fourZeroFour {
               pageTitle
               notFoundTitle
