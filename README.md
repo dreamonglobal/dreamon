@@ -1,6 +1,14 @@
 
 
-# Dreamon
+# ⚠️ DEPRECATED
+
+**This repository is deprecated and no longer maintained.**
+
+Please use the new repository: **[dreamonglobal/world](https://github.com/dreamonglobal/world)**
+
+---
+
+# Dreamon (Legacy)
 Dream On: Global is a non-profit 501C3 organization that does missionary and humanitarian work in Central and South America. This repo is used to manage all of the public software. 
 
 
