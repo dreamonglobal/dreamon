@@ -113,7 +113,10 @@
   },
   "board": {
     "pageTitle": "Dream On: Board of Directors",
-    "meetTheCollectiveTitle": "Board of Directors"
+    "meetTheCollectiveTitle": "Board of Directors",
+    "contactTitle": "Contact the Board",
+    "contactDescription": "Have questions or want to reach out to the Board of Directors?",
+    "contactEmail": "board@dreamon.world"
   },
   "films": {
     "pageTitle": "Dream On: Films",

@@ -114,7 +114,10 @@
   "board": {
     "pageTitle": "Dream On: Conselho Coletivo",
     "meetTheCollectiveTitle": "Conheça o Coletivo",
-    "meetTheCollectiveDescription": "Dream On: Conselho Coletivo é uma equipe de autores, palestrantes e pregadores. Somos apaixonados por capacitar e ensinar os outros a perseguir seus sonhos e propósitos que Deus colocou na vida de cada um."
+    "meetTheCollectiveDescription": "Dream On: Conselho Coletivo é uma equipe de autores, palestrantes e pregadores. Somos apaixonados por capacitar e ensinar os outros a perseguir seus sonhos e propósitos que Deus colocou na vida de cada um.",
+    "contactTitle": "Contatar o Conselho",
+    "contactDescription": "Tem perguntas ou quer entrar em contato com o Conselho Diretor?",
+    "contactEmail": "board@dreamon.world"
   },
   "films": {
     "pageTitle": "Sonhar com: Filmes",

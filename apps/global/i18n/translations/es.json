@@ -114,7 +114,10 @@
   "board": {
     "pageTitle": "Dream On: Junta Colectiva",
     "meetTheCollectiveTitle": "Conoce a la colectiva",
-    "meetTheCollectiveDescription": "Dream On: Junta Colectiva es un equipo de autores, oradores y predicadores. Nos apasiona empoderar y enseñar a otros a perseguir sus sueños y propósitos que Dios ha puesto en la vida de todos y cada uno."
+    "meetTheCollectiveDescription": "Dream On: Junta Colectiva es un equipo de autores, oradores y predicadores. Nos apasiona empoderar y enseñar a otros a perseguir sus sueños y propósitos que Dios ha puesto en la vida de todos y cada uno.",
+    "contactTitle": "Contactar a la Junta",
+    "contactDescription": "¿Tienes preguntas o quieres comunicarte con la Junta Directiva?",
+    "contactEmail": "board@dreamon.world"
   },
   "films": {
     "pageTitle": "Dream On: Películas",

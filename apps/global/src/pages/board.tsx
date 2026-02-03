@@ -39,6 +39,22 @@ const BoardPage = ({
           </div>
         </div>
       </div>
+
+      <div className="contact-board-area section-padding">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-8 col-sm-offset-2 text-center">
+              <h2>{translations.contactTitle}</h2>
+              <p>{translations.contactDescription}</p>
+              <p>
+                <a href={`mailto:${translations.contactEmail}`}>
+                  {translations.contactEmail}
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   )
 }
